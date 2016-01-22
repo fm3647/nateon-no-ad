@@ -6,7 +6,6 @@ hosts 추가 부분
 #NateON AD
 
 127.0.0.1 cyad.nate.com
-
 127.0.0.1 cyad1.nate.com
 
 127.0.0.1 nateonevent.nate.com
