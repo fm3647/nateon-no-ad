@@ -1,0 +1,71 @@
+<Window size="478,31" caption="0,0,0,0">
+	<ListContainerElement name="noti_item" height="31">
+		<VerticalLayout width="478" height="31">
+			<HorizontalLayout height="30">
+				<Control width="20" />
+				<VerticalLayout>
+					<Control />
+					<HorizontalLayout height="12">
+						<Label name="pre"
+							   text="[" 
+							   font="4" textcolor="#FF333333" 
+							   width="8"
+							   height="12" 
+							   align="center"
+						/>
+						<Label name="name"
+							   font="4" textcolor="#FF333333" 
+							   disabledtextcolor="#FFA7A6AA" 
+							   height="12" 
+							   endellipsis="true" 
+						/>
+						<Label name="post" 
+							   text="]" 
+							   font="4" textcolor="#FF333333" 
+							   width="8"
+							   height="12" 
+							   align="center"
+						/>
+						<Control width="5" />
+						<Label name="desc"
+							   text="11110203930"
+							   font="4" textcolor="#FF333333" 
+							   disabledtextcolor="#FFA7A6AA" 
+							   height="12" 
+							   align="left"
+							   endellipsis="true" 
+						/>
+					</HorizontalLayout>
+					<Control />
+				</VerticalLayout>
+				<Control width="10" />
+				<VerticalLayout width="60">
+					<Control />
+					<HorizontalLayout height="12">
+						<Label name="date" visible="true"
+							   text="2015.02.04"
+							   font="4" textcolor="#FF999999" 
+							   width="60" height="12" 
+							   align="center"
+						/>
+						<Button name="news_submit" visible="false"
+							    text="이동"
+							    font="5" textcolor="#FF31aed8" 
+							    width="60" height="12" 
+							    align="center"
+						/>
+						<Button name="invite_submit" visible="false"
+							    text="확인"
+							    font="5" textcolor="#FF31aed8" 
+							    width="60" height="12" 
+							    align="center"
+						/>
+					</HorizontalLayout>
+					<Control />
+				</VerticalLayout>
+				<Control width="17" />
+			</HorizontalLayout>
+			<Control height="1" bkcolor="#FFf2f2f2" />
+		</VerticalLayout>
+	</ListContainerElement>
+</Window>

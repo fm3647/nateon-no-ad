@@ -1,0 +1,78 @@
+﻿
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<Window size="51,514" mininfo="51,544" maxinfo="375,1280" sizebox="3,3,0,3" setround="0,0,0,0">
+
+<Font name="돋움" size="12" bold="false" italic="false" default="true" />
+<Font name="돋움" size="11" bold="false" textcolor="#FF9C9C9C" italic="false" />
+<Font name="돋움" size="10" bold="false" textcolor="#FF9C9C9C" italic="false" />
+<Font name="Verdana" size="10" bold="false" italic="false" />
+<Font name="Verdana" size="10" bold="false" extra="-1" />
+<Font name="Tahoma" size="10" bold="true" italic="false" />
+<Font name="Verdana" size="9" bold="false" italic="false" />
+<Font name="Tahoma" size="9" bold="false" italic="false" />
+
+<Default name="VScrollBar" value="button1normalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,0,17,17&apos;&quot; button1hotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;17,0,34,17,17&apos;&quot; button1pushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;34,0,51,17&apos;&quot; button2normalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,34,17,51&apos;&quot; button2hotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;17,34,34,51&apos;&quot; button2pushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;34,34,51,51&apos;&quot; thumbnormalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,51,17,152&apos; corner=&apos;0,2,0,2&apos;&quot; thumbhotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;17,51,34,152&apos; corner=&apos;0,2,0,2&apos;&quot; thumbpushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;34,51,51,152&apos; corner=&apos;0,2,0,2&apos;&quot; bknormalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,17,17,34&apos;&quot; " />
+
+<VerticalLayout name="Main" bkcolor="#FFFFFFFF">
+	<Control height="1" bkcolor="#FFA0A0A0"/>
+	<HorizontalLayout name="MainTop" width="375" height="80" hole="true" >
+		<Control width="1" bkcolor="#FFA0A0A0"/>
+		<Ticker name="ServiceTabAD" tickertype="image" hole="true" width="374" height="80" imagewidth="374" bkcolor="#FFFFFFFF"/>
+		<Button name="ImageFrame" mouse="false" float="true" relativepos="0,0,0,0" width="374" height="80" />
+	</HorizontalLayout>
+	
+	<HorizontalLayout name="MainBottom" width="375" bkcolor="#00000000" inset="0,0,0,0">		
+		<Control width="1" bkcolor="#FFA0A0A0"/>
+		<VerticalLayout name="MainBottomLeft" 
+					    width="50" 
+					    bkcolor="#00000000" 
+					    bkimage="file='bg_tap.png'" 
+					    hole="true" >
+			<PaneService name="PaneService" 
+						 width="50" height="180" 
+						 bkcolor="#00000000" 
+						 rowheight="36" maxheight="180" minheight="0" 
+						 scrollheight="14" />
+			<PaneAD name="PaneAD" 
+				    width="50" height="36" 
+				    bkcolor="#00000000" 
+				    minheight="36" />
+										
+			<HorizontalLayout name="PaneADEnd" 
+							  width="50" height="0" 
+							  bkcolor="#00000000" 
+							  bkimage="file='svc_tm_bottom_line.png'" 
+							  hole="true" />
+
+			<PaneQL name="PaneQL" 
+				    width="50" 
+				    bkcolor="#00000000"
+					rowheight="36" minheight="20"/>
+					
+			<HorizontalLayout name="PaneOption" 
+							  width="50" height="30" 
+							  bkcolor="#00000000" 
+							  maxheight="50" minheight="30">
+				<Button name="BtnOption" 
+					    tooltip="퀵런치 설정하기" 
+					    pos="0,0,50,30" 
+					    width="50" height="30" 
+					    maxwidth="50" maxheight="30" 
+					    normalimage="btn_tap_svc_setting.png" 
+					    hotimage="btn_tap_svc_setting_over.png" 
+					    pushedimage="btn_tap_svc_setting_down.png" />
+			</HorizontalLayout>
+<!--			<HorizontalLayout name="MainBottomLeftTail" height="5" />-->
+		</VerticalLayout>
+		
+		<VerticalLayout name="MainBottomRight" width="324" bkcolor="#00000000">
+			<MessageBox name="MessageBox" bkcoldferr="#00000000" />
+			<TreeServiceWnd name="TreeServiceWnd" bkcoldferr="#00000000" />
+			<ServiceTabWeb name="ServiceTabWeb" bkcolor="#00000000" />
+		</VerticalLayout>		
+	</HorizontalLayout>
+	<Control height="1" bkcolor="#FFA0A0A0"/>	
+</VerticalLayout>
+
+</Window>

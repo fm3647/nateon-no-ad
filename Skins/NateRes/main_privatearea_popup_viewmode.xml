@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window alpha="255">
+	<Font name="돋움" size="12" bold="false" default="true" />
+	<Default name="Menu" bkcolor="FFFFFFFF" bordercolor="FF828282" bordersize="1" value="bordersize=&quot;1&quot; bordercolor=&quot;FF828282&quot; bkcolor=&quot;FFFFFFFF&quot; inset=&quot;1,2,1,2&quot; itemtextpadding=&quot;20,0,7,0&quot; itemselectedbkcolor=&quot;FFFFF27F&quot;" />
+	<Menu>
+		<MenuElement name="ShowMiniView" height="23" text="미니모드 보기">
+			<HorizontalLayout>
+				<Label name="ShowMiniViewCheck" visible="false" float="true" pos="7,0,10,17" width="22" bkimage="file='ico_select_dot.png' source='0,0,10,10' dest='0,5,10,15'"/>
+			</HorizontalLayout>
+		</MenuElement>
+		<MenuElement name="ShowDefaultView" height="23" text="기본모드 보기">
+			<HorizontalLayout>
+				<Label name="ShowDefaultViewCheck" visible="false" float="true" pos="7,0,10,17" width="22" bkimage="file='ico_select_dot.png' source='0,0,10,10' dest='0,5,10,15'"/>
+			</HorizontalLayout>
+		</MenuElement>
+		<MenuElement drawselectedbk="false" height="3" mouse="false">
+			<VerticalLayout>
+				<HorizontalLayout height="1"></HorizontalLayout>
+				<HorizontalLayout bkcolor="FF828282" height="1"></HorizontalLayout>
+				<HorizontalLayout height="1"></HorizontalLayout>
+			</VerticalLayout>
+		</MenuElement>
+    <MenuElement name="ShowServiceView" height="23" text="서비스탭 보기">
+      <HorizontalLayout>
+        <Label name="ShowServiceViewCheck" visible="false" float="true" pos="7,0,10,17" width="22" bkimage="file='ico_select_dot.png' source='0,0,10,10' dest='0,5,10,15'"/>
+      </HorizontalLayout>
+    </MenuElement>
+    <MenuElement name="HideServiceView" height="23" text="서비스탭 숨기기">
+      <HorizontalLayout>
+        <Label name="HideServiceViewCheck" visible="false" float="true" pos="7,0,10,17" width="22" bkimage="file='ico_select_dot.png' source='0,0,10,10' dest='0,5,10,15'"/>
+      </HorizontalLayout>
+    </MenuElement>
+	</Menu>
+</Window>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement name="buddy" bkcolor="00FFFFFF" pushedelementimage="file='main_buddy_selected.png' corner='2,2,2,2'"  hotelementimage="file='main_buddy_over.png' corner='2,2,2,2'">
+    <HorizontalLayout>
+      <VerticalLayout width="8">
+      </VerticalLayout>
+      <VerticalLayout name="profileImageContainer" width="27">
+       <Button name="buddyProfileImage" float="true" pos="0,1,25,26" width="25" height="25"  normalimage="file='buddy_profile_default.png'"  />
+		   <Button name="buddyProfileImageFrame" float="true" pos="0,1,25,26" width="25" height="25"  normalimage="file='profileimg_frame.png'"  />
+      </VerticalLayout>
+      <VerticalLayout name="pocContainer" width="16">
+		<Button name="pocImage" mouse="false" float="true" pos="1,8,0,0" width="13" height="11"  normalimage="file='ico_poc_pc.png'" />
+      </VerticalLayout>
+      <VerticalLayout >
+        <HorizontalLayout>
+		  <VerticalLayout name="buddynamecontainer">
+          <Label name="buddyName" height="28" align="left" endellipsis="true" font="4" bordersize="0" textcolor="#FF000000" disabledtextcolor="#FF808080" />
+		  </VerticalLayout>
+		</HorizontalLayout>
+      </VerticalLayout>
+      <VerticalLayout width="4">
+      </VerticalLayout>
+      <VerticalLayout name="buttonContainer" width="30">
+	  	<Button name="birthdayImage" visible="false" mouse="false" float="true" pos="0,6,11,19" width="11" height="13"  normalimage="file='ico_birthday.png'"  />
+		<Button name="homepyBtn" float="true" pos="14,8,28,19" width="14" height="12"  normalimage="file='ico_minihompy.png'" />
+      </VerticalLayout>
+      <Edit name="buddyEdit" height="28" float="true" pos="0,5,100,23" align="left" visible="false" font="4" bordersize="1" bordercolor="#FFD0D0D0" textcolor="#FF000000" disabledtextcolor="#FF808080" />
+    </HorizontalLayout>
+  </ListContainerElement>
+</Window>

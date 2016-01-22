@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="340,170" caption="0,0,0,25">
+    <Font name="돋움" size="12" bold="false" italic="false" />
+    <Font name="돋움" size="11" bold="false" italic="false" default="true" />
+    <Font name="돋움" size="10" bold="false" italic="false" />
+    <Font name="굴림" size="12" bold="true" italic="false" />
+    
+    <HorizontalLayout bkcolor="FFffffff" bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1">
+        <VerticalLayout hole="true" bkimage="file='popup_skin_bg.png' source='0,0,9,26' corner='1,25,1,0'">
+            <HorizontalLayout height="25">
+                <Control width="10" />
+                <VerticalLayout width="100">
+                    <Control height="7" />
+                    <VerticalLayout height="12">
+                        <Label text="메시지창 편집"
+                               font="3" textcolor="#FF222222"
+                               width="100" height="12"   
+                        />
+                    </VerticalLayout>
+                    <Control height="5" />
+                </VerticalLayout>
+                <Control width="207" />
+                <VerticalLayout width="15">
+                    <Control height="5" />
+                    <VerticalLayout height="15">
+                        <Button name="closebtn" float="true"
+                                width="15" height="15"
+                                normalimage= "btn_closepopup.png"
+                                hotimage=    "btn_closepopup_over.png"
+                                pushedimage= "btn_closepopup_down.png"
+                        />
+                    </VerticalLayout>
+                    <Control height="5" />
+                </VerticalLayout>
+                <Control width="6" />
+            </HorizontalLayout>
+            <Control height="20" />
+            <HorizontalLayout height="60">
+                <Control width="20" />
+                <VerticalLayout width="60">
+                    <Button name="image" float="true" mouse="true" 
+                            width="60" height="60" 
+                            bkimage="file='profileimg_group_60x60.png'" 
+                    />
+                    <Button name="imageFrame" mouse="false" float="true" 
+                            width="60" height="60" 
+                            bkimage="profileimg_frame_60x60.png" 
+                            visible="false" 
+                    />
+                    <Button name="imageEdit" float="true" mouse="false"
+                            width="16" height="16" 
+                            bkimage="minipf_edit_name.png" 
+                            pos="38,39,0,0" 
+                    />
+                </VerticalLayout>
+                <Control width="10" />
+                <VerticalLayout width="248">
+                    <Control height="5" />
+                    <VerticalLayout height="12">
+                        <Text text="메시지창의 대표사진과 이름을 설정하세요." float="true"
+                              width="248" height="12" textpadding="2,0,2,0" 
+                              textcolor="#FF000000" font="0" align="left" />
+                    </VerticalLayout>
+                    <Control height="13" />
+                    <HorizontalLayout height="22">
+                        <VerticalLayout width="228">
+                            <Edit name="editName" float="true"
+                                  width="228" height="22"
+                                  bkimage="file='contents_input_bg.png' corner='3,3,1,1'"
+                                  textpadding="4,3,4,3" textcolor="#FFBBBBBB" 
+                            />
+                        </VerticalLayout>
+                        <Control width="20" />
+                    </HorizontalLayout>
+                    <Control height="8" />
+                </VerticalLayout>
+            </HorizontalLayout>
+            <Control height="19" />
+            <HorizontalLayout height="30">
+                <Control width="111" />
+                <VerticalLayout width="55">
+                    <Button name="btnok" float="true"
+                            width="55" height="30" 
+                            normalimage="btn_popup_confirm.png" 
+                            hotimage="btn_popup_confirm_over.png" 
+                            pushedimage="btn_popup_confirm_down.png" 
+                    />
+                </VerticalLayout>
+                <Control width="6" />
+                <VerticalLayout width="55">
+                    <Button name="btncancel" float="true"
+                            width="55" height="30" 
+                            normalimage="btn_pop_cancel.png" 
+                            hotimage="btn_pop_cancel_over.png" 
+                            pushedimage="btn_pop_cancel_over.png" />
+                </VerticalLayout>
+                <Control width="111" />
+            </HorizontalLayout>
+            <Control height="15" />
+        </VerticalLayout>
+    </HorizontalLayout>
+</Window>

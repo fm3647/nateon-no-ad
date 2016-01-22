@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="300,260" caption="0,0,0,25" setround="0,0,0,0">
+	
+	<Default name="VScrollBar" width="17" value="button1normalimage=&quot;file='scrollbar_s.png' source='0,0,17,17'&quot; button1hotimage=&quot;file='scrollbar_s.png' source='17,0,34,17,17'&quot; button1pushedimage=&quot;file='scrollbar_s.png' source='34,0,51,17'&quot; button2normalimage=&quot;file='scrollbar_s.png' source='0,34,17,51'&quot; button2hotimage=&quot;file='scrollbar_s.png' source='17,34,34,51'&quot; button2pushedimage=&quot;file='scrollbar_s.png' source='34,34,51,51'&quot; thumbnormalimage=&quot;file='scrollbar_s.png' source='0,51,17,152' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar_s.png' source='17,51,34,152' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar_s.png' source='34,51,51,152' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar_s.png' source='0,17,17,34'&quot; " />
+
+	<Font name="돋움"   size="12" bold="false" default="true"/>
+	<Font name="돋움"   size="12" bold="true" />
+	<Font name="굴림"   size="12" bold="false" />
+	<Font name="돋움"   size="11" bold="false" />
+	<Font name="돋움"   size="11" bold="false" underline="true" />
+	<Font name="굴림"   size="12" bold="true" />
+	
+	<VerticalLayout bkcolor="#FFFFFFFF" bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1">	
+		<VerticalLayout name="frame" bkimage="file='popup_skin_bg.png' corner='1,25,1,0'">
+		
+			<HorizontalLayout height="25" >
+				<Control width="10" />
+				<VerticalLayout>
+					<Control height="7"/>
+					<Label text="팀룸 탈퇴하기" 
+						   height="12" 
+						   textcolor="#FF333333" 
+						   font="5" 
+					/>
+					<Control />
+				</VerticalLayout>
+				<VerticalLayout width="15">
+					<Control />
+					<Button name="closebtn" 
+							width="15" height="15"
+							normalimage= "btn_closepopup.png"
+							hotimage=	 "btn_closepopup_over.png"
+							pushedimage= "btn_closepopup_down.png"
+					/>
+					<Control />
+				</VerticalLayout>
+				<Control width="6" />
+			</HorizontalLayout>
+
+			<HorizontalLayout height="215">
+				<Control width="10" />
+				<VerticalLayout>
+
+					<Control height="30" />
+					
+					<Text name="name" 
+							text="팀룸명"
+							height="12"
+							textcolor="#FF333333"
+							font="1"
+							align="center"
+					/>
+					
+					<Control height="20" />
+					<Text 	text="팀룸을 탈퇴하시면, 초대를 받기 전까지"
+							height="12"
+							textcolor="#FF333333"
+							font="0"
+							align="center"
+					/>
+					<Control height="3" />					
+					<Text 	text="팀룸에 들어오실 수 없습니다."
+							height="12"
+							textcolor="#FF333333"
+							font="0"
+							align="center"
+					/>
+					<Control height="3" />					
+					<Text 	text="정말 탈퇴하시겠습니까?"
+							height="12"
+							textcolor="#FF333333"
+							font="0"
+							align="center"
+					/>
+					<Control height="20" />					
+
+					<Text 	text="팀룸을 탈퇴해도"
+							height="12"
+							textcolor="#FFFF3030"
+							font="3"
+							align="center"
+					/>
+					<Control height="2" />					
+					<Text 	text="작성한 메시지나 파일은삭제되지 않습니다."
+							height="12"
+							textcolor="#FFFF3030"
+							font="3"
+							align="center"
+					/>
+					<Control height="2" />					
+					<Text 	text="단, 입력한 프로필 정보는 지체없이 파기됩니다."
+							height="12"
+							textcolor="#FFFF3030"
+							font="3"
+							align="center"
+					/>
+					
+					<Control height="20" />					
+					
+					<HorizontalLayout height="22">
+						<Control />
+						<Button name="yes" 
+								width="50" 
+								normalimage= "btn_pop_yes_s.png"
+								hotimage=	 "btn_pop_yes_s_over.png"
+								pushedimage= "btn_pop_yes_s_down.png"
+						/>
+						<Control width="5" />
+						<Button name="no" 
+								width="50" 
+								normalimage= "btn_pop_no_s.png"
+								hotimage=	 "btn_pop_no_s_over.png"
+								pushedimage= "btn_pop_no_s_down.png"
+						/>
+						<Control />
+					</HorizontalLayout>
+				</VerticalLayout>
+				<Control width="10" />
+			</HorizontalLayout>
+			<Control />
+			
+		</VerticalLayout>
+	</VerticalLayout>
+</Window>

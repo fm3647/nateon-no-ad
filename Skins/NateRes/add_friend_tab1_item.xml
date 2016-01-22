@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="378,48">
+<ListContainerElement height="47" name="item">
+	<VerticalLayout bkcolor="#FFFFFFFF">
+		<Button name="btnRecomProfile" 
+			    float="true" 
+			    pos="15,8,40,33" 
+			    width="25" height="25" 
+			    mouse="false" 
+		/>
+	  	<Button name="btnRecomProfileFrame" 
+	  		    float="true" 
+	  		    pos="15,8,40,33" 
+	  		    width="25" height="25" 
+	  		    normalimage="profileimg_frame.png" 
+	  		    mouse="false" 
+	  	/>
+		<Button name="btnRecomHompy" 
+			    float="true" 
+					pos="226,18,240,30" 
+			    width="14" height="12" 
+			    normalimage="ico_minihompy.png" 
+		/>
+		<Button name="btnRecomAdd" 
+			    tooltip="친구 추가 요청을 보냅니다." 
+			    float="true" 
+			    pos="251,14,314,36" 
+			    width="63" height="22" 
+			    normalimage="btn_popup_addfriends_01.png" 
+			    hotimage="btn_popup_addfriends_01_over.png" 
+			    pushedimage="btn_popup_addfriends_01_down.png" 
+		/>
+		<Button name="btnRecomDel" 
+			    tooltip="차단한 친구는 환경설정의 [차단한 친구 관리]에서 확인할 수 있습니다." 
+			    float="true" 
+			    pos="314,14,354,36" 
+			    width="40" height="22" 
+			    normalimage="btn_popup_blockfriends.png" 
+			    hotimage="btn_popup_blockfriends_over.png" 
+			    pushedimage="btn_popup_blockfriends_down.png" 
+		/>
+		<Label name="Name" 
+			   float="true" 
+			   pos="50, 8, 110, 20" 
+			   height="12" 
+			   maxwidth="60" 
+			   font="1" 
+			   textcolor="#FF000000" 
+		/>
+		<Label name="Desc" 
+			   float="true" 
+			   pos="50, 26, 224, 38" 
+			   height="12" 
+			   maxwidth="174" 
+			   font="2" 
+			   textcolor="#FFBBBBBB" 
+			   endellipsis="true" 
+		/>
+		<Label name="End" 
+			   float="true" 
+			   pos="248, 18, 348, 30" 
+			   height="12" 
+			   maxwidth="100" 
+			   font="1" 
+			   textcolor="#FF4A4A4A" 
+			   text="친구 요청 완료" 
+			   align="right" 
+		/>
+		<Label name="IndexData" 
+			   float="true" 
+			   pos="0, 0, 0, 0" 
+			   height="0" 
+			   maxwidth="0"
+			   font="2" 
+			   textcolor="#FF9C9C9C" 
+		/>
+		<Control float="true" 
+			     pos="0, 46, 378, 47" 
+			     height="1" 
+			     bkcolor="#FFF2F2F2" 
+		/>
+	</VerticalLayout>
+</ListContainerElement>
+</Window>

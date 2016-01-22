@@ -1,0 +1,118 @@
+<Window>
+	<ListContainerElement height="75" name="finder_msg_item">
+		<HorizontalLayout>
+			<VerticalLayout>
+				<VerticalLayout name="finder_item_bklayout" height="74">
+					<HorizontalLayout height="29">
+						<Control width="5" />
+						<VerticalLayout name="finder_msg_on_area"
+										width="41">
+							<Control height="10" />
+							<Label name="finder_msg_on"
+									 height="13"
+									 text="이수연"
+									 width="41"
+									 endellipsis="true"
+									 textcolor="#FF333333"
+									 disabledtextcolor="#FF333333"
+									 font="7"
+									 align="left"
+						/>
+							<Control />
+						</VerticalLayout>
+						<Control width="7" />
+						<VerticalLayout name="finder_msg_time_area" width="150">
+							<Control height="9" />
+							<Label name="finder_msg_time"
+									 text="2015/12/11 (수) 오전 02:00"
+									 textcolor="#FFB9B9B9"
+									 font="10"
+									 align="left"
+						/>
+							<Control />
+						</VerticalLayout>
+						<Control />
+						<VerticalLayout width="19">
+							<Control height="5" />
+							<HorizontalLayout height="16">
+								<Control width="16" name="finder_msg_impo" bkimage="troom_ic_flag_on.png" />
+								<Control width="3" />
+							</HorizontalLayout>
+							<Control />
+						</VerticalLayout>
+						<VerticalLayout name="finder_msg_favo"
+											width="19">
+							<Control height="5" />
+							<HorizontalLayout height="16">
+								<Control width="16" bkimage="troom_ic_scrap_on.png" />
+								<Control width="3" />
+							</HorizontalLayout>
+							<Control />
+						</VerticalLayout>
+					</HorizontalLayout>
+					<HorizontalLayout name="finder_msg_layout" height="14">
+						<Control width="3" />
+						<VerticalLayout name="IndentVerticalLayout" width="54" visible="false">
+							<!-- 텍스트 왼쪽 댓글 표시 -->
+							<HorizontalLayout width="54" >
+								<Control width="2" />
+								<Control width="52" height="12" bkimage="troom_ic_comment.png" />
+							</HorizontalLayout>
+						</VerticalLayout>
+						<EllipsisText name="finder_msg"
+											text="이것은 중요한 메시지입중요 이것은 중요한 메시지입중요 이것은 중요한 메시지입중요 이것은 중요한 메시지입중요 이것은 중요한 메시지입중요 이것은 중요한 메시지입중요다아"
+											maxlinecnt="3"
+											lineinterval="3"
+													textcolor="#FF333333"
+											font="8"
+											endellipsis="true"
+					/>
+					</HorizontalLayout>
+					<Control height="10" />
+					<HorizontalLayout name="finder_msg_cc_area" visible="true"
+										height="11">
+						<Control width="7" />
+						<VerticalLayout height="11" width="10">
+							<Control />
+							<Control height="5" bkimage="troom_bl_dot_01.png" />
+							<Control />
+						</VerticalLayout>
+						<Label name="finder_msg_moim"
+								 text="#기획파트"
+								 textcolor="#FFB9B9B9"
+								 font="10"
+								 align="left"
+								 endellipsis="true"
+								 height="12"
+					/>
+					</HorizontalLayout>
+					<Control height="10" />
+				</VerticalLayout>
+				<Button name="finder_msg_item_btn" width="335" float="true" />
+				<Control height="1" bkcolor="#FFF1F1F1" />
+			</VerticalLayout>
+			<Control width="5" />
+		</HorizontalLayout>
+		<!--
+		<HorizontalLayout name="finder_msg_over_area" visible="false"
+					      float="true" 
+					      pos="263,33,326,61">
+			<Control />
+			<Button name="finder_msg_move" 
+				    width="28" 
+				    align="center"
+				    normalimage= "troom_bt_move.png" 
+				    hotimage=	 "troom_bt_move_over.png" 
+				    pushedimage= "troom_bt_move_down.png"
+			/>
+			<Control width="7" />
+			<Button name="finder_msg_detail" 
+				    width="28"
+				    align="center"
+				    normalimage= "troom_bt_detail.png" 
+				    hotimage=	 "troom_bt_detail_over.png" 
+				    pushedimage= "troom_bt_detail_down.png"
+			/>
+		</HorizontalLayout>-->
+	</ListContainerElement>
+</Window>

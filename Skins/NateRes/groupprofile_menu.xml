@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window>
+  <Font name="돋움" size="12" bold="false" default="true"/>
+  <Default name="Menu" bkcolor="FFFFFFFF" bordercolor="FF828282" bordersize="1" value="bordersize=&quot;1&quot; bordercolor=&quot;FF828282&quot; bkcolor=&quot;FFFFFFFF&quot; inset=&quot;1,2,1,2&quot; itemtextpadding=&quot;10,0,10,0&quot; itemselectedbkcolor=&quot;FFFFF27F&quot;" />
+  <Menu name="buddymenu" >
+	<MenuElement text="이름 변경" name="changename"/>
+	<MenuElement text="차단" name="menu_blockbuddies"/>
+	<MenuElement text="차단해제" name="menu_unblockbuddies"/>
+	<MenuElement text="삭제" name="menu_hidebuddy" padding="0,0,0,0"/>
+  </Menu>
+</Window>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,285" sizebox="2,2,2,2" caption="0,0,0,25">
+	<Font name="굴림" size="12" bold="true" italic="false" />
+	<Font name="돋움" size="12" bold="false" italic="false" default="true" />
+	<Font name="돋움" size="12" bold="true" italic="false" />
+	<Font name="돋움" size="11" bold="false" italic="false" />
+	<Font name="돋움" size="10" bold="false" italic="false" />
+  <Font name="돋움" size="30" bold="false" italic="false" />
+	<Default name="VScrollBar" width="17" value="button1normalimage=&quot;file='scrollbar.png' source='0,0,17,17'&quot; button1hotimage=&quot;file='scrollbar.png' source='17,0,34,17,17'&quot; button1pushedimage=&quot;file='scrollbar.png' source='34,0,51,17'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,34,17,51'&quot; button2hotimage=&quot;file='scrollbar.png' source='17,34,34,51'&quot; button2pushedimage=&quot;file='scrollbar.png' source='34,34,51,51'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,51,17,152' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='17,51,34,152' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='34,51,51,152' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,17,17,34'&quot; " />
+	<VerticalLayout name="bg" width="400" height="265" bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1">
+		<VerticalLayout name="Frame" hole="true" bkimage="file='popup_skin_bg.png' source='0,0,9,26' corner='1,25,1,0'">
+			<VerticalLayout name="HeaderLayOut" height="24"> 
+				<HorizontalLayout name="HeaderHorzLayout">
+					<HorizontalLayout name="titleTextHlay">
+						<Text text="친구 추가" float="true" pos="11,7,0,0" width="100" height="14"
+						textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+					</HorizontalLayout>
+					<HorizontalLayout name="HeaderRightLayOut" width="90">
+						<Button name="closebtn" tooltip="창 닫기" float="true" keyboard="false" pos="69,5,0,0" width="15" height="15" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="btn_closepopup.png" hotimage="btn_closepopup_over.png" pushedimage="btn_closepopup_down.png" />
+					</HorizontalLayout>
+				</HorizontalLayout>
+			</VerticalLayout>
+
+			<VerticalLayout height="265" >				
+				<Control pos="20,73,378,140" float="true" bordersize="1" bordercolor="#FFDADADA" />
+				<Text name="buddyInfo" text="" float="true" pos="22,31,0,0" width="350" height="36"
+				textpadding="0,0,2,0" textcolor="#FF333333" disabledtextcolor="#FFA7A6AA" align="left" font="2" />
+				<Label name="Info" float="true" 
+					   pos="22,165,0,0" width="100" height="12" 
+					   textcolor="#FF333333" font="1" align="left"
+					   text="친구를" 
+				/>
+				<Label name="Info2" float="true" 
+					   pos="233,165,0,0" width="100" height="12" 
+					   textcolor="#FF333333" font="1" align="left" 
+					   text="그룹에 추가합니다." 
+				/>
+				<Combo name="comboGroup" float="true" align="left" itemtextpadding="6,3,0,0" 
+					   pos="63,160,0,0" width="160" height="22" textcolor="FF333333" 
+					   dropboxsize="160,184" imagewidth="27" endellipsis="true" 
+					   normalimage= "file='btn_contents_open.png' 		corner='3,3,22,3'" 
+					   hotimage= 	"file='btn_contents_open_over.png' 	corner='3,3,22,3'" 
+					   pushedimage= "file='btn_contents_open_down.png' 	corner='3,3,22,3'">
+				</Combo>
+				<Button name="ok" float="true" pos="145,212,0,0" width="63" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="btn_pop_addfrd.png" hotimage="btn_pop_addfrd_over.png" pushedimage="btn_pop_addfrd_down.png" />
+				<Button name="cancel" float="true" pos="213,212,0,0" width="40" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="btn_pop_cancel_s.png" hotimage="btn_pop_cancel_s_over.png" pushedimage="btn_pop_cancel_s_down.png" />
+			</VerticalLayout>
+		</VerticalLayout>
+	</VerticalLayout>
+</Window>

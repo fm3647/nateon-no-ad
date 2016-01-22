@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<Window size="312,332" sizebox="2,2,2,2" caption="0,0,0,25" roundcorner="6,6">
+  <Font name="굴림" size="12" bold="true" italic="false" />
+	<VerticalLayout name="bg" width="312" height="332" bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1">
+    <VerticalLayout name="Frame"  hole="true" bkimage="file=&apos;popup_skin_bg.png&apos; source='0,0,9,26' corner=&apos;1,25,1,0&apos;">
+			<VerticalLayout name="HeaderLayOut" width="310" height="25">
+        <HorizontalLayout name="HeaderHorzLayout">
+          <HorizontalLayout name="titleTextHlay">
+            <Text text="이미지 전송하기" float="true" pos="11,7,0,0" width="194" height="14" textpadding="2,0,2,0"
+							textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+          </HorizontalLayout>
+          <HorizontalLayout name="HeaderRightLayOut" width="90">
+            <Button name="closebtn" tooltip="창 닫기" float="true" keyboard="false" pos="69,5,0,0" width="15" height="15" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+							normalimage="btn_closepopup.png" hotimage="btn_closepopup_over.png" pushedimage="btn_closepopup_down.png" />
+          </HorizontalLayout>
+        </HorizontalLayout>
+      </VerticalLayout>
+      
+      <VerticalLayout height="300" bkcolor="#FFFFFFFF">
+        <HorizontalLayout width="250" height="250" padding="30,10,0,0">
+          <Control name="ClipboardImage" height="250" width="250" />
+				</HorizontalLayout>        
+        <Button name="ok" float="true" pos="112,270,0,0" width="40" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
+						normalimage="btn_pop_confirm_s.png" hotimage="btn_pop_confirm_s_over.png" pushedimage="btn_pop_confirm_s_down.png" />
+        <Button name="cancel" float="true" pos="157,270,0,0" width="40" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
+						normalimage="btn_pop_cancel_s.png" hotimage="btn_pop_cancel_s_over.png" pushedimage="btn_pop_cancel_s_down.png" />
+      </VerticalLayout>
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

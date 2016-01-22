@@ -1,0 +1,97 @@
+<Window size="300,175" caption="0,0,0,30" roundcorner="6,6">
+	<Font name="돋움" 		size="12" bold="true" />
+	<Font name="굴림" 		size="12" bold="true" />
+	<Font name="Tahoma" 	size="10" bold="false" />
+	<Font name="돋움" 		size="12" bold="false" />
+	<Font name="돋움" 		size="11" bold="false" />
+	<Font name="돋움" 		size="11" bold="false" extra="-1" />
+	<HorizontalLayout bkcolor="#FFffffff" bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1">
+		<VerticalLayout bkimage="file='popup_skin_bg.png' source='0,0,9,26' corner='1,25,1,0'" hole="true">
+			<HorizontalLayout height="24">
+				<Control width="10" />
+				<VerticalLayout width="150">
+					<Control height="7" />
+					<VerticalLayout height="12">
+						<Label text="네이트온 잠금 해제" 
+							   font="1" textcolor="#FF222222" 
+							   width="150" height="12" 
+						/>
+					</VerticalLayout>
+					<Control height="5" />
+				</VerticalLayout>
+				<Control width="117" />
+				<VerticalLayout width="15">
+					<Control height="5" />
+					<VerticalLayout height="15">
+						<Button name="closebtn" float="true"
+							    width="15" height="15"
+							    normalimage= "btn_closepopup.png"
+							    hotimage=	 "btn_closepopup_over.png"
+							    pushedimage= "btn_closepopup_down.png"
+						/>
+					</VerticalLayout>
+					<Control height="5" />
+				</VerticalLayout>
+				<Control width="4" />
+			</HorizontalLayout>
+			<Control height="15" />
+			<HorizontalLayout height="39">
+				<Control width="20" />
+				<VerticalLayout width="39" bkimage="ico_unlock.png"/>
+				<Control width="7" />
+				<VerticalLayout width="232">
+					<Control height="13" />
+					<HorizontalLayout height="12">
+						<VerticalLayout width="108">
+							<Label text="네이트온 비밀번호" 
+								   font="0" textcolor="#FF222222" 
+								   width="108" height="12" 
+							/>
+						</VerticalLayout>
+						<VerticalLayout width="124">
+							<Label text="를 입력해주세요." 
+								   font="3" textcolor="#FF222222" 
+								   width="124" height="12" 
+							/>	
+						</VerticalLayout>
+					</HorizontalLayout>
+					<Control height="14" />
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control height="11" />
+			<HorizontalLayout height="24">
+				<Control width="57" />
+				<VerticalLayout width="184" height="24" hole="true" bkimage="file='inputbox_01.png' corner='3,4,1,1'">
+					<!--<Edit name="subpwdEdit" align="left" password="true" 
+						  width="184" height="24" textcolor="#FF333333"
+						  bkimage="file='inputbox_01.png' corner='3,4,1,1'"
+					/>-->
+				</VerticalLayout>
+				<Control width="57" />
+			</HorizontalLayout>
+			<Control height="17" />
+			<HorizontalLayout height="22">
+				<Control width="98" />
+				<VerticalLayout width="55">
+					<Button name="okBtn" float="true" align="center"
+						    width="55" height="22"
+						    normalimage= "btn_pop_unlock.png"
+						    hotimage=	 "btn_pop_unlock_over.png"
+						    pushedimage= "btn_pop_unlock_down.png"
+					/>
+				</VerticalLayout>
+				<Control width="6" />
+				<VerticalLayout width="40">
+					<Button name="cancelBtn" float="true" align="center"
+						    width="40" height="22"
+						    normalimage= "btn_pop_cancel_s.png"
+						    hotimage=	 "btn_pop_cancel_s_over.png"
+						    pushedimage= "btn_pop_cancel_s_down.png"
+						/>
+				</VerticalLayout>
+				<Control width="99" />
+			</HorizontalLayout>
+			<Control height="21" />
+		</VerticalLayout>
+	</HorizontalLayout>
+</Window>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement name="buddyGroup" pushedelementimage="file='main_group_selected.png' corner='2,2,2,2'"  hotelementimage="file='main_group_over.png' corner='2,2,2,2'" >
+    <HorizontalLayout>
+      <VerticalLayout width="8">
+      </VerticalLayout>
+      <VerticalLayout name="expandContainer" width="11">
+        <Button name="expand" float="true" pos="0,6,0,0" width="11" height="11"  normalimage="file='ico_main_grp_close_s.png'"  />
+      </VerticalLayout>
+      <VerticalLayout name="groupnameallcontainer">
+        <HorizontalLayout>
+		  <VerticalLayout name="groupnamecontainer">
+            <Label name="groupName" height="24" align="left" endellipsis="true" font="2" bordersize="0" textcolor="#FF31AED8" disabledtextcolor="#FF808080" />
+		  </VerticalLayout>
+
+		  <VerticalLayout name="margine" width="1">
+		  </VerticalLayout>	
+        </HorizontalLayout>
+      </VerticalLayout>
+      <Edit name="groupEdit" height="24" float="true" pos="0,3,100,21" align="left" visible="false" font="2" bordersize="1" bordercolor="#FFD0D0D0" textcolor="#FF000000" disabledtextcolor="#FF808080" />
+    </HorizontalLayout>
+  </ListContainerElement>
+</Window>

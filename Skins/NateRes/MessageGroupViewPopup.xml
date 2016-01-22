@@ -1,0 +1,63 @@
+﻿
+<?xml version="1.0" encoding="utf-8"?>
+
+<Window alpha="255">
+
+	<Font name="돋움" size="12" bold="false" default="true" />
+	<Default name="Menu" bkcolor="FFFFFFFF" bordercolor="FF828282" bordersize="1" value="bordersize=&quot;1&quot; bordercolor=&quot;FF828282&quot; bkcolor=&quot;FFFFFFFF&quot; inset=&quot;1,2,1,2&quot; itemtextpadding=&quot;20,0,10,0&quot; itemselectedbkcolor=&quot;FFFFF27F&quot;" />
+
+	<Menu>
+
+		<MenuElement name="TRoomCreateMenu" height="23" text="팀룸 만들기" />
+		
+		<MenuElement name="CryptoChatMenu" height="23" text="비밀대화 시작"  />
+		
+		<MenuElement name="CryptLine" drawselectedbk="false" height="3">
+		  <VerticalLayout>
+			<HorizontalLayout height="1"></HorizontalLayout>
+			<HorizontalLayout bkcolor="FF828282" height="1">
+			</HorizontalLayout>
+			<HorizontalLayout height="1"></HorizontalLayout>
+		  </VerticalLayout>
+		</MenuElement>
+		
+		<MenuElement name="AlwaysTopMenu" height="23" text="항상 위">
+			<HorizontalLayout>
+				<Label name="AlwaysTopCheck" visible="false" float="true" pos="7,0,10,17" width="22"  bkimage="file='ico_select_dot.png' source='0,0,10,10' dest='0,5,10,15'"/>
+			</HorizontalLayout>
+		</MenuElement>
+		
+		<MenuElement name="InviteUserMenu" height="23" text="대화상대 초대"  />
+		
+		<MenuElement name="CaptureMsgMenu" height="23" text="메시지 캡쳐"  />
+		
+		<MenuElement name="MiniOnMenu" height="23" text="미니대화 설정" />
+		<!-- MenuElement name="SecretChatMenu" height="23" text="몰래대화">
+			<HorizontalLayout>
+				<Label name="SecretChatCheck" visible="false" float="true" pos="7,0,10,17" width="22"  bkimage="file='ico_select_dot.png' source='0,0,10,10' dest='0,5,10,15'"/>
+			</HorizontalLayout>
+		</MenuElement -->
+		
+		<MenuElement name="AlertMenu" height="23" text="신고하기" />
+		
+		<MenuElement drawselectedbk="false" height="3">
+		  <VerticalLayout>
+			<HorizontalLayout height="1"></HorizontalLayout>
+			<HorizontalLayout bkcolor="FF828282" height="1">
+			</HorizontalLayout>
+			<HorizontalLayout height="1"></HorizontalLayout>
+		  </VerticalLayout>
+		</MenuElement>
+  
+		<MenuElement name="AlarmOnMenu" height="23" text="알림 켜기"  />
+		<MenuElement name="AlarmOffMenu" height="23" text="알림 끄기" visible="false" />
+		
+		<MenuElement name="BookmarkMenu" height="23" text="즐겨찾기 설정" />
+		<MenuElement name="UnBookmarkMenu" height="23" text="즐겨찾기 해제" visible="false" />
+		
+		<MenuElement name="EditGroupViewMenu" height="23" text="이름바꾸기" />
+		
+		<MenuElement name="PopupPrefMenu" height="23" text="환경설정" />
+	
+	</Menu>
+</Window>

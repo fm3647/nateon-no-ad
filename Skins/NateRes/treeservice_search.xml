@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Window 설정 가능 속성들
+size,sizebox,caption,roundcorner,mininfo,maxinfo,showdirty,alpha,bktrans,disabledfontcolor
+defaultfontcolor,linkfontcolor,linkhoverfontcolor,selectedcolor,setround,
+-->
+<!-- 
+  윈도우 이동이 필요할때
+<Window size="337,39" caption="0,0,0,38" sizebox="5,5,5,5" mininfo="337,39" roundcorner="3,3">
+-->
+<Window size="337,150" mininfo="337,39" roundcorner="3,3">
+
+	<Default name="VScrollBar" width="17" value="button1normalimage=&quot;file='scrollbar.png' source='0,0,17,17'&quot; button1hotimage=&quot;file='scrollbar.png' source='17,0,34,17,17'&quot; button1pushedimage=&quot;file='scrollbar.png' source='34,0,51,17'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,34,17,51'&quot; button2hotimage=&quot;file='scrollbar.png' source='17,34,34,51'&quot; button2pushedimage=&quot;file='scrollbar.png' source='34,34,51,51'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,51,17,152' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='17,51,34,152' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='34,51,51,152' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,17,17,34'&quot; " />
+	
+	<Font name="돋움"   size="12" bold="false" default="true"/>
+	<Font name="돋움"   size="12" bold="true" />
+	<Font name="굴림"   size="12" bold="false" />
+	
+	<HorizontalLayout hole="true" bkcolor="FFffffff">
+		<VerticalLayout name="view_search">
+			<HorizontalLayout name="viewTreeLayer" minheight="1">
+				<Tree name="tree_search_result" 					  
+					  header="hidden" 
+					  vscrollbar="true" 
+					  hscrollbar="true"
+					  itemshowhtml="true"
+					  bkcolor="#FFFFFFFF" 					  
+					  itemhotbkcolor="#FFFFFFFF" 
+					  itemselectedbkcolor="#FFFFFFFF" 
+					  kindorder="Member,Inviting,Group"
+					  draggerxml="treeservice_dragable.xml">
+					<Attribute kindof="Root" 
+							   height="10"
+							   haschild="true"
+							   padding="2,0,2,0"
+							   focusedimage="file='tree_list_focused.png' corner='2,2,2,2'"	/>
+							   
+					<!--		   
+					<Attribute kindof="Root" 
+							   height="10"
+							   haschild="true"
+							   padding="2,0,2,0"
+							   pushedelementimage="file='tree_list_selected.png' corner='2,2,2,2'"
+							   hotelementimage="file='tree_list_over.png' corner='2,2,2,2'">
+						<Attribute type="HorizontalLayout"  inset="10,0,0,0">
+							<Attribute type="Select"
+										width="19" 
+										height="22"
+										expand="true"
+										selected="true"
+										normalimage="file='tree_ico_f_closed.png'"
+										selectedimage="file='tree_ico_f_opened.png'"/>
+							<Attribute type="Folder"
+									   width="15" 
+									   height="13" 
+									   selected="true"
+									   padding="0,3,0,0"
+									   normalimage="file='tree_ico_folder.png'"
+									   selectedimage="file='tree_ico_folder_opened.png'"/>
+							<Attribute type="Name"
+									   padding="4,2,0,0"
+									   textchange="false"
+									   label="showhtml=&quot;true&quot; align=&quot;left&quot; textcolor=&quot;FF000000&quot; font=&quot;3&quot;"
+									   edit="bordercolor=&quot;#FFCCCCCC&quot; bordersize=&quot;1&quot; bkcolor=&quot;#FFFFFFFF&quot; multiline=&quot;false&quot; align=&quot;left&quot;"/>									   													
+							<Attribute type="HorizontalLayout" />
+						</Attribute>
+					</Attribute>
+					-->
+					
+					<Attribute kindof="Group"
+							   height="22" 
+							   haschild="true"
+							   showdrag="Folder,Name"
+							   padding="2,0,2,0"
+							   pushedelementimage="file='tree_list_selected.png' corner='2,2,2,2'"
+							   hotelementimage="file='tree_list_over.png' corner='2,2,2,2'"
+							   focusedimage="file='tree_list_focused.png' corner='2,2,2,2'">
+						<Attribute type="HorizontalLayout"  inset="10,0,0,0">
+							<Attribute type="Indent" 
+									   size="16" 
+									   indentimage="file='tree_ln_dot_03.png'"/>								
+							<Attribute type="Select"
+										width="19" 
+										height="22"
+										expand="true"
+										selected="true"
+										defaultimage="middle=&quot;tree_ln_dot_01.png&quot; bottom=&quot;tree_ln_dot_02.png&quot;"
+										childcloseimage="middle=&quot;tree_ico_f_closed_01.png&quot; bottom=&quot;tree_ico_f_closed_02.png&quot;"
+										childopenimage="middle=&quot;tree_ico_f_opened_01.png&quot; bottom=&quot;tree_ico_f_opened_02.png&quot;"/>
+							
+							<Attribute type="Folder"
+									   width="15" 
+									   height="13" 
+									   padding="0,3,0,0"
+									   selected="true"
+									   normalimage="file='tree_ico_folder.png'"
+									   selectedimage="file='tree_ico_folder_opened.png'"/>
+
+							
+							<Attribute type="Name"
+									   length="20"
+									   padding="4,2,0,0"															   
+									   label="showhtml=&quot;true&quot; align=&quot;left&quot; textcolor=&quot;#FF000000&quot; font=&quot;3&quot;"
+									   edit="bordercolor=&quot;#FFCCCCCC&quot; bordersize=&quot;1&quot; bkcolor=&quot;#FFFFFFFF&quot; multiline=&quot;false&quot; align=&quot;left&quot;"
+									   />
+						</Attribute>
+					</Attribute>						
+					<Attribute kindof="Member" 
+							   height="22"
+							   showdrag="Option,Name"
+							   bkcolor="00FFFFFF"
+							   padding="2,0,2,0"
+							   pushedelementimage="file='tree_list_selected.png' corner='2,2,2,2'"
+							   hotelementimage="file='tree_list_over.png' corner='2,2,2,2'"
+							   focusedimage="file='tree_list_focused.png' corner='2,2,2,2'">
+						<Attribute type="HorizontalLayout"  inset="10,0,0,0">
+							<Attribute type="Indent" 
+									   size="16" 
+									   expand="16"
+									   indentimage="file='tree_ln_dot_03.png'"/>
+							<Attribute type="GuideLine"
+									   width="19" 
+									   height="22"
+									   middleimage="file='tree_ln_dot_01.png'"
+									   bottomimage="file='tree_ln_dot_02.png'"/>
+							
+							<Attribute type="Presence"
+									   width="15" 
+									   height="13" 
+									   visible="true"
+									   selected="false"
+									   padding="0,5,0,0"
+									   selectedimage="file='tree_ico_on.png'"/>
+									   
+							<Attribute type="Name"
+									   padding="4,2,0,0"
+									   label="showhtml=&quot;true&quot; align=&quot;left&quot; textcolor=&quot;#FF000000#&quot; font=&quot;3&quot;"
+									   edit="bordercolor=&quot;#FFCCCCCC&quot; bordersize=&quot;1&quot; bkcolor=&quot;#FFFFFFFF&quot; multiline=&quot;false&quot; align=&quot;left&quot;"/>
+						</Attribute>
+					</Attribute>
+				
+					<Attribute kindof="Inviting"
+							   height="22" 													   
+							   showdrag="Name"
+							   padding="2,0,2,0"
+							   pushedelementimage="file='tree_list_selected.png' corner='2,2,2,2'"
+							   hotelementimage="file='tree_list_over.png' corner='2,2,2,2'"
+							   focusedimage="file='tree_list_focused.png' corner='2,2,2,2'">
+						<Attribute type="HorizontalLayout"  inset="10,0,0,0">
+							<Attribute type="Indent" 
+									   size="16"
+									   indentimage="file='tree_ln_dot_03.png'"/>
+							<Attribute type="GuideLine"
+									   width="19" 
+									   height="22"
+									   middleimage="file='tree_ln_dot_01.png'"
+									   bottomimage="file='tree_ln_dot_02.png'"/>
+							
+							<Attribute type="Option"
+									   width="15" 
+									   height="13" 
+									   visible="true"
+									   selected="false"
+									   enabled="false"
+									   selectedimage="file='tree_ico_on.png'"/>
+									   
+							<Attribute type="Name"
+									   padding="4,2,0,0"
+									   label="showhtml=&quot;true&quot; align=&quot;left&quot; textcolor=&quot;#FF888888&quot; font=&quot;3&quot;"
+									   edit="bordercolor=&quot;#FFCCCCCC&quot; bordersize=&quot;1&quot; bkcolor=&quot;#FFFFFFFF&quot; multiline=&quot;false&quot; align=&quot;left&quot;"
+									   />
+						</Attribute>										
+					</Attribute>					
+				</Tree>
+			</HorizontalLayout>			
+			<VerticalLayout name="view_not_found" visible="false">
+				<Text name="txt_not_found" 
+					  text="검색 결과가 없습니다." 
+					  padding="0,30,0,0" 
+					  textpadding="2,0,2,0" 
+					  textcolor="#FFC6C6C6" font="1"
+					  align="centerwrap"/>
+			</VerticalLayout>		
+		</VerticalLayout>	
+	</HorizontalLayout>
+</Window>

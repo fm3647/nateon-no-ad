@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="307,53">
+	
+	<ListContainerElement name="ListElement" width="307" height="53" >
+		<VerticalLayout height="53">
+			<HorizontalLayout name="h_lay" width="307" height="52" bkcolor="#006B93B2">
+				<Control width="14" />
+				<VerticalLayout width="30">
+					<Control height="11" />
+					<VerticalLayout height="36">
+						<Button name="picture"
+										float="true"
+										width="30" height="30"
+										relativepos="0,0,0,0"
+										align="center"
+										mouse="false"
+						/>
+						<Button name="cryptImg"
+										float="true"
+										width="30" height="30"
+										relativepos="0,0,0,0"
+										normalimage="file='profileimg_security_30x30.png' makecorner='100,100,100,100'"
+										mouse="false"
+										visible="false"
+						/>
+						<Button name="ImageFrame"
+										float="true"
+										width="30" height="30"
+										relativepos="0,0,0,0"
+										normalimage="profileimg_frame_30x30.png"
+										mouse="false"
+						/>
+						<Button name="BtnBadge"
+										float="true"
+										pos="8,21,0,0"
+										width="15" height="15"
+										mouse="false"
+										textpadding="0,0,0,2"
+										textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"
+										font="7"
+										align="center"
+										normalimage="file='ico_badge_num.png' corner='5,0,5,0'"
+						/>
+					</VerticalLayout>
+					<Control height="5" />
+				</VerticalLayout>
+				<Control width="14" />
+				<VerticalLayout width="239">
+					<Control height="9" />
+					<HorizontalLayout height="15">
+						<Button name="MsgElement_bookmark"
+										float="true"
+										pos="0,0,0,0"
+										width="15" height="15"
+										textcolor="#FF000000" disabledtextcolor="#FFA7A6AA"
+										align="center"
+										normalimage="btn_bookmark_on.png"
+										mouse="false"
+						/>
+						<Text name="MsgElement_buddy"
+									float="true"
+									pos="20,3,0,0"
+									width="159" height="12"
+									textpadding="0,0,0,0"
+									textcolor="#FF000000"
+									disabledtextcolor="#FFA7A6AA"
+									font="0"
+									align="wrap"
+						/>
+						<Text name="MsgElement_time"
+									float="true"
+									pos="179,3,0,0"
+									width="60" height="11"
+									textpadding="0,0,0,0"
+									textcolor="#FFBBBBBB"
+									disabledtextcolor="#FFA7A6AA"
+									font="1"
+									align="right"
+						/>
+					</HorizontalLayout>
+					<Control height="2" />
+					<HorizontalLayout height="26">
+						<Button name="send"
+										float="true"
+										pos="0,4,0,0"
+										width="12" height="11"
+										align="center"
+										mouse="false"
+						/>
+						<Button name="snap"
+										float="true"
+										pos="12,4,0,0"
+										width="12" height="12"
+										align="center"
+										moust="false"
+										visible="false"
+										normalimage="chat_snap_emoti.png"
+						/>
+						<Label name="MsgElement_message"
+									 float="true"
+									 pos="12,0,0,0"
+									 width="167" height="22"
+									 textpadding="0,0,0,0"
+									 textcolor="#FFA4A4A4" disabledtextcolor="#FFA7A6AA"
+									 font="1"
+									 emoticonsize="15"
+									 endellipsis="true"
+						/>
+						<Button name="alarm"
+										float="true"
+										pos="224,2,0,0"
+										width="15" height="15"
+										align="center"
+										normalimage="ico_noalarm.png"
+						/>
+						<!--
+						<Button name="file"
+										float="true"
+										pos="244,4,0,0"
+										width="15" height="15"
+										align="center"
+										normalimage="ico_msg_file.png"
+						/>
+						-->
+					</HorizontalLayout>
+				</VerticalLayout>
+				<Control width="10" />
+			</HorizontalLayout>
+			<Control height="1" bkcolor="#FFF5F5F5" />
+		</VerticalLayout>
+	</ListContainerElement>
+
+</Window>
+
+<!--
+<Window>
+    <ListContainerElement name="ListElement" width="321" height="50" padding="0,0,26,0">
+        <VerticalLayout width="311" height="50">
+            <HorizontalLayout name="h_lay" width="311" height="48" bkcolor="#006B93B2">
+                <VerticalLayout width="30" height="40" padding="15,8,0,0">
+                    <Button name="picture" width="25" height="25" relativepos="0,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" mouse="false"/>
+					<Button name="ImageFrame" mouse="false" float="true" relativepos="0,0,0,0" width="25" height="25"  normalimage="file='profileimg_frame.png'"  />
+                    <Button name="BtnBadge" float="true" pos="5,19,0,0" width="15" height="15" mouse="false" textpadding="0,0,0,2" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="5" align="center" normalimage="file=&apos;ico_badge_num.png&apos; corner=&apos;5,0,5,0&apos;" />
+                </VerticalLayout>
+                <VerticalLayout width="276" height="50" padding="5,0,0,0">
+                    <HorizontalLayout width="276" height="15" padding="0,8,0,0">
+                        <Button name="MsgElement_bookmark" float="true" pos="0,0,0,0" width="15" height="15" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;ico_bookmark_01.png&apos;" mouse="false" />
+                        <Text name="MsgElement_buddy" float="true" pos="15,3,0,0" width="145" height="12" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                        <Text name="MsgElement_time" float="true" pos="200,3,0,0" width="60" height="10" textpadding="2,0,2,0" textcolor="#FF9C9C9C" disabledtextcolor="#FFA7A6AA" font="1" align="right" />
+                    </HorizontalLayout>
+                    <HorizontalLayout width="276" height="27">
+                        <Button float="true" pos="0,1,0,0" width="12" height="11" padding="0,3,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" mouse="false" />
+                        <Label name="MsgElement_message" float="true" pos="12,0,0,0" width="217" height="12" textpadding="2,0,2,0" textcolor="#FF9C9C9C" disabledtextcolor="#FFA7A6AA" font="1" emoticonsize="15" endellipsis="true" />
+                        <Button name="send" float="true" pos="0,4,0,0" width="12" height="11" padding="0,3,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" mouse="false" />
+                        <Button name="alarm" float="true" pos="244,4,0,0" width="15" height="15" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;ico_noalarm.png&apos;" />
+                        <Button name="file" float="true" pos="244,4,0,0" width="15" height="15" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;ico_msg_file.png&apos;" />
+                    </HorizontalLayout>
+                </VerticalLayout>
+            </HorizontalLayout>
+            <VerticalLayout width="311" height="2">
+                <Label float="true" pos="14,1,0,0" width="294" height="2" bkimage="file=&apos;line1.png&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            </VerticalLayout>
+        </VerticalLayout>
+    </ListContainerElement>
+</Window>
+-->

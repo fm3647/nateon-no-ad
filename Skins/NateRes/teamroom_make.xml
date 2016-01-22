@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="350,612" caption="0,0,0,25" setround="0,0,0,0">
+	
+	<Default name="VScrollBar" width="17" value="button1normalimage=&quot;file='scrollbar_s.png' source='0,0,17,17'&quot; button1hotimage=&quot;file='scrollbar_s.png' source='17,0,34,17,17'&quot; button1pushedimage=&quot;file='scrollbar_s.png' source='34,0,51,17'&quot; button2normalimage=&quot;file='scrollbar_s.png' source='0,34,17,51'&quot; button2hotimage=&quot;file='scrollbar_s.png' source='17,34,34,51'&quot; button2pushedimage=&quot;file='scrollbar_s.png' source='34,34,51,51'&quot; thumbnormalimage=&quot;file='scrollbar_s.png' source='0,51,17,152' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar_s.png' source='17,51,34,152' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar_s.png' source='34,51,51,152' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar_s.png' source='0,17,17,34'&quot; " />
+
+	<Font name="돋움"   size="12" bold="false" default="true"/>
+	<Font name="돋움"   size="12" bold="true" />
+	<Font name="굴림"   size="12" bold="false" />
+	<Font name="돋움"   size="11" bold="false" />
+	<Font name="돋움"   size="11" bold="false" underline="true" />
+	<Font name="굴림"   size="12" bold="true" />
+	
+	<VerticalLayout bkcolor="#FFFFFFFF" bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1">	
+		<VerticalLayout name="frame" bkimage="file='popup_skin_bg.png' corner='1,25,1,0'">
+		
+			<HorizontalLayout name="viewHeader" height="25" >
+				<Control width="10" />
+				<VerticalLayout>
+					<Control  height="7"/>
+					<Label name="title"
+						   text="팀룸 만들기" 
+						   height="12" 
+						   textcolor="#FF222222" 
+						   font="5" 
+					/>
+					<Control />
+				</VerticalLayout>
+				<VerticalLayout width="15">
+					<Control />
+					<Button name="closebtn" 
+							width="15" height="15"
+							normalimage= "btn_closepopup.png"
+							hotimage=	 "btn_closepopup_over.png"
+							pushedimage= "btn_closepopup_down.png"
+					/>
+					<Control />
+				</VerticalLayout>
+				<Control width="6" />
+			</HorizontalLayout>
+
+			<HorizontalLayout name="viewBody" height="616" visible="false">
+				<Control width="20" />
+				<VerticalLayout>
+
+					<Control height="20" />
+					<HorizontalLayout height="13">
+						<Label text="팀룸명"
+								width="40" height="13"
+								textcolor="FF333333"
+								font="0"
+								align="left"
+						/>
+						<Label text="(필수)"
+								width="34" height="13"
+								textcolor="FFFF0000"
+								font="3"
+								align="left"
+						/>
+						<Label text="만들고 싶은 팀룸명을 입력하세요" 
+							   height="13" 
+							   textcolor="#FF999999" 
+							   font="3" 
+							   align="left"
+						/>
+						<Label text="2~20자"
+							   width="50" height="13"
+							   textcolor="FF999999"
+							   font="3"
+							   align="right"
+						/>
+					</HorizontalLayout>
+					<Control height="8" />
+
+					<Edit name="name" 
+						  height="22" 
+						  bkimage="file='inputbox_01.png' corner='3,4,1,1'"
+						  textcolor="#FF333333" 
+						  textpadding="4,1,4,0" 
+						  font="0" 
+						  align="left" 
+						  maxchar="20"
+					/>
+
+					<Control height="20" />
+					
+					<HorizontalLayout height="13">
+						<Label text="소개글"
+								width="40" height="13"
+								textcolor="FF333333"
+								font="0"
+								align="left"
+						/>
+						<Label text="(선택)"
+								width="34" height="13"
+								textcolor="FF999999"
+								font="3"
+								align="left"
+						/>
+						<Control />
+						<Label text="2~50자"
+							   width="50" height="13"
+							   textcolor="FF999999"
+							   font="3"
+							   align="right"
+						/>
+					</HorizontalLayout>
+
+					<Control height="8" />
+										
+<!--					<VerticalLayout height="60" bkcolor="#FFC3C6CA" inset="1,1,1,1">-->
+					<VerticalLayout height="55" bkimage="file='inputbox_01.png' corner='3,4,1,1'" inset="1,1,1,1">
+						<Control height="4" />
+						<Control name="IntroEdit" />
+					</VerticalLayout>
+
+					<Control height="20" />
+					<HorizontalLayout height="13">
+						<Label text="팀룸 서비스 안내"
+						   height="13"
+						   textcolor="FF333333"
+						   font="0"
+						   align="left"
+						/>
+						<Control />
+						<Button name="faq"
+								width="50" height="13" 
+								text="팀룸FAQ" 
+								textcolor="#FF42BFDA" 
+								font="4" 
+								align="right" 
+						/>
+					</HorizontalLayout>
+					
+					<Control height="8" />
+					
+					<VerticalLayout height="60" bkcolor="#FFC3C6CA" inset="1,1,1,1">
+						<Control height="5"  bkcolor="#FFFAFAFA"/>
+						<RichEdit name="desc" 
+								  height="55" width="308"
+								  textcolor="#FF666666" 
+								  textpadding="0,0,0,8"
+								  font="3" 
+								  bkcolor="#FFFAFAFA" 
+								  vscrollbar="true" 
+								  text="" 
+								  align="left" 
+								  enabled="false" 
+						/>
+					</VerticalLayout>
+					
+					<Control height="20" />
+				
+					<Label text="개인정보보호 의무 안내"
+						   height="13"
+						   textcolor="FF333333"
+						   font="0"
+						   align="left"
+					/>
+					
+					<Control height="8" />
+					
+					<VerticalLayout height="60" bkcolor="#FFC3C6CA" inset="1,1,1,1">
+						<Control height="5"  bkcolor="#FFFAFAFA"/>
+						<RichEdit name="privacy" 
+								  height="55" width="308"
+								  textcolor="#FF666666" 
+								  textpadding="0,0,0,8"
+								  font="3" 
+								  bkcolor="#FFFAFAFA" 
+								  vscrollbar="true" 
+								  text="" 
+								  align="left" 
+								  enabled="false" 
+						/>
+					</VerticalLayout>
+					
+					<Control height="6" />
+					
+					<Label text="위 개인정보보호 의무 안내에 대한 내용을 충분히 숙지하신 후"
+						   height="10"
+						   textcolor="FF42BFDA"
+						   font="4"
+						   align="left"
+					/>
+					<Control height="2" />
+					
+					<Label text="이용하여 주시기 바랍니다."
+						   height="10"
+						   textcolor="FF42BFDA"
+						   font="4"
+						   align="left"
+					/>
+					
+					<Control height="20" />
+					
+					<VerticalLayout name="selected" height="128" visible="false">
+						<Label text="초대 선택된 친구"
+							   height="13"
+							   textcolor="FF333333"
+							   font="0"
+							   align="left"
+						/>
+						
+						<Control height="8" />
+						
+						<VerticalLayout height="60" bkcolor="#FFC3C6CA" inset="1,1,1,1">
+							<Control height="5" bkcolor="#FFFFFFFF"/>
+							<HorizontalLayout height="55" bkcolor="#FFFFFFFF">
+								<Control width="8"/>
+								<TileLayout name="member" 
+									  height="54" width="300"
+									  font="0" 
+									  bkcolor="#FFFFFFFF" 
+									  vscrollbar="true" 
+									  text="" 
+									  enabled="false" 
+								/>
+							</HorizontalLayout>
+							
+						</VerticalLayout>
+						
+						<Control height="20" />
+						
+						<Label text="선택된 친구에게 팀룸 초대 메시지가 발송됩니다"
+							   height="12"
+							   textcolor="FF333333"
+							   font="0"
+							   align="center"
+						/>
+						
+						<Control height="15" />
+					</VerticalLayout>
+					
+					<HorizontalLayout height="30">
+						<Control />
+						<Button name="make" 
+								width="100" 
+								normalimage= "btn_pop_troom_make.png"
+								hotimage=	 "btn_pop_troom_make_over.png"
+								pushedimage= "btn_pop_troom_make_down.png"
+						/>
+						<Control width="5" />
+						<Button name="cancel" 
+								width="55" 
+								normalimage= "btn_pop_cancel.png"
+								hotimage=	 "btn_pop_cancel_over.png"
+								pushedimage= "btn_pop_cancel_down.png"
+						/>
+						<Control />
+					</HorizontalLayout>
+				</VerticalLayout>
+				<Control width="20" />
+			</HorizontalLayout>
+			<VerticalLayout name="viewTutorial" height="459" visible="false">
+				<HorizontalLayout >
+						<WebBrowser  name="web_entrance"
+									 clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" 
+									 delaycreate="false"/>
+				</HorizontalLayout>					
+					
+				<HorizontalLayout height="13">
+					<Control />
+					<Button name="web_tutorial"
+							width="100" height="13" 
+							text="팀룸 자세히 보기" 
+							textcolor="#FF42BFDA" 
+							font="4" 
+							align="right" 
+					/>
+					<Control width="13"/>
+				</HorizontalLayout>
+
+				<Control height="7" />
+				<HorizontalLayout height="30">
+					<Control />
+					<Button name="tutorial_make" 
+						    width="100" height="30" 
+						    align="center" 
+						    normalimage= "btn_pop_troom_make.png" 
+						    hotimage=    "btn_pop_troom_make_over.png" 
+						    pushedimage= "btn_pop_troom_make_down.png" 
+					/>
+					<Control />
+				</HorizontalLayout>
+				<Control height="20" />			
+			</VerticalLayout>
+			<Control />
+		</VerticalLayout>
+	</VerticalLayout>
+</Window>

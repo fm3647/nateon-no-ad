@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="380,290" caption="0,0,0,25" roundcorner="6,6">
+    <Font name="돋움" size="12" bold="false" italic="false" default="true" />
+    <Font name="돋움" size="11" bold="false" italic="false" />
+    <Font name="돋움" size="10" bold="false" italic="false" />
+    <Font name="굴림" size="12" bold="true" italic="false" />
+	<Font name="돋움" size="12" bold="true" italic="false" />
+	<Default name="VScrollBar"
+			 width="17" 
+			 value="button1normalimage=&quot;file='scrollbar.png' source='0,0,17,17'&quot; button1hotimage=&quot;file='scrollbar.png' source='17,0,34,17,17'&quot; button1pushedimage=&quot;file='scrollbar.png' source='34,0,51,17'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,34,17,51'&quot; button2hotimage=&quot;file='scrollbar.png' source='17,34,34,51'&quot; button2pushedimage=&quot;file='scrollbar.png' source='34,34,51,51'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,51,17,152' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='17,51,34,152' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='34,51,51,152' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,17,17,34'&quot; ver=&quot;true&quot; " 
+	/>
+<HorizontalLayout name="RootTop" bkcolor="#FFFFFFFF" bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1">
+		<VerticalLayout name="root" 	hole="true" bkimage="file='popup_skin_bg.png' source='0,0,9,26' corner='1,25,1,0'">						
+    		<HorizontalLayout height="25">
+    			<Control width="11" />
+    			<VerticalLayout width="200">
+    				<Control height="7" />
+    				<VerticalLayout height="13">
+    					<Text name="textTitle" 
+    						  text="친구 요청" 
+    						  height="13" width="200"
+    						  textcolor="#FF000000" 
+    						  disabledtextcolor="#FFA7A6AA" 
+    						  font="3"
+           				/>
+           			</VerticalLayout>
+           			<Control height="5" />
+    			</VerticalLayout>
+            	<Control />
+            	<VerticalLayout width ="15">
+            		<Control height="5" />
+            		<VerticalLayout height="15">
+            			<Button name="btnClose" float="true" 
+            				    width="15" height="15" 
+            				    normalimage="btn_closepopup.png" 
+            				    hotimage="btn_closepopup_over.png" 
+            				    pushedimage="btn_closepopup_down.png" 
+            			/>
+            		</VerticalLayout>
+            		<Control height="5" />
+            	</VerticalLayout>
+            	<Control width="6" />
+            </HorizontalLayout>
+			
+	        <VerticalLayout name="horizon" height="265" bkcolor="#00ffffff">
+	        	
+				<VerticalLayout height="160" bkimage="pop_becomeF_bg.png">
+	        		<Control height="20" />
+	        		<HorizontalLayout height="140">
+	        			
+						<Control width="20" />
+	        			
+						<VerticalLayout width="114">							
+	        				<VerticalLayout height="114">
+	        					<Button name="BtnProfile" float="true" 
+									    width="114" height="114" 
+								/>
+								<Button name="BtnProfileFlame" float="true" 
+									    pos="0,0,0,0" width="114" height="114" 
+									    normalimage="profileimg_frame_114x114.png"
+								/>
+							</VerticalLayout>
+							<Control height="21" />
+	        			</VerticalLayout>
+	        			
+						<Control width="10" />
+	        			
+						<VerticalLayout width="246">
+						
+	        				<Control height="35" name="topEmpty" />		<!-- Msg 텍스트가 긴 경우 height 줄인다. -->
+							
+	        				<HorizontalLayout height="12">
+	        					<VerticalLayout width="120">
+	        						<Label name="Name" float="true" textpadding="1,0,0,0"
+										   width="120" height="12" 
+										   textcolor="#FF333333" font="4" align="left" 
+										   endellipsis="true" 
+									/>
+	        					</VerticalLayout>
+	        					<Control width="8" />
+	        					<VerticalLayout width="14">
+	        						<Button name="BtnHompy" width="14" height="12" 
+									        float="true" 
+									        normalimage="ico_minihompy.png" 
+									/>
+	        					</VerticalLayout>
+								<Control />
+	        				</HorizontalLayout>
+							
+	        				<Control height="6" />
+							
+	        				<HorizontalLayout height="110">
+	        					<VerticalLayout width="230">
+	        						<Text name="Msg" float="true" 
+										  width="230" height="110" 
+										  textcolor="#FF333333" font="0" align="wrap" 
+									/>
+								</VerticalLayout>
+								<Control />
+	        				</HorizontalLayout>
+							
+	        			</VerticalLayout>
+						
+	        		</HorizontalLayout>
+	        	</VerticalLayout>
+	        	
+				<VerticalLayout height="105">
+	        		<Control height="4" />
+	        		<HorizontalLayout height="22">
+	        			<Control />
+	        			<HorizontalLayout width="290">
+		        			<VerticalLayout width="40">
+		        				<Control height="5" />
+		        				<VerticalLayout height="12">
+		        					<Label name="Info" float="true" 
+										   width="40" height="12" 
+										   textcolor="#FF333333" font="0" 
+										   align="right"
+										   text="친구를" 
+									/>
+		        				</VerticalLayout>
+		       					<Control />
+		        			</VerticalLayout>
+		        			<Control width="5" />
+		        			<VerticalLayout width="140">
+		        				<Combo name="comboGroup" 
+		        					   float="true" align="left" 
+		        					   itemtextpadding="6,3,0,0" itemfont="0"
+									   width="140" height="22" 
+									   textcolor="FF333333"
+									   dropboxsize="140,184" 
+									   imagewidth="27" 
+									   endellipsis="true" 
+									   normalimage= "file='btn_contents_open.png' 	   corner='3,3,22,3'" 
+									   hotimage= 	"file='btn_contents_open_over.png' corner='3,3,22,3'" 
+									   pushedimage= "file='btn_contents_open_down.png' corner='3,3,22,3'">
+								</Combo>
+		        			</VerticalLayout>
+		        			<Control width="5" />
+		        			<VerticalLayout width="100">
+		        				<Control height="5" />
+		        				<VerticalLayout height="12">
+		        					<Label name="Info2" float="true" 
+										   width="100" height="12" 
+										   textcolor="#FF333333" font="0" 
+										   align="left"
+										   text="그룹에 추가합니다." 
+									/>
+		        				</VerticalLayout>
+		        				<Control />
+		        			</VerticalLayout>
+		        		</HorizontalLayout>
+	        			<Control />
+	        		</HorizontalLayout>
+	        		<Control height="30" />
+	        		<HorizontalLayout height="22">
+	        			<Control />
+	        			<HorizontalLayout width="180">
+	        				<VerticalLayout width="60">
+	        					<Button name="btnAccept" tooltip="수락하기" 
+									    width="60" height="22" float="true"
+									    normalimage="btn_pop_acceptfriends02.png" 
+									    hotimage="btn_pop_acceptfriends02_over.png" 
+									    pushedimage="btn_pop_acceptfriends02_down.png" 
+								/>
+	        				</VerticalLayout>
+	        				<Control width="5" />
+	        				<VerticalLayout width="60">
+	        					<Button name="btnBlock" tooltip="차단하기" 
+									    width="60" height="22" float="true"
+									    normalimage="btn_pop_blockfriends02.png" 
+									    hotimage="btn_pop_blockfriends02_over.png" 
+									    pushedimage="btn_pop_blockfriends02_down.png" 
+								/>
+	        				</VerticalLayout>
+	        				<Control width="5" />
+	        				<VerticalLayout width="50">
+	        					<Button name="btnLater" tooltip="나중에" 
+									    width="50" height="22" float="true" 
+									    normalimage="btn_pop_later_s.png" 
+									    hotimage="btn_pop_later_s_over.png" 
+									    pushedimage="btn_pop_later_s_down.png" 
+								/>
+	        				</VerticalLayout>
+	        			</HorizontalLayout>
+	        			<Control />
+	        		</HorizontalLayout>
+	        		<Control bkcolor="#00ffffff"/>
+	        	</VerticalLayout>
+			</VerticalLayout>
+    	</VerticalLayout>
+   	</HorizontalLayout>
+</Window>

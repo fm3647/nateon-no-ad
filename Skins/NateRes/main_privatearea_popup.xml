@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window alpha="255">
+	<Font name="돋움" size="12" bold="false" default="true" />
+	<Default name="Menu" bkcolor="FFFFFFFF" bordercolor="FF828282" bordersize="1" value="bordersize=&quot;1&quot; bordercolor=&quot;FF828282&quot; bkcolor=&quot;FFFFFFFF&quot; inset=&quot;1,2,1,2&quot; itemtextpadding=&quot;20,0,10,0&quot; itemselectedbkcolor=&quot;FFFFF27F&quot;" />
+	<Menu>
+		<MenuElement name="alwaysOnTopMenu" height="23" text="항상위">
+			<HorizontalLayout>
+				<Label name="alwaysOnTopCheck" float="true" pos="7,0,10,17" width="22"  bkimage="file='ico_select_dot.png' source='0,0,10,10' dest='0,5,10,15'"/>
+			</HorizontalLayout>
+		</MenuElement>
+		<MenuElement name="tooloptionMenu" height="23" text="환경설정" />
+		<!-- <MenuElement name="themeChangeMenu" height="22" text="테마 변경" /> -->
+		<MenuElement name="loginManagerMenu" height="23" text="로그인 매니저" />
+		<MenuElement drawselectedbk="false" height="3">
+      <VerticalLayout>
+        <HorizontalLayout height="1"></HorizontalLayout>
+        <HorizontalLayout bkcolor="FF828282" height="1">
+        </HorizontalLayout>
+        <HorizontalLayout height="1"></HorizontalLayout>
+      </VerticalLayout>
+		</MenuElement>
+		<MenuElement name="nateonBlogMenu" height="23" text="네이트온 블로그" />
+		<MenuElement name="nateonQAMenu" height="23" text="네이트온 FAQ" />
+    <MenuElement name="nateonVersion" height="23" text="네이트온 정보" />
+    <MenuElement drawselectedbk="false" height="3">
+      <VerticalLayout>
+        <HorizontalLayout height="1"></HorizontalLayout>
+        <HorizontalLayout bkcolor="FF828282" height="1">
+        </HorizontalLayout>
+        <HorizontalLayout height="1"></HorizontalLayout>
+      </VerticalLayout>
+    </MenuElement>
+		<MenuElement name="lockMenu" height="23" text="메신저 잠그기" />
+		<MenuElement name="logoutMenu" height="23" text="로그아웃" />
+		<MenuElement name="exitMenu" disable="true" height="23" text="종료" />
+	</Menu>
+</Window>

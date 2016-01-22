@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="558,387">
+<VerticalLayout>
+	<VerticalLayout height="39">
+		<Label text="전체 서비스" font="0" textcolor="#FF333333" width="80" height="12" float="true" pos="20, 18, 100, 30"/>
+		<Label text="사용 중인 서비스" font="0" textcolor="#FF333333" width="150" height="12" float="true" pos="350, 18, 500, 30"/>
+	</VerticalLayout>
+	<HorizontalLayout height="323">
+		<Control width="19" />
+		<VerticalLayout width="286" bkcolor="#FFdadada" inset="1, 1, 1, 1">
+			<List name="listServiceAll" bkcolor="#FFFFFFFF" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" vscrollbar="true" header="hidden">
+				<ListContainerElement />
+			</List>
+		</VerticalLayout>
+		<Control width="10" />
+		<VerticalLayout width="30">
+			<Button name="btnServiceAdd" width="30" height="25" float="true" pos="0, 109, 30, 134" normalimage="btn_sendlist.png" hotimage="btn_sendlist_over.png" pushedimage="btn_sendlist_down.png" />
+			<Button name="btnServiceDel" width="30" height="25" float="true" pos="0, 144, 30, 169" normalimage="btn_sendback.png" hotimage="btn_sendback_over.png" pushedimage="btn_sendback_down.png" />
+		</VerticalLayout>
+		<Control width="10" />
+		<VerticalLayout width="184" bkcolor="#FFdadada" inset="2, 2, 2, 2">
+			<List name="listServiceSel" bkcolor="#FFFFFFFF" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" height="297" vscrollbar="true" header="hidden">
+				<ListContainerElement />
+			</List>
+			<Button name="btnServiceListUp" width="90" height="22" float="true" pos="2, 299, 92, 321" normalimage="btn_listup.png" hotimage="btn_listup_over.png" pushedimage="btn_listup_down.png" />
+			<Button name="btnServiceListDown" width="90" height="22" float="true" pos="92, 299, 182, 321" normalimage="btn_listdown.png" hotimage="btn_listdown_over.png" pushedimage="btn_listdown_down.png" />
+		</VerticalLayout>
+	</HorizontalLayout>
+</VerticalLayout>
+</Window>

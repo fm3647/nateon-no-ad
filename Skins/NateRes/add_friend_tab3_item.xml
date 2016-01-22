@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="378,48">
+<ListContainerElement height="47" name="item">
+	<VerticalLayout bkcolor="#FFFFFFFF">
+		<Button name="btnBuddyProfile" 
+			    float="true" 
+			    pos="20,8,45,33" 
+			    width="25" height="25" 
+			    mouse="false" 
+		/>
+		<Button name="btnBuddyProfileFrame" 
+			    float="true" 
+			    pos="20,8,45,33" 
+			    width="25" height="25" 
+			    normalimage="profileimg_frame.png" 
+			    mouse="false" 
+		/>
+		<Button name="btnBuddyHompy" 
+			    float="true" 
+			    pos="120,8,134,20" 
+			    width="14" height="12" 
+			    normalimage="ico_minihompy.png" 
+		/>
+		<Button name="btnAllowBuddy" 
+			    float="true" 
+			    pos="309,14,351,36" 
+			    width="42" height="22" 
+			    normalimage="btn_confirm_s.png" 
+			    hotimage="btn_confirm_s_over.png" 
+			    pushedimage="btn_confirm_s_down.png" 
+			    tooltip="친구 요청을 수락합니다." 
+		/>
+		<Label name="Name" 
+			   float="true" 
+			   pos="55, 8, 115, 20" 
+			   height="12" 
+			   maxwidth="60" 
+			   font="1" 
+			   textcolor="#FF000000" 
+			   endellipsis="true" 
+		/>
+		<Label name="Desc" 
+			   float="true" 
+			   pos="55, 26, 295, 38" 
+			   height="12" 
+			   maxwidth="240" 
+			   font="2" 
+			   textcolor="#FFBBBBBB" 
+			   endellipsis="true" 
+		/>
+		<Label name="IndexData" 
+			   float="true" 
+			   pos="0, 0, 0, 0" 
+			   height="0" 
+			   maxwidth="0" 
+			   font="2" 
+			   textcolor="#FF9C9C9C" 
+		/>
+    <Control float="true" 
+    		 pos="0, 46, 378, 47" 
+    		 height="1" 
+    		 bkcolor="#FFF2F2F2" 
+    />
+  </VerticalLayout>
+</ListContainerElement>
+</Window>

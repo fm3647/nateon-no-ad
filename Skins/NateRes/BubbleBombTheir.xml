@@ -1,0 +1,62 @@
+﻿
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<Window>
+	<ListContainerElement name="BubbleBombTheirVerticalLayout" height="96" inset="0,5,0,5">
+
+	<VerticalLayout>
+	    <HorizontalLayout>
+		
+			<VerticalLayout width="30">
+				<Button name="ProfileThumb" relativepos="0,0,0,0" width="30" height="30"
+				normalimage="highquality='true' file='buddy_profile_default_43x43.png' makecorner='100,100,100,100'" align="center" />
+				<Button name="ImageFrame" mouse="false" float="true" relativepos="0,0,0,0" width="30" height="30"  normalimage="file='profileimg_frame_30x30.png' highquality='true'"  />
+			</VerticalLayout>
+			
+			<HorizontalLayout width="10" />
+			
+	        <HorizontalLayout inset="3,0,0,0">
+	            <VerticalLayout>
+	                <VerticalLayout height="15">
+	                    <HorizontalLayout inset="0,0,0,0">
+	                        <HorizontalLayout name="NameLayout" width="0" >
+								<Label name="NameLabel" text="[이름]" textcolor="#FF9C9C9C" disabledtextcolor="#FFA7A6AA" font="2" endellipsis="true" />
+							</HorizontalLayout>								
+							<Control width="8" />								
+							<HorizontalLayout width="100" name="DateLayout">
+								<Label name="DateLabel" text="오후 00:00" textcolor="#FFB9B9B9" disabledtextcolor="#FFA7A6AA" font="2" />
+							</HorizontalLayout>
+	                    </HorizontalLayout>
+	                </VerticalLayout>
+					
+					<VerticalLayout height="6" />
+					
+	                <VerticalLayout height="60">					
+	                    <HorizontalLayout>
+	                        <!-- HorizontalLayout width="126" bkimage="file=&apos;chat_balloon_receive.png&apos; corner=&apos;20,15,13,14&apos;" inset="16,9,10,10" -->
+							<HorizontalLayout width="76" height="60" inset="1,0,15,0" >
+	                            <Button name="BombImageBtn" mouse="false" keyboard="false" bkimage="chat_ico_oncemsg_before.png" />
+	                        </HorizontalLayout>
+							
+	                        <!-- HorizontalLayout inset="9,10,0,0">
+	                            <VerticalLayout>
+	                                <VerticalLayout />
+                                    <VerticalLayout height="14">                                        										
+										
+                                    </VerticalLayout>                                   
+									
+	                            </VerticalLayout>
+	                        </HorizontalLayout -->
+							
+	                    </HorizontalLayout>
+	                </VerticalLayout>
+	            </VerticalLayout>
+	        </HorizontalLayout>
+	        
+			<HorizontalLayout width="31" />
+			
+	    </HorizontalLayout>
+	</VerticalLayout>
+	
+	</ListContainerElement>
+</Window>

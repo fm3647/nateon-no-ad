@@ -1,0 +1,126 @@
+
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<Window size="500,85">
+
+    <ListContainerElement name="FeedFileVerticalLayout" height="85" inset="5,10,0,5" menu="true" >
+		<HorizontalLayout>
+			<VerticalLayout name="FrameLayout">
+				<HorizontalLayout>
+				
+					<VerticalLayout width="10">																<!-- 왼쪽 공백 -->
+					</VerticalLayout>
+									
+					<HorizontalLayout>
+						<VerticalLayout>
+						
+							<VerticalLayout height="5" />
+							
+							<VerticalLayout height="15" name="NameVerticalLayout">							<!-- 이름 영역 -->
+								<HorizontalLayout inset="0,0,0,0">
+								
+									<HorizontalLayout name="NameLayout" width="0">
+										<Button name="feed_NameLabel" text="[이름]" 
+											   textcolor="#FF333333" disabledtextcolor="#FFA7A6AA" 
+											   font="7" endellipsis="true" align="left" />
+									</HorizontalLayout>
+									
+									<Control width="8" />
+									
+									<HorizontalLayout width="100" name="TimeLayout">
+										<Label name="feed_DateLabel" text="오후 00:00" 
+											   textcolor="#FFB9B9B9" disabledtextcolor="#FFA7A6AA" 
+											   font="10" />
+									</HorizontalLayout>
+									
+									<HorizontalLayout width="58" name="RetryLayout" visible="false">
+										<Button name="feed_ReSendButton" width="36" text="재전송" font="10" textcolor="#FF0000FF" disabledtextcolor="#00000000" padding="0,0,6,0" />
+										<Control height="17" width="16" bkimage="chat_ico_sendfail.png" />
+									</HorizontalLayout>
+									
+								</HorizontalLayout>
+							</VerticalLayout>
+							
+							<VerticalLayout height="7" name="SpaceVerticalLayout" />						<!-- 위아래 중간 공백 -->
+							
+							<VerticalLayout>						
+								<HorizontalLayout>
+								
+									<VerticalLayout name="FileThumbLayout" width="32" height="32">			<!-- 이미지 썸네일  -->
+										<!-- HorizontalLayout width="32"  -->
+											
+											<!-- Button name="feed_FileThumbImg" keyboard="false" normalimage="highquality='true' file='2ndID_btn_mmy_file_down.png'"/ -->
+											<Button name="feed_FileThumbImg" width="32" height="32" />
+											
+										<!-- /HorizontalLayout -->										
+									</VerticalLayout>
+								
+									<VerticalLayout width="12" />								
+									
+									<VerticalLayout name="FileInfoLayout" >									<!-- 파일정보 영역 -->
+										<HorizontalLayout  name="FileNameLayout" width="0" height="14">
+											<Button name="feed_FileName" text="FileInfoLayout.xml" height="14" 
+													textcolor="#FF2B508D" font="7" align="left" endellipsis="true" />
+										</HorizontalLayout>
+										
+										<HorizontalLayout height="10" />
+										
+										<HorizontalLayout height="14">
+											<Label name="feed_FileSize" text="[256MB]" height="14" width="60"
+													textcolor="#FF999999" font="10" align="left" endellipsis="true" mouse="false" />
+											
+											<HorizontalLayout width="59" name="feed_FileDownLayout">
+												<VerticalLayout name="IndentVerticalLayout" width="10" height="10">					<!-- 텍스트 왼쪽 • 표시 -->
+													<Control height="3" />
+													<Control width="10" height="5" bkimage="troom_bl_dot_01.png" />
+													<Control />
+												</VerticalLayout>
+												<Button name="feed_Download" text="다운로드" height="14" width="45"
+														textcolor="#FF9EBCC3" font="10" align="left" endellipsis="true" />
+											</HorizontalLayout>
+											
+											<HorizontalLayout width="64">
+												<VerticalLayout name="IndentVerticalLayout" width="10" height="10">					<!-- 텍스트 왼쪽 • 표시 -->
+													<Control height="3" />
+													<Control width="10" height="5" bkimage="troom_bl_dot_01.png" />
+													<Control />
+												</VerticalLayout>
+												<Button name="feed_Reply" text="댓글(99)" height="14" width="50"
+														textcolor="#FF9EBCC3" font="10" align="left" endellipsis="true" />												
+											</HorizontalLayout>
+											
+											<Control />
+										</HorizontalLayout>
+										
+									</VerticalLayout>	
+										
+								</HorizontalLayout>
+							</VerticalLayout>
+							
+							<VerticalLayout height="5" />
+							
+						</VerticalLayout>
+					</HorizontalLayout>
+					
+					<VerticalLayout width="16" name="PinVerticalLayout" >									<!-- 중요버튼 영역 -->
+						<Control height="3" />
+						<Option name="feed_PinButton" width="16" height="16" relativepos="0,0,0,0" 
+								textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" 
+								align="center" 
+								normalimage=	"troom_ic_flag_off.png"
+								hotimage=		"troom_ic_flag_off.png" 
+								pushedimage=	"troom_ic_flag_off.png" 
+								selectedimage=	"troom_ic_flag_on.png"/>
+						<Option name="feed_BookmarkButton" visible="false" />		
+					</VerticalLayout>	
+					
+				</HorizontalLayout>			
+			</VerticalLayout>
+			
+			<VerticalLayout width="5">																<!-- 오픈쪽 공백 -->
+			</VerticalLayout>
+		</HorizontalLayout>
+		
+    </ListContainerElement>
+	
+</Window>

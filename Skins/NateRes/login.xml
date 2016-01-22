@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="302,482" mininfo="302,482" caption="0,0,0,24" showdirty="false">
+	<Font name="돋움" size="12" bold="false" default="true" />
+ 	<Font name="돋움" size="11" bold="false" extra="-1"/>
+	<Font name="돋움" size="11" bold="false" />
+ 	<Font name="Tahoma" size="13" bold="true" />
+	<Font name="돋움" size="11" bold="false" underline="true"/>
+ 	
+  	<HorizontalLayout name="bg" bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1">
+    	<VerticalLayout inset="1,1,1,1" bkcolor="#FFF7F7F7" >
+			
+				<!-- caption | height=24 -->
+				<HorizontalLayout height="24" >
+					<VerticalLayout />
+					<VerticalLayout width="90">
+						<Button name="menubtn" 
+										float="true" 
+										pos="0,8,37,23" width="37" height="15"
+		    						normalimage="login_btn_menu.png" 
+		    						hotimage="login_btn_menu_over.png" 
+		    						pushedimage="login_btn_menu_down.png" />
+							<Button name="sep" 
+		      					float="true" mouse="false" 
+		      					pos="40,8,46,23" width="6" height="15"
+		      					normalimage="login_bar_v.png" 
+		      					hotimage="login_bar_v.png" 
+		      					pushedimage="login_bar_v.png" />
+						<Button name="minbtno" tooltip="최소화" 
+				     				float="true" pos="49,8,64,23" width="15" height="15"
+				     				normalimage="login_btn_winminimize.png" 
+						 				hotimage="login_btn_winminimize_over.png" 
+		     						pushedimage="login_btn_winminimize_down.png" />
+							<Button name="closebtno" tooltip="창 닫기" 
+										float="true" pos="66,8,81,23" width="15" height="15"
+			     					normalimage="login_btn_winclose.png" 
+			     					hotimage="login_btn_winclose_over.png" 
+			     					pushedimage="login_btn_winclose_down.png" />
+					</VerticalLayout>
+				</HorizontalLayout>
+				<!-- /caption -->
+        
+				<!-- BI Area-->
+				<VerticalLayout name="nateonBi" height="180" visible="true">
+					<Control float="true" pos="85,30,215,180" width="130" height="150" bkimage="login_bi_nateon.png" />
+				</VerticalLayout>
+				
+				<VerticalLayout name="talkonBi" height="180" visible="false">
+					<Control float="true" pos="34,94,214,179" width="232" height="20" bkimage="login_bi_nateon&amp;talkon.png" />
+				</VerticalLayout>
+			  <!-- BI Area-->
+
+				<!-- descArea_talkon -->
+				<VerticalLayout height="41" name="descArea_talkon" visible="false">
+					<VerticalLayout height="11">
+						<Text height="11" text="네이트온 아이디를 입력해주세요." align="center" textcolor="#FF4EB6CE" font="2" />
+					</VerticalLayout>
+					<VerticalLayout height="6" />
+					<VerticalLayout height="11">
+						<Text height="11" text="토크온과 네이트온이 동시에 로그인 됩니다." align="center" textcolor="#FF4EB6CE" font="2" />
+					</VerticalLayout>
+			</VerticalLayout>
+				<!-- /descArea_talkon -->
+
+				<!-- ID -->
+				<VerticalLayout height="55" name="idArea" visible="false">
+					<Control height="37" />		<!--상단 마진-->
+					<HorizontalLayout>
+						<VerticalLayout width="16" />
+						<VerticalLayout>
+							<Label name="logingID" endellipsis="true"
+									height="18" text="taesikeom@nate.com" align="center"
+									textcolor="#FF222222" font="3" />
+						</VerticalLayout>
+						<VerticalLayout width="16" />
+					</HorizontalLayout>
+				</VerticalLayout>
+				<!-- /ID -->
+
+				<!-- Loading image-->
+				<VerticalLayout name="loadingArea" height="68" visible="false">
+					<Control height="8" />		<!--상단 마진-->
+					<Control height="20" />		<!--하단 마진-->
+				</VerticalLayout>
+				<!-- /Loading image-->
+
+				<!-- login retry ? -->
+				<VerticalLayout height="68" name="connectLogingArea" visible="false">
+					<VerticalLayout name="connectLogingArea_desc" visible="true">
+						<Control height="11" /> <!--상단 마진-->
+						<HorizontalLayout height="11">
+							<VerticalLayout>
+								<Text name="connetctLogingRetryMent" height="11" text="인터넷 연결이 원활치 않아 로그아웃 되었습니다." align="center" textcolor="#FFA9ABAF" font="2" />
+							</VerticalLayout>
+						</HorizontalLayout>
+						<Control height="5" />
+						<HorizontalLayout height="11" >
+							<VerticalLayout>
+								<Text name="connetctLogingRetryMent2" height="11" text="1분 15초 후에 다시 연결합니다." align="center" textcolor="#FFA9ABAF" font="2" />
+							</VerticalLayout>
+						</HorizontalLayout>
+						<Control height="27" /> <!--하단 마진-->
+					</VerticalLayout>
+				</VerticalLayout>
+				<!-- /login retry ? -->
+
+				<!-- talkon logout -->
+				<HorizontalLayout height="68" name="logoutLogingArea" visible="false">
+					<Control width="45" />
+					<VerticalLayout>
+						<Control height="18" />						
+						<VerticalLayout name="logoutMent_talkon" visible="false">
+							<Text height="11"
+									text="토크온과 네이트온이 동시에 로그인 됩니다."
+									textcolor="#FF4EB6CE" font="2" />
+						</VerticalLayout>
+					</VerticalLayout>
+				</HorizontalLayout>
+				<!-- talkon logout -->
+
+				<!-- id, pwd input area normal upper margin-->
+				<VerticalLayout name="inputArea_normalUpperMargin" height="40" visible="true" />
+				<!-- id, pwd input area normal upper margin-->
+				
+				<!-- id, pwd input-->
+				<VerticalLayout name="inputArea" height="78" visible="true">					
+					<HorizontalLayout height="70">
+						<Control width="23" />
+						<VerticalLayout width="252" bkimage="file='login_input.png' corner='3,30,10,8'">
+							<HorizontalLayout height="29">
+
+								<Control width="13" />
+
+								<VerticalLayout width="106">
+									<Control height="12" />
+									<VerticalLayout height="12">
+										<Container name="editid" height="12" width="106"
+													 textcolor="#FFD3D3D3"
+													 float="true"
+													 bkcolor="#FFFFFFFF" />
+									</VerticalLayout>
+									<Control height="7" />
+								</VerticalLayout>
+
+								<Control width="2" />
+
+								<VerticalLayout width="14">
+									<Control height="12" />
+									<VerticalLayout height="12">
+										<Label text="@" width="14"  align="right"
+												 float="true" height="12"
+												 textcolor="#FF000000" font="0" />
+									</VerticalLayout>
+									<Control height="7" />
+								</VerticalLayout>
+
+								<VerticalLayout width="108">
+									<Control height="8" />
+									<VerticalLayout height="12">
+										<Container name="cbodomain" height="12" width="108"
+													 textcolor="#FFD3D3D3"
+													 float="true"
+													 bkcolor="#FFFFFFFF" />
+									</VerticalLayout>
+									<Control height="11" />
+								</VerticalLayout>
+
+								<Control width="4" />
+							</HorizontalLayout>
+							<Control height="1" />
+							<HorizontalLayout height="29">
+								<Control width="13" />
+								<VerticalLayout >
+									<Control height="16" />
+									<VerticalLayout height="12">
+										<Container name="editpwd" height="12" width="226"
+													 textcolor="#FFD3D3D3"
+													 float="true"
+													 bkcolor="#FFFFFFFF" />
+									</VerticalLayout>
+									<Control height="10" />
+								</VerticalLayout>
+								<Control width="12" />
+							</HorizontalLayout>
+							<Label name="descid" visible="false" text="아이디" textcolor="#D3D3D3" bkcolor="#FFFFFF" />
+							<Label name="descpwd" visible="false" text="비밀번호" textcolor="#D3D3D3" bkcolor="#FFFFFF" />
+						</VerticalLayout>
+						<VerticalLayout />
+					</HorizontalLayout>
+					<Control height="7" />	<!-- 하단 마진 -->
+				</VerticalLayout>
+				<!-- / id, pwd input -->
+
+				<!-- login/out button -->
+				<HorizontalLayout height="40">
+					<Control width="23" />
+					<VerticalLayout name ="logButArea" width="252" visible="true">
+						<Button name="loginBtn" float="true" pos="0,0,252,40" width="252" height="40"
+										normalimage="login_btn.png"
+										hotimage="login_btn_over.png"
+										pushedimage="login_btn.down.png"
+										disabledimage="login_btn_di.png">
+						</Button>
+					</VerticalLayout>
+					<VerticalLayout name="loginOtherIDButArea" width="252" visible="false" >
+						<Button name="loginBtn2" float="true" pos="0,0,252,40" width="252" height="40"
+										normalimage="login_btn.png"
+										hotimage="login_btn_over.png"
+										pushedimage="login_btn.down.png"
+										disabledimage="login_btn_di.png">
+						</Button>
+					</VerticalLayout>
+					<VerticalLayout name="logingButArea" width="252" visible="false">
+						<Button name="loginCancelBtn" float="true" pos="0,0,252,40" width="252" height="40"
+										normalimage="login_btn_cancel.png"
+										hotimage="login_btn_cancel_over.png"
+										pushedimage="login_btn_cancel.down.png"
+										disabledimage="login_btn_cancel_di.png">
+						</Button>
+					</VerticalLayout>
+					<HorizontalLayout name="connectCancelButArea" width="252" visible="false">
+						<Button name="connectDirectConnectBtn" float="true" pos="0,0,122,40" width="122" height="40"
+										normalimage="login_btn_retry.png"
+										hotimage="login_btn_retry_over.png"
+										pushedimage="login_btn_retry_down.png">
+						</Button>
+						<Button name="connectLoginCancelBtn" float="true" pos="130,0,252,40" width="122" height="40"
+										normalimage="login_btn_cancel_s.png"
+										hotimage="login_btn_cancel_s_over.png"
+										pushedimage="login_btn_cancel_s_down.png">
+						</Button>
+					</HorizontalLayout>
+				</HorizontalLayout>
+				<!-- /login button -->
+
+				<Control height="9" />
+
+				<!-- AutoLogin -->
+				<HorizontalLayout height="16" name="AutoLoginArea" visible="true">
+					<Control name="AutoLoginArea_nateon_LeftMargin" width="66" visible="true"/>
+					<Control name="AutoLoginArea_talkon_LeftMargin" width="47" visible="false"/>
+					
+					<!--autologin-->
+					<HorizontalLayout name="autoLogin" width="75">
+						<CheckBox name="autoLoginBtn"
+										selected="true" width="16" height="16"
+										normalimage="btn_check_off_05.png"
+										selectedimage="btn_check_on_05.png" />
+
+						<Control width="6" />
+
+						<VerticalLayout width="53">
+							<Control height="3" />
+							<VerticalLayout height="11">
+								<Label name="autoLoginLable"
+											 float="true" height="11" width="53"
+											 text="자동로그인" textcolor="#FF97999F" font="2" />
+							</VerticalLayout>
+							<Control height="2" />
+						</VerticalLayout>					
+					</HorizontalLayout>
+					<!--autologin-->
+					
+					<!--/security-->
+					<HorizontalLayout name="security" visible="true">
+						<Control width="18" />						
+						<CheckBox name="ipSecurityBtn"
+															selected="true" width="16" height="16"
+															normalimage="btn_check_off_05.png"
+															selectedimage="btn_check_on_05.png" />
+
+						<Control width="5" />
+
+						<VerticalLayout width="32">
+							<Control height="3" />
+							<VerticalLayout height="11">
+								<Label name="ipsec"
+											 float="true" height="11" width="32"
+											 text="IP보안" textcolor="#FF97999F" font="2" />
+							</VerticalLayout>
+							<Control height="2" />
+						</VerticalLayout>
+
+						<Control width="5" />
+
+						<VerticalLayout width="16">
+							<Button name="questionBtn"
+											tooltip="IP 보안 이용 안내 보기"
+											width="16" height="16"
+											normalimage="ico_Q.png"
+											hotimage="ico_Q_over.png"
+											pushedimage="ico_Q_down.png" />
+						</VerticalLayout>					
+					</HorizontalLayout>
+					<!--/security-->
+
+					<!-- talkonInfoArea-->
+					<HorizontalLayout name="talkonInfoArea" visible="false">
+						<Control width="8" />
+						
+						<Button name="sep"
+										width="6" height="15" mouse="false"
+										normalimage="login_bar_v.png"
+										hotimage="login_bar_v.png"
+										pushedimage="login_bar_v.png" />
+						
+						<Control width="6" />
+
+						<VerticalLayout width="94">
+							<Control height="3" />
+							<VerticalLayout height="11">
+								<Label float="true" height="12" width="94"
+										 text="토크온 자세히 보기" textcolor="#FF97999F" font="2" />
+							</VerticalLayout>
+							<Control height="2" />
+						</VerticalLayout>
+
+						<Control width="5" />
+
+						<VerticalLayout width="16">
+							<Button name="talkonInfoBtn"
+											tooltip="토크온 자세히 보기"
+											width="16" height="16"
+											normalimage="ico_Q.png"
+											hotimage="ico_Q_over.png"
+											pushedimage="ico_Q_down.png" />
+						</VerticalLayout>
+					</HorizontalLayout>
+					<!-- /talkonInfoArea-->
+					
+				</HorizontalLayout>
+				<!-- /AutoLogin -->
+			
+				<!-- otherID -->
+				<VerticalLayout name="logoutOtherArea" height="22" visible="false">
+					<Control height="3" />
+					<HorizontalLayout>
+						<Control width="90" />
+						<VerticalLayout width="120">							
+							<Button name="loginOtherID"
+											float="true" height="15" width="120"
+											text="다른 아이디로 로그인" underline="true"
+											textcolor="#FF97999F"
+											font="4"/>
+						</VerticalLayout>
+					</HorizontalLayout>
+				</VerticalLayout>
+				<!-- /otherID -->
+
+				<HorizontalLayout height="54" />
+				
+				<!-- bottom link -->
+				<HorizontalLayout name="findjoinArea" height="38" visible="true">
+					<Control width="26" />
+					<VerticalLayout width="135">
+						<Control height="3" />
+						<HorizontalLayout>
+							<Button name="findid" pos="0,4,57,15" text="아이디 찾기" textcolor="#FF97999F" align="left" font="2" />
+							<Label name="findspr" pos="57,4,67,15" text="/" textcolor="#FF97999F" align="left" font="2" align="center" />
+							<Button name="findpwd" pos="67,4,135,15" text="비밀번호 찾기" textcolor="#FF97999F" align="left" font="2" />
+						</HorizontalLayout>
+					</VerticalLayout>
+
+					<Control width="8" />
+
+					<Button name="sep"
+									width="6" height="15" mouse="false"
+									normalimage="login_bar_v.png"
+									hotimage="login_bar_v.png"
+									pushedimage="login_bar_v.png" />
+
+					<Control width="6" />
+
+					<VerticalLayout>
+						<Control height="3" />						
+						<Button name="join" pos="0,4,110,15" text="네이트온 회원가입"  textcolor="#FF97999F" align="left" font="2"/>
+					</VerticalLayout>
+
+					<Control width="10" />
+				</HorizontalLayout>
+				<!-- /bottom link -->
+			
+			</VerticalLayout>
+  	</HorizontalLayout>
+</Window>

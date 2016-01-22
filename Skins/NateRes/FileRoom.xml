@@ -1,0 +1,202 @@
+
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<Window size="482,402" sizebox="5,5,5,5" caption="0,0,0,25" mininfo="482,402">
+
+    <Font name="돋움" size="11" bold="false" italic="false" />
+    <Font name="돋움" size="12" bold="false" italic="false" default="true" />
+    <Font name="돋움" size="10" bold="false" italic="false" />
+    <Font name="굴림" size="12" bold="true" italic="false" />    
+	    
+    <Default name="VScrollBar" value="button1normalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,0,17,17&apos;&quot; button1hotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;17,0,34,17&apos;&quot; button1pushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;34,0,51,17&apos;&quot; button2normalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,34,17,51&apos;&quot; button2hotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;17,34,34,51&apos;&quot; button2pushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;34,34,51,51&apos;&quot; thumbnormalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,51,17,152&apos; corner=&apos;0,2,0,2&apos;&quot; thumbhotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;17,51,34,152&apos; corner=&apos;0,2,0,2&apos;&quot; thumbpushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;34,51,51,152&apos; corner=&apos;0,2,0,2&apos;&quot; bknormalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,17,17,34&apos;&quot; " />
+	
+	<VerticalLayout name="RootTop"  bkcolor="#FFFFFFFF"
+					bordersize="1"
+					bordercolor="#FFAAAAAA"
+					inset="1,1,1,1" >
+		
+		<VerticalLayout name="Frame" bkimage="file='popup_skin_bg.png' corner='3,25,3,0'" hole="true">
+		
+			<VerticalLayout height="25">
+			
+				<HorizontalLayout>
+				
+					<HorizontalLayout name="titleTextHlay" width="415" height="25">
+						<!--
+						<Label name="Shadow" float="true" pos="11,8,0,0" width="400" height="12"
+						textpadding="2,0,2,0" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="3" align="wrap" endellipsis="true" />
+						-->
+						<Label name="FRSubject" float="true" pos="8,7,0,0" width="400" height="12"
+						textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="3" align="wrap" endellipsis="true" />	
+					</HorizontalLayout>
+					
+					<Button name="openfrlist" float="true" pos="420,5,0,0" width="15" height="15" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+							normalimage="btn_pulldown_01.png" hotimage="btn_pulldown_01_over.png" pushedimage="btn_pulldown_01_down.png" />
+							
+					<!-- VerticalLayout width="40" height="2" / -->
+					
+					<VerticalLayout height="2" />
+					
+					<VerticalLayout width="37">
+						<Button name="minbtn" tooltip="최소화" float="true" keyboard="false" pos="0,5,0,0" width="15" height="15"
+								textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+								normalimage="btn_minimizepopup.png" hotimage="btn_minimizepopup_over.png" pushedimage="btn_minimizepopup_down.png" />
+						<Button name="closebtn" tooltip="창 닫기" float="true" pos="16,5,0,0" width="15" height="15"
+								textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+								normalimage="btn_closepopup.png" hotimage="btn_closepopup_over.png" pushedimage="btn_closepopup_down.png" />
+					</VerticalLayout>
+					
+				</HorizontalLayout>
+				
+			</VerticalLayout>
+			
+			<VerticalLayout>
+				<HorizontalLayout >
+					<VerticalLayout name="expansion" width="100" hole="true" bkcolor="#FFFFFFFF">
+						<VerticalLayout bkimage="file_ctgr_bg.png" bkcolor="#FFFFFFFF">
+							<HorizontalLayout width="80" height="11" padding="11,14,0,0">
+								<Option name="all" width="11" height="11" textpadding="20,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_radio_uncheck.png&apos;" hotimage="file=&apos;btn_radio_uncheck.png&apos;" group="1" selected="true" selectedimage="file=&apos;btn_radio_check.png&apos;" />
+								<Text text="전체" float="true" pos="13,0,0,0" width="61" height="11" padding="0,2,0,0" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+							</HorizontalLayout>
+							<HorizontalLayout width="80" height="11" padding="11,9,0,0">
+								<Option name="photo" width="11" height="11" textpadding="20,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_radio_uncheck.png&apos;" hotimage="file=&apos;btn_radio_uncheck.png&apos;" group="1" selectedimage="file=&apos;btn_radio_check.png&apos;" />
+								<Text text="사진" float="true" pos="13,0,0,0" width="61" height="11" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+							</HorizontalLayout>
+							<HorizontalLayout width="80" height="11" padding="11,9,0,0">
+								<Option name="document" width="11" height="11" textpadding="20,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_radio_uncheck.png&apos;" hotimage="file=&apos;btn_radio_uncheck.png&apos;" group="1" selectedimage="file=&apos;btn_radio_check.png&apos;" />
+								<Text text="문서" float="true" pos="13,0,0,0" width="61" height="11" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+							</HorizontalLayout>
+							<HorizontalLayout width="80" height="11" padding="11,9,0,0">
+								<Option name="media" width="11" height="11" textpadding="20,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_radio_uncheck.png&apos;" hotimage="file=&apos;btn_radio_uncheck.png&apos;" group="1" selectedimage="file=&apos;btn_radio_check.png&apos;" />
+								<Text text="미디어" float="true" pos="13,0,0,0" width="61" height="11" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+							</HorizontalLayout>
+							<HorizontalLayout width="80" height="11" padding="11,9,0,0">
+								<Option name="etc" width="11" height="11" textpadding="20,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_radio_uncheck.png&apos;" hotimage="file=&apos;btn_radio_uncheck.png&apos;" group="1" selectedimage="file=&apos;btn_radio_check.png&apos;" />
+								<Text text="기타" float="true" pos="13,0,0,0" width="61" height="11" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+							</HorizontalLayout>
+							<HorizontalLayout width="100" height="16">
+							</HorizontalLayout>
+
+              <Control height="40" />
+              <Control height="1" bkcolor="#FFF0F0F0" />
+              <Control height="10" />
+              
+							<HorizontalLayout width="80" height="11" padding="11,15,0,0">
+								<Option name="alllist" width="11" height="11" textpadding="20,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_radio_uncheck.png&apos;" hotimage="file=&apos;btn_radio_uncheck.png&apos;" group="2" selected="true" selectedimage="file=&apos;btn_radio_check.png&apos;" />
+								<Text text="전체" float="true" pos="13,0,0,0" width="61" height="11" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+							</HorizontalLayout>
+							<HorizontalLayout width="80" height="11" padding="11,9,0,0">
+								<Option name="receive" width="11" height="11" textpadding="20,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_radio_uncheck.png&apos;" hotimage="file=&apos;btn_radio_uncheck.png&apos;" group="2" selectedimage="file=&apos;btn_radio_check.png&apos;" />
+								<Text text="받은 파일" float="true" pos="13,0,0,0" width="61" height="11" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+							</HorizontalLayout>
+							<HorizontalLayout width="80" height="11" padding="11,9,0,0">
+								<Option name="send" width="11" height="11" textpadding="20,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_radio_uncheck.png&apos;" hotimage="file=&apos;btn_radio_uncheck.png&apos;" group="2" selectedimage="file=&apos;btn_radio_check.png&apos;" />
+								<Text text="보낸 파일" float="true" pos="13,0,0,0" width="61" height="11" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+							</HorizontalLayout>
+							<Button name="deletefile" float="true" pos="11,328,0,0" width="62" height="12" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;file_btn_delfile.png&apos;" hotimage="file=&apos;file_btn_delfile_over.png&apos;" />
+						</VerticalLayout>
+					</VerticalLayout>
+					<VerticalLayout name="main" bkcolor="#FFFFFFFF" minheight="375" >
+            
+            <HorizontalLayout height="43" bkimage="file=&apos;file_search_bg.png&apos;">
+              
+              <VerticalLayout width="9">
+                <Button name="showhide" tooltip="목록 옵션 영역 열고 닫기" height="42" width="9" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;file_btn_ctgr_close.png&apos;" />
+              </VerticalLayout>
+                            
+              <HorizontalLayout>
+                <VerticalLayout width="10" />
+                
+                <VerticalLayout>
+                  <HorizontalLayout height="10" />
+                  
+                  <HorizontalLayout>
+                    
+                    <HorizontalLayout minwidth="300" height="22" hole="true" bkimage="file='inputbox_01.png' corner='1,1,1,1'">
+                      <Control width="9" />
+                      <VerticalLayout width="13">
+                        <Control height="6" />
+                        <Control height="13" bkimage="ico_search2.png" />
+                      </VerticalLayout>                      
+
+                      <VerticalLayout minwidth="280">
+                        <Control height="3" />
+                        <Edit name="searchEdit" text="이름 또는 파일명으로 검색" padding="0,0,10,0" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#00C6C6C6" disabledtextcolor="#FFA7A6AA" />
+                      </VerticalLayout>
+                    </HorizontalLayout>
+
+                    <Control width="5" />
+
+                    <VerticalLayout width="40" height="22">
+                      <Button name="filebox_searchbtn" float="true" width="40" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='btn_pop_troom_search.png'" />
+                    </VerticalLayout>
+                    
+                  </HorizontalLayout>
+                  
+                  <HorizontalLayout height="10" />
+                </VerticalLayout>
+                
+                <VerticalLayout width="9" />
+              </HorizontalLayout>
+              
+            </HorizontalLayout>              
+            
+						<Text name="FileBox_NotFound" text="검색결과가 없습니다." visible="false" padding="0,40,0,0" textpadding="2,0,2,0" textcolor="#009C9C9C" font="1" align="centerwrap" />
+						<List name="filelist" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFFFF38D" itemhottextcolor="#FF000000" itemhotbkcolor="#FFF5F5F5" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" header="hidden" vscrollbar="true">
+							<ListHeader />
+						</List>
+					</VerticalLayout>
+				</HorizontalLayout>
+			</VerticalLayout>
+			
+		</VerticalLayout>
+
+
+		<Container name="LayerToolTip"
+							 visible="false"
+							 float="true"
+							 pos="25,19,215,110"
+							 height="91" width="190">
+			<VerticalLayout>
+				<HorizontalLayout height="6" />
+				<HorizontalLayout>
+					<VerticalLayout bordersize="1"
+										bordercolor="#FF777777"
+										bkcolor="#FFFFFFFF">
+						<Button name="btnCloseLayer"
+									float="true" pos="172,6,186,20"
+									normalimage= "btn_title_close.png"
+									hotimage=    "btn_title_close_over.png"
+									pushedimage= "btn_title_close_down.png"
+							/>
+						<Label float="true" pos="1,20,189,35"
+								 text="목록에서 선택하여"
+								 textcolor="#FF000000"
+								 font="1"
+								 align="vcenter"
+							/>
+						<Label float="true" pos="1,36,189,51"
+								 text="특정 사용자와 주고받는 내용만"
+								 textcolor="#FF000000"
+								 font="1"
+								 align="vcenter"
+							/>
+						<Label float="true" pos="1,52,189,67"
+								 text="볼 수 있습니다."
+								 textcolor="#FF000000"
+								 font="1"
+								 align="vcenter"
+							/>
+					</VerticalLayout>
+				</HorizontalLayout>
+				<Button float="true" pos="91,0,107,7"
+							width="11" height="7"
+							mouse="false"
+							normalimage="layer_tail.png"
+					/>
+			</VerticalLayout>
+		</Container>		
+		
+	</VerticalLayout>
+	
+</Window>

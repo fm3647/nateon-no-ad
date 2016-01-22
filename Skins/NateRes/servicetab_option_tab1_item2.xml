@@ -1,0 +1,8 @@
+<Window size="180,27">
+<ListContainerElement height="27" name="ItemServiceSel">
+	<VerticalLayout bkcolor="#00FFFFFF">
+		<Label name="ServiceName" font="1" textcolor="#FF222222" maxwidth="170" height="13" float="true" endellipsis="true" pos="10, 7, 180, 20" />
+		<Control height="1" bkcolor="#FFdadada" float="true" pos="0, 26, 180, 27" />
+	</VerticalLayout>
+</ListContainerElement>
+</Window>

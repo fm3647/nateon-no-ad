@@ -1,0 +1,155 @@
+<Window size="390,424" caption="0,0,0,30">
+	<Default name="VScrollBar" width="17" value="button1normalimage=&quot;file='scrollbar.png' source='0,0,17,17'&quot; button1hotimage=&quot;file='scrollbar.png' source='17,0,34,17,17'&quot; button1pushedimage=&quot;file='scrollbar.png' source='34,0,51,17'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,34,17,51'&quot; button2hotimage=&quot;file='scrollbar.png' source='17,34,34,51'&quot; button2pushedimage=&quot;file='scrollbar.png' source='34,34,51,51'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,51,17,152' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='17,51,34,152' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='34,51,51,152' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,17,17,34'&quot; " />
+	<Font name="굴림" 		size="12" bold="false" default="true" />
+	<Font name="돋움" 		size="12" bold="true" />
+	<Font name="굴림" 		size="12" bold="true" />
+	<Font name="Tahoma" 	size="10" bold="false" />
+	<Font name="돋움" 		size="12" bold="false" />
+	<Font name="돋움" 		size="11" bold="false" />
+	<Font name="돋움" 		size="11" bold="false" extra="-1" />
+	<HorizontalLayout bkcolor="#FFffffff" bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1">
+		<VerticalLayout name="root" bkimage="file='popup_skin_bg.png' source='0,0,9,26' corner='1,25,1,0'"hole="true">
+			<HorizontalLayout height="24">
+				<Control width="10" />
+				<VerticalLayout width="150">
+					<Control height="7" />
+					<VerticalLayout height="12">
+						<Label name="textTitle" text="친구 접속 알림 상세 설정" 
+							   font="2" textcolor="#FF222222"
+							   width="150" height="12"
+						/>
+					</VerticalLayout>
+					<Control height="5" />
+				</VerticalLayout>
+				<Control width="207" />
+				<VerticalLayout width="15">
+					<Control height="5" />
+					<VerticalLayout height="15">
+						<Button name="closebtn" float="true"
+							    width="15" height="15"
+							    normalimage= "btn_closepopup.png"
+							    hotimage=    "btn_closepopup_over.png"
+							    pushedimage= "btn_closepopup_down.png"
+						/>
+					</VerticalLayout>
+					<Control height="5" />
+				</VerticalLayout>
+				<Control witdh="4" />
+			</HorizontalLayout>
+			<Control height="15" />
+			<HorizontalLayout height="11">
+				<Control width="20" />
+				<VerticalLayout width="368">
+					<Label text="접속 알림을 받고 싶지 않은 친구를 선택하세요." 
+						   align="left" font="5" textcolor="#FF9c9c9c" 
+						   height="11" 
+						   name="descriptionLabel1" 
+					/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control height="5" />
+			<HorizontalLayout height="11">
+				<Control width="20" />
+				<VerticalLayout width="368">
+					<Label text="숨김친구는 접속 알림이 제공되지 않습니다." 
+						   align="left" font="5" textcolor="#FF9c9c9c" 
+						   height="11" 
+						   name="descriptionLabel1" 
+					/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control height="10" />
+			<HorizontalLayout height="276">
+				<Control width="19" />
+				<VerticalLayout width="150" hole="true">
+					<HorizontalLayout height="20" bkimage="file='contents_input_bg.png' corner='3,4,1,1'">
+						<Control width="10" bkcolor="#00FFFFFF" />
+						<VerticalLayout width="10">
+							<Control height="5" />
+							<Control height="10" bkimage="ico_search.png" />
+							<Control height="5" />
+						</VerticalLayout>
+						<Control width="5" />
+						<VerticalLayout width="125">
+							<Edit name="searchEdit" align="left" 
+								  text="이름검색" 
+								  height="20" 
+								  font="5" textcolor="#FFcccccc" 
+								  bkcolor="#00FFFFFF"
+							/>
+						</VerticalLayout>
+					</HorizontalLayout>
+					<HorizontalLayout height="256" bkimage="file='listbox_01.png' source='0,2,12,12' corner='2,0,2,2'" inset="1,0,1,1">
+						<List name="whiteList" width="148" height="256" 
+							  vscrollbar="true" header="hidden" 
+							  itemselectedbkcolor="#FFFFFFFF" itemhotbkcolor="#FFFFFFFF" 
+							  itemshowhtml="true">
+								<ListContainerElement />
+						</List>
+						<List name="searchList" width="148" height="256" 
+							  vscrollbar="true" header="hidden" 
+							  itemselectedbkcolor="#FFFFFFFF" itemhotbkcolor="#FFFFFFFF" 
+							  itemshowhtml="true">
+								<ListContainerElement />
+						</List>
+					</HorizontalLayout>
+				</VerticalLayout>
+				<Control width="10" />
+				<VerticalLayout width="30">
+					<Control height="114" />
+					<VerticalLayout height="25">
+						<Button name="selBtn" float="true" align="center"
+							    width="30" height="25"
+							    normalimage= "btn_sendlist.png"
+							    hotimage=	 "btn_sendlist_over.png"
+							    pushedimage= "btn_sendlist_down.png"
+						/>
+					</VerticalLayout>
+					<Control height="10" />
+					<VerticalLayout height="25">
+						<Button name="unselBtn" float="true" align="center"
+							    width="30" height="25"
+							    normalimage= "btn_sendback.png"
+							    hotimage=	 "btn_sendback_over.png"
+							    pushedimage= "btn_sendback_down.png"
+						/>
+					</VerticalLayout>
+					<Control height="114" />
+				</VerticalLayout>
+				<Control width="10" />
+				<VerticalLayout width="150" bkimage="file='listbox_02.png' corner='2,2,2,2'" inset="2,2,2,2">
+					<List name="blackList" width="148" height="266" 
+						  vscrollbar="true" header="hidden" 
+						  itemselectedbkcolor="#FFFFFFFF" itemhotbkcolor="#FFFFFFFF" 
+						  itemshowhtml="true">
+						<ListContainerElement />
+					</List>
+				</VerticalLayout>
+				<Control width="19" />
+			</HorizontalLayout>
+			<Control height="25" />
+			<HorizontalLayout height="30">
+				<Control width="136" />
+				<VerticalLayout width="55">
+					<Button name="okBtn" float="true" align="center"
+						    width="55" height="30"
+						    normalimage= "btn_popup_confirm.png"
+						    hotimage=	 "btn_popup_confirm_over.png"
+						    pushedimage= "btn_popup_confirm_down.png"
+					/>
+				</VerticalLayout>
+				<Control width="6" />
+				<VerticalLayout width="55">
+					<Button name="cancelBtn" float="true" align="center"
+						    width="55" height="30"
+						    normalimage= "btn_pop_cancel.png"
+						    hotimage=	 "btn_pop_cancel_over.png"
+						    pushedimage= "btn_pop_cancel_down.png"
+						/>
+				</VerticalLayout>
+				<Control width="136" />
+			</HorizontalLayout>
+			<Control height="15" />
+		</VerticalLayout>
+	</HorizontalLayout>
+</Window>

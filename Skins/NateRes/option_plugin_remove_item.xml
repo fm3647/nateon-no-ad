@@ -1,0 +1,70 @@
+<Window size="398,45" caption="0,0,0,0">
+	<ListContainerElement height="45">
+		<VerticalLayout width="398" height="45">
+			<HorizontalLayout height="44">
+				<Control width="20" />
+				<VerticalLayout width="24">
+					<Control height="8" />
+					<VerticalLayout height="24">
+						<VerticalLayout name="pluginphoto" bkimage="file=plugin_ico_default" hole="true" />
+					</VerticalLayout>
+					<Control height="12" />
+				</VerticalLayout>
+				<Control width="15" />
+				<VerticalLayout width="269" name="infoVer">
+					<Control height="8" />
+					<HorizontalLayout height="12">
+						<VerticalLayout width="180" name="nameVer">
+							<Label name="nameLabel" text="이름" 
+								   align="left" font="4" textcolor="#FF666666" 
+								   width="180"
+								   height="12" 
+							/>
+						</VerticalLayout>
+						<Control width="6" />
+						<VerticalLayout height="12">
+							<Control height="1" />
+							<VerticalLayout height="11">
+								<Label name="verLabel" text="버전" 
+									   align="left" font="7" textcolor="#FFcccccc" 
+									   width="83" 
+									   height="11" 
+								/>
+							</VerticalLayout>
+						</VerticalLayout>
+					</HorizontalLayout>
+					<Control height="4" />
+					<VerticalLayout height="11">
+						<Label name="descLabel" text="설명" 
+							   align="left" font="5" textcolor="#FFcccccc"
+							   width="269"
+							   height="11" 
+						/>
+					</VerticalLayout>
+					<Control height="9" />
+				</VerticalLayout>
+				<Control width="3" />
+				<VerticalLayout width="40">
+					<Control height="12" />
+					<VerticalLayout height="20">
+						<Button name="removeBtn" float="true"
+							    width="40" height="20"
+							    normalimage="btn_removeplugin.png"
+							    hotimage=	"btn_removeplugin_over.png"
+							    pushedimage="btn_removeplugin_down.png"
+						/>
+					</VerticalLayout>
+					<Control height="12" />
+				</VerticalLayout>
+				<Control width="27" />
+			</HorizontalLayout>
+			<Control height="1" bkcolor="#FFf2f2f2" />
+		</VerticalLayout>
+		<Button name="updateBtn" float="true" visible="false"
+			    width="56" height="20"
+			    normalimage="btn_updateplugin.png"
+			    hotimage=	"btn_updateplugin_over.png"
+			    pushedimage="btn_updateplugin_down.png"
+		/>
+	</ListContainerElement>
+</Window>

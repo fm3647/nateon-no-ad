@@ -1,0 +1,460 @@
+<Window size="507,550">
+	<VerticalLayout width="507" height="550">
+		<Control height="17" />
+		<HorizontalLayout height="117">
+         <Control width="25" />
+         <VerticalLayout width="80">
+            <VerticalLayout height="12">
+               <Label text="메신저" font="1"
+                     width="80" height="12" 
+                     textcolor="#FF77858C" 
+               />
+            </VerticalLayout>
+            <Control height="8" />
+            <VerticalLayout height="12">
+               <Label text="보안 설정" font="1"
+                     width="80" height="12" 
+                     textcolor="#FF77858C" 
+               />
+            </VerticalLayout>
+            <Control height="85" />
+         </VerticalLayout>
+         <Control width="15" />
+         <VerticalLayout width="367">
+            <HorizontalLayout height="11">
+               <Control width="1" />
+               <VerticalLayout width="366">
+                  <Label text="보안을 위해 송수신 데이터를 암호화합니다. 일부 네트워크 환경에서는"
+                        align="left" font="6" textcolor="#FF9c9c9c"
+                        width="366" height="11"  
+                  />
+               </VerticalLayout>
+            </HorizontalLayout>
+            <Control height="5" />
+            <HorizontalLayout height="11">
+               <Control width="1" />
+               <VerticalLayout width="366">
+                  <Label text="네이트온 이용에 문제가 있을 수 있습니다."
+                        align="left" font="6" textcolor="#FF9c9c9c"
+                        width="366" height="11"  
+                  />
+               </VerticalLayout>
+            </HorizontalLayout>
+            <Control height="11" />
+            <HorizontalLayout height="15">
+               <VerticalLayout width="15">
+                  <Option name="EncPacket" float="true" 
+                         width="15" height="15" 
+                         normalimage=   "btn_uncheck_03.png" 
+                         hotimage=     "btn_uncheck_03_over.png" 
+                         pushedimage=   "btn_uncheck_03_down.png" 
+                         selectedimage= "btn_check_03.png"        
+                  />
+               </VerticalLayout>
+               <Control width="5" />
+               <VerticalLayout width="135">
+                  <Control height="1" />
+                  <VerticalLayout height="12">
+                     <Label text="전체 데이터 암호화"
+                           align="left" font="2" textcolor="#FF333333"
+                           width="135" height="12"  
+                     />
+                  </VerticalLayout>
+                  <Control height="2" />
+               </VerticalLayout>
+               <Control />
+            </HorizontalLayout>
+            <Control height="12" />
+            <Control height="1"  bkcolor="#FFF0F0F0" />
+            <Control height="15" />
+            <HorizontalLayout height="11">
+               <Control width="1" />
+               <HorizontalLayout width="366">
+                  <HorizontalLayout width="66">
+                     <Label text="메시지로 받은"
+                           align="left" font="6" textcolor="#FF9c9c9c"
+                           width="66" height="11"  
+                     />
+                  </HorizontalLayout>
+                  <HorizontalLayout width="21">
+                     <Label text="URL"
+                           align="left" font="6" textcolor="#FF9c9c9c"
+                              width="21" height="11"  
+                     />
+                  </HorizontalLayout>
+                  <HorizontalLayout width="123">
+                     <Label text="이, 네이트온에 신고된 악성"
+                           align="left" font="6" textcolor="#FF9c9c9c"
+                           width="123" height="11"  
+                     />
+                  </HorizontalLayout>
+                  <HorizontalLayout width="21">
+                     <Label text="URL"
+                           align="left" font="6" textcolor="#FF9c9c9c"
+                           width="21" height="11"  
+                     />
+                  </HorizontalLayout>
+                  <HorizontalLayout width="135">
+                     <Label text="인지 검사합니다."
+                           align="left" font="6" textcolor="#FF9c9c9c"
+                           width="135" height="11"  
+                     />
+                  </HorizontalLayout>
+               </HorizontalLayout>
+            </HorizontalLayout>
+            <Control height="10" />
+            <HorizontalLayout height="15">
+               <VerticalLayout width="15">
+                  <Option name="url_diagnose_use" float="true" 
+                         width="15" height="15" 
+                         normalimage=   "btn_uncheck_03.png" 
+                         hotimage=     "btn_uncheck_03_over.png" 
+                         pushedimage=   "btn_uncheck_03_down.png" 
+                         selectedimage= "btn_check_03.png" 
+                  />
+               </VerticalLayout>
+               <Control width="5" />
+               <VerticalLayout width="135">
+                  <Control height="1" />
+                  <VerticalLayout height="12">
+                     <Label text="악성 URL 검사"
+                           align="left" font="2" textcolor="#FF333333"
+                           width="135" height="12"  
+                     />
+                  </VerticalLayout>
+                  <Control height="2" />
+               </VerticalLayout>
+               <Control width="212" />
+            </HorizontalLayout>
+         </VerticalLayout>
+         <Control width="20" />
+      </HorizontalLayout>
+      <Control height="18" />
+      <Control height="1" bkcolor="#FFf0f0f0" />
+      <Control height="20" />
+		<HorizontalLayout height="266" name="use_proxy_horlayout">
+			<Control width="25" />
+			<VerticalLayout width="80">
+				<Control height="1" />
+				<VerticalLayout height="12">
+					<Label text="네트워크" font="1"
+						   width="80" height="12" 
+						   textcolor="#FF77858C" 
+					/>
+				</VerticalLayout>
+				<Control height="8" />
+				<VerticalLayout height="12">
+					<Label text="연결 설정" font="1"
+						   width="80" height="12" 
+						   textcolor="#FF77858C" 
+					/>
+				</VerticalLayout>
+				<Control height="147" />
+				<Control height="86" name="hideControl" />
+			</VerticalLayout>
+			<Control width="15" />
+			<VerticalLayout width="367">
+				<HorizontalLayout height="15">
+					<VerticalLayout width="15">
+						<Option name="UseProxy" float="true" 
+							    width="15" height="15" 
+							    normalimage=   "btn_uncheck_03.png" 
+							    hotimage=	   "btn_uncheck_03_over.png" 
+							    pushedimage=   "btn_uncheck_03_down.png" 
+							    selectedimage= "btn_check_03.png" 
+						/>
+					</VerticalLayout>
+					<Control width="5" />
+					<VerticalLayout width="347">
+						<Control height="1" />
+						<VerticalLayout height="12">
+							<Label text="프록시 서버 사용하기"
+								   align="left" font="2" textcolor="#FF333333"
+								   width="347" height="12"  
+							/>
+						</VerticalLayout>
+						<Control heigh="2" />
+					</VerticalLayout>
+				</HorizontalLayout>
+				<Control height="10" />
+				<VerticalLayout height="86" name="use_proxy_verlayout">
+					<HorizontalLayout height="22">
+						<Control width="1" />
+						<VerticalLayout width="44">
+							<Control height="6" />
+							<VerticalLayout height="12">
+								<Label text="종류"
+									   align="left" font="2" textcolor="#FF333333"
+									   width="44" height="12"  
+								/>
+							</VerticalLayout>
+							<Control height="4" />
+						</VerticalLayout>
+						<VerticalLayout width="121">
+							<Combo name="ProxyType" float="true" align="left" itemtextpadding="6,3,0,0" 
+								   width="121" height="22" textcolor="FF333333" 
+								   dropboxsize="121,70" imagewidth="27"
+								   normalimage=	"file='btn_contents_open.png' 		corner='3,3,22,3'"
+								   hotimage=	"file='btn_contents_open_over.png' 	corner='3,3,22,3'"
+								   pushedimage=	"file='btn_contents_open_down.png' 	corner='3,3,22,3'">
+								<ListLabelElement text="HTTP 프록시"  naem="0" height="22" />
+								<ListLabelElement text="SOCKS 버전 4" naem="1" height="22" />
+								<ListLabelElement text="SOCKS 버전 5" naem="2" height="22" />
+							</Combo>
+						</VerticalLayout>
+						<Control width="20" />
+						<VerticalLayout width="143">
+							<Control height="1" />
+							<VerticalLayout height="20">
+								<Button name="load_web_value" float="true" align="center"
+									    width="143" height="20"
+									    normalimage= "btn_bring_webseting.png"
+									    hotimage=	 "btn_bring_webseting_over.png"
+									    pushedimage= "btn_bring_webseting_down.png"
+									    visible="false" 
+								/>
+							</VerticalLayout>
+							<Control height="1" />
+						</VerticalLayout>
+						<Control width="38" />
+					</HorizontalLayout>
+					<Control height="7" />
+					<HorizontalLayout height="20">
+						<Control width="1" />
+						<VerticalLayout width="44">
+							<Control height="4" />
+							<VerticalLayout height="12">
+								<Label text="서버"
+									   align="left" font="2" textcolor="#FF333333"
+									   width="44" height="12"  
+								/>
+							</VerticalLayout>
+							<Control height="4" />
+						</VerticalLayout>
+						<VerticalLayout width="121">
+							<Edit name="ProxyHost" align="left" 
+								  width="121" height="20" textcolor="#FF333333"
+								  bkimage="file='contents_input_bg.png' corner='3,3,1,1'"
+							/>
+						</VerticalLayout>
+						<Control width="21" />
+						<VerticalLayout width="44">
+							<Control height="4" />
+							<VerticalLayout height="12">
+								<Label text="포트" 
+									   align="left" font="2" textcolor="#FF333333"
+									   width="44" height="12"  
+								/>
+							</VerticalLayout>
+							<Control height="4" />
+						</VerticalLayout>
+						<VerticalLayout width="121">
+							<Edit name="ProxyPort" align="left" numberonly="true" 
+								  width="121" height="20" textcolor="#FF333333"
+								  bkimage="file='contents_input_bg.png' corner='3,3,1,1'"
+							/>
+						</VerticalLayout>
+						<Control width="15" />
+					</HorizontalLayout>
+					<Control height="7" />
+					<HorizontalLayout height="20">
+						<Control width="1" />
+						<VerticalLayout width="44">
+							<Control height="4" />
+							<VerticalLayout height="12">
+								<Label text="사용자"
+									   align="left" font="2" textcolor="#FF333333"
+									   width="44" height="12"  
+								/>
+							</VerticalLayout>
+							<Control height="4" />
+						</VerticalLayout>
+						<VerticalLayout width="121">
+							<Edit name="ProxyUser" align="left"
+								  width="121" height="20" textcolor="#FF333333"
+								  bkimage="file='contents_input_bg_dim.png' corner='3,3,1,1'"
+							/>
+						</VerticalLayout>
+						<Control width="21" />
+						<VerticalLayout width="44">
+							<Control height="4" />
+							<VerticalLayout height="12">
+								<Label text="암호" 
+									   align="left" font="2" textcolor="#FF333333"
+									   width="44" height="12"  
+								/>
+							</VerticalLayout>
+							<Control height="4" />
+						</VerticalLayout>
+						<VerticalLayout width="121">
+							<Edit name="ProxyPass" align="left" password="true" 
+								  width="121" height="20" textcolor="#FF333333"
+								  bkimage="file='contents_input_bg_dim.png' corner='3,3,1,1'"
+							/>
+						</VerticalLayout>
+						<Control width="15" />
+					</HorizontalLayout>
+					<Control height="10" />
+				</VerticalLayout>
+				<Control height="5" />
+				<Control height="1"  bkcolor="#FFF0F0F0" />
+				<Control height="13" />
+				<HorizontalLayout height="15">
+					<VerticalLayout width="15">
+						<Option name="SvcBlockAutoCheck" float="true" 
+							    width="15" height="15" 
+							    normalimage=   "btn_uncheck_03.png" 
+							    hotimage=	   "btn_uncheck_03_over.png" 
+							    pushedimage=   "btn_uncheck_03_down.png" 
+							    selectedimage= "btn_check_03.png" 
+						/>
+					</VerticalLayout>
+					<Control width="5" />
+					<VerticalLayout width="347">
+						<Control height="1" />
+						<VerticalLayout height="12">
+							<Label text="서비스 연결 설정 자동 확인"
+								   align="left" font="2" textcolor="#FF333333"
+								   width="347" height="12"  
+							/>
+						</VerticalLayout>
+						<Control heigh="2" />
+					</VerticalLayout>
+				</HorizontalLayout>
+				<Control height="10" />
+				<HorizontalLayout height="11">
+					<Control width="1" />
+					<VerticalLayout width="366">
+						<Label text="싸이월드 접속이 차단된 네트워크 환경에서도"
+							   align="left" font="6" textcolor="#FF9c9c9c"
+							   width="366" height="11"  
+						/>
+					</VerticalLayout>
+				</HorizontalLayout>
+				<Control height="5" />
+				<HorizontalLayout height="11">
+					<Control width="1" />
+					<VerticalLayout width="366">
+						<Label text="네이트 연동 서비스는 정상적으로 이용할 수 있습니다."
+							   align="left" font="6" textcolor="#FF9c9c9c"
+							   width="366" height="11"  
+						/>
+					</VerticalLayout>
+				</HorizontalLayout>
+				<Control height="13" />
+				<Control height="1"  bkcolor="#FFF0F0F0" />
+				<Control height="13" />
+				<HorizontalLayout height="20">
+					<Control width="1" />
+					<VerticalLayout width="110">
+						<Control height="4" />
+						<VerticalLayout height="12">
+							<Label text="P2P 연결 포트 설정"
+								   align="left" font="2" textcolor="#FF333333"
+								   width="110" height="12"  
+							/>
+						</VerticalLayout>
+						<Control height="4" />
+					</VerticalLayout>
+					<VerticalLayout width="84">
+						<Edit name="P2PListenPort" align="left" numberonly="true" 
+							  width="84" height="20" textcolor="#FF333333"
+							  bkimage="file='contents_input_bg.png' corner='3,3,1,1'"
+						/>
+					</VerticalLayout>
+					<Control width="172" />
+				</HorizontalLayout>
+				<Control height="10" />
+				<HorizontalLayout height="11">
+					<Control width="1" />
+					<VerticalLayout width="366">
+						<Label text="방화벽으로 네트워크가 막혀있는 경우 열려있는 특정 포트를 선택하면"
+							   align="left" font="6" textcolor="#FF9c9c9c"
+							   width="366" height="11"  
+						/>
+					</VerticalLayout>
+				</HorizontalLayout>
+				<Control height="5" />
+				<HorizontalLayout height="11">
+					<Control width="1" />
+					<VerticalLayout width="23">
+						<Label text="P2P"
+							   align="left" font="6" textcolor="#FF9c9c9c"
+							   width="23" height="11"  
+						/>
+					</VerticalLayout>
+					<VerticalLayout width="62">
+						<Label text="파일전송등에"
+							   align="left" font="6" textcolor="#FF9c9c9c"
+							   width="62" height="11"  
+						/>
+					</VerticalLayout>
+					<VerticalLayout width="23">
+						<Label text="P2P"
+							   align="left" font="6" textcolor="#FF9c9c9c"
+							   width="23" height="11"  
+						/>
+					</VerticalLayout>
+					<VerticalLayout width="258">
+						<Label text="연결을 사용할 수 있습니다."
+							   align="left" font="6" textcolor="#FF9c9c9c"
+							   width="258" height="11"  
+						/>
+					</VerticalLayout>
+				</HorizontalLayout>
+			</VerticalLayout>
+			<Control width="20" />
+		</HorizontalLayout>
+		<Control height="19" />
+		<Control height="1" bkcolor="#FFF0F0F0" />
+		<Control height="20" />
+		<HorizontalLayout height="41">
+			<Control width="25" />
+			<VerticalLayout width="80">
+				<Control height="1" />
+				<VerticalLayout height="12">
+					<Label text="플러그인" font="1"
+						   width="80" height="12" 
+						   textcolor="#FF77858C" 
+					/>
+				</VerticalLayout>
+				<Control height="8" />
+				<VerticalLayout height="12">
+					<Label text="설정" font="1"
+						   width="80" height="12" 
+						   textcolor="#FF77858C" 
+					/>
+				</VerticalLayout>
+				<Control height="8" />
+			</VerticalLayout>
+			<Control width="15" />
+			<VerticalLayout width="367">
+				<HorizontalLayout height="11">
+					<Control width="1" />
+					<VerticalLayout width="366">
+						<Label text="네이트온 플러그인의 설치 및 업데이트 정보를 관리할 수 있습니다."
+							   align="left" font="6" textcolor="#FF9c9c9c" disabletextcolor="#FFb2b2b2" 
+							   width="366" height="11" name="plugin_label"
+						/>
+					</VerticalLayout>
+				</HorizontalLayout>
+				<Control height="10" />
+				<HorizontalLayout height="20">
+					<Control width="1" />
+					<VerticalLayout width="100">
+						<Button name="plugin" float="true" align="center"
+							    width="100" height="20"
+							    normalimage=   "btn_pluginsetup.png"
+							    hotimage=	   "btn_pluginsetup_over.png"
+							    pushedimage=   "btn_pluginsetup_down.png"
+							    disabledimage= "btn_pluginsetup_disable.png" 
+						/>
+					</VerticalLayout>
+					<Control width="266" />
+				</HorizontalLayout>
+			</VerticalLayout>
+			<Control width="20" />
+		</HorizontalLayout>
+		<Control height="30" />
+	</VerticalLayout>
+</Window>

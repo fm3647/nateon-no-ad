@@ -1,0 +1,8 @@
+<Window size="180,27">
+<ListContainerElement height="27" name="ItemQLSel">
+	<VerticalLayout bkcolor="#00FFFFFF">
+		<Label name="QLName" font="1" textcolor="#FF222222" maxwidth="130" height="13" float="true" pos="10, 7, 140, 20" />
+		<Control height="1" bkcolor="#FFF0F0F0" float="true" pos="0, 26, 180, 27" />
+	</VerticalLayout>
+</ListContainerElement>
+</Window>

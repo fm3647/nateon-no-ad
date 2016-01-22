@@ -1,0 +1,59 @@
+<Window size="175,95" caption="0,0,0,0">
+	<ListContainerElement name="msg_item" 
+						  height="95">
+		<VerticalLayout height="95" 
+				  	    inset="5,5,5,5">
+			<HorizontalLayout height="15">
+				<VerticalLayout name="owner_name_area" width="40">
+					<Control />
+					<Label name="owner_name" 
+						   text="이수연" 
+						   textcolor="#FF222222" 
+						   font="4" 
+						   align="left" 
+					/>
+					<Control />
+				</VerticalLayout>
+				<Control />
+				<VerticalLayout name="upload_time_area" width="95">
+					<Control />
+					<Label name="upload_time" 
+						   text="오전 11:30(15/05/09)" 
+						   font="6" 
+						   align="left"
+						   textcolor="#FF222222" 
+					/>
+					<Control />
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control height="5" />
+			<HorizontalLayout name="msg_area">
+				<Text name="msg" 
+					  text="이것은 중요한 메시지입니다. /안녕/<c #EE9032>메시지는 두줄까지 보이는게 좋겠어요,</c> 클릭하면 피드가 변경되지요." 
+					  font="3" 
+					  mul_endellipsis="true"  
+					  showhtml="true"
+				/>
+			</HorizontalLayout>
+			<HorizontalLayout height="13">
+				<Label name="gather_name_msg" 
+					   text="#기획파트" 
+					   font="4" 
+				/>
+				<Button name="file_favorite" visible="true"  
+					    width="15" 
+					    normalimage= "ico_bookmark_01.png" 
+					    hotimage=	 "ico_bookmark_01.png" 
+					    pushedimage= "ico_bookmark_01.png"
+				/>
+				<Control width="3" />
+				<Button name="file_important" visible="true"  
+					    width="15" 
+					    normalimage= "ico_badge_num.png" 
+					    hotimage=	 "ico_badge_num.png" 
+					    pushedimage= "ico_badge_num.png"
+				/>
+			</HorizontalLayout>
+		</VerticalLayout>
+	</ListContainerElement>
+</Window>

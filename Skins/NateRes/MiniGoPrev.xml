@@ -1,0 +1,15 @@
+﻿
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<Window>
+	<ListContainerElement name="BubbleGoPrevLayout" height="28" inset="0,10,10,4">
+    <HorizontalLayout>
+	
+        <Button name="GoPrevButton" width="13" height="13" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+		normalimage="chat_btn_previous2.png" hotimage="chat_btn_previous2_over.png" pushedimage="chat_btn_previous2_down.png" />
+		
+        <Button name="GoPrevLabel" text="이전 메시지" width="70" height="14" textpadding="5,0,0,0" textcolor="#00888888" disabledtextcolor="#FFA7A6AA" font="2" />
+		
+    </HorizontalLayout>
+    </ListContainerElement>
+</Window>

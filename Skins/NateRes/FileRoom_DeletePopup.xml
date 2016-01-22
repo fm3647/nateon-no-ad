@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window alpha="255" size="115, 38">
+  <Font name="돋움" size="12" bold="false" default="true" />
+  <Default name="Menu" bkcolor="FFFFFFFF" bordercolor="FF777777" bordersize="1" value="bordersize=&quot;1&quot; bordercolor=&quot;FF777777&quot; bkcolor=&quot;FFFFFFFF&quot; inset=&quot;1,1,1,1&quot; itemtextpadding=&quot;10,0,10,0&quot; itemselectedbkcolor=&quot;FFFFF38d&quot;" />
+  <Menu name="popupmenu">
+    <MenuElement name="DeleteNoPath" height="22" padding="0,0,0,0" text="유효하지 않은 목록만 삭제"/>
+    <MenuElement name="DeleteRecentContents" height="22" text="목록 모두 삭제" />
+	<!-- <MenuElement name="DeleteFileAndList" height="22" text="목록 및 파일 모두 삭제" /> -->
+  </Menu>
+</Window>

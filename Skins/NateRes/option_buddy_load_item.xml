@@ -1,0 +1,43 @@
+<Window size="150,29">
+	
+	<Font name="돋움"   size="12" bold="false" />
+	
+	<ListContainerElement height="29" name="item" 
+						  hotelementimage="file='main_buddy_over.png' corner='3,3,3,3'" 
+						  pushedelementimage= "file='main_buddy_selected.png' corner='3,3,3,3'" >
+		<HorizontalLayout width="150" height="29">
+			<Control width="10" />
+			<VerticalLayout width="25">
+				<Control height="1" />
+				<VerticalLayout height="25" name="profilephoto" bkimage="file='buddy_profile_default.png' makecorner='100,100,100,100'"/>
+				<VerticalLayout height="25" name="profilephotoFrame" float="true" pos="0,1,25,26"  bkimage="file='profileimg_frame.png'"/>
+				<Control height="2" />
+			</VerticalLayout>
+			<Control width="3" />
+			<VerticalLayout width="13">
+				<Control height="8" />
+				<VerticalLayout height="13" name="pocpcCtl" />			
+				<Control height="8" />
+			</VerticalLayout>
+			<Control width="5" />
+			<VerticalLayout >
+				<Control height="8" />
+				<VerticalLayout height="12">
+					<Label name="nameLabel"
+						   font="4" textcolor="#FF222222"
+						   height="12" 
+						   align="left" 
+						   endellipsis="true" 
+						   visible="true" 
+					/>
+					<Label name="idLabel"
+						   font="4" textcolor="#FF222222"
+						   height="12" 
+						   visible="false" 
+					/>
+				</VerticalLayout>
+				<Control height="9" />
+			</VerticalLayout>
+		</HorizontalLayout>
+	</ListContainerElement>
+</Window>

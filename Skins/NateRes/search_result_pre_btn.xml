@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="328,51">
+  <ListContainerElement name="postMsgBtnLayout" height="51">
+      <HorizontalLayout height="51">
+          <VerticalLayout width="4" />
+          <VerticalLayout width="95" align="bottom">
+              <Control height="18" />
+              <HorizontalLayout height="18">
+                  <VerticalLayout width="17">
+                      <Button name="preMsgBtn" float="true" keyboard="false" 
+                              width="17" height="18"
+                              normalimage="chat_btn_previous.png"
+                              hotimage=   "chat_btn_previous_over.png"
+                              pushedimage="chat_btn_previous_down.png"
+                      />
+                  </VerticalLayout>
+                  <Control width="8" />
+                  <VerticalLayout width="70">
+                      <Control height="4" />
+                      <VerticalLayout height="12">
+                          <Button name="preMsgTextBtn" visible="true" float="true" keyboard="false" 
+                                  text="메시지 더보기"
+                                  font="2"
+                                  width="70" height="12"
+                                  textcolor="#FFA7A6AA" align="left" 
+                          />
+                      </VerticalLayout>
+                      <Control height="2" />
+                  </VerticalLayout>
+              </HorizontalLayout>
+              <Control height="15" />
+          </VerticalLayout>
+          <Control />
+      </HorizontalLayout>
+  </ListContainerElement>
+</Window>

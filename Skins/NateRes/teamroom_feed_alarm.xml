@@ -1,0 +1,49 @@
+
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<Window size="210,37">
+
+    <ListContainerElement name="FeedAlarmVerticalLayout" height="37" inset="0,10,0,15">
+	
+        <VerticalLayout name="FrameLayout">
+            <HorizontalLayout>
+			
+                <VerticalLayout width="15">																<!-- 왼쪽 공백 -->
+                </VerticalLayout>
+				                
+                <HorizontalLayout>
+                    <VerticalLayout>
+											
+                        <VerticalLayout>						
+                            <HorizontalLayout>
+							
+								<HorizontalLayout name="NameAlarmLayout" width="0">	   
+									<Button name="feed_NameAlarm" text="[작성자]"
+										   textcolor="#FF999999" font="7" align="left" endellipsis="true" />
+								</HorizontalLayout>
+									
+								<HorizontalLayout name="AlarmMsgLayout" width="0">	
+									<Label name="feed_AlarmMsg" text="[메세지]" 
+											textpadding="0,0,0,0" textcolor="#FF999999" font="8" align="left" endellipsis="true" />
+								</HorizontalLayout>			
+										
+								<Control width="8" />
+								
+								<Label name="feed_DateLabel" text="오후 2:30" 
+										textpadding="0,0,0,0" textcolor="#FFB9B9B9" font="10" align="left" endellipsis="true" />		
+
+                            </HorizontalLayout>
+                        </VerticalLayout>
+						
+                    </VerticalLayout>
+                </HorizontalLayout>
+												
+				<VerticalLayout width="5">																<!-- 오픈쪽 공백 -->
+                </VerticalLayout>
+				
+            </HorizontalLayout>			
+        </VerticalLayout>
+		
+    </ListContainerElement>
+	
+</Window>

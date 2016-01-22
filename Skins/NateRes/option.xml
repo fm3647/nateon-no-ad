@@ -1,0 +1,132 @@
+<Window size="509,766" caption="0,0,0,25">        <!--mod by tae(2015.11.09)-->
+	<Font name="굴림"   size="12" bold="true" />
+	<Font name="돋움"   size="12" bold="true" />
+	<Font name="돋움"   size="12" bold="false" default="true"/>
+	<Font name="돋움"   size="11" bold="false" extra="-1" />
+	<Font name="돋움"   size="11" bold="false" extra="-1" underline="true" />
+	<Font name="Tahoma" size="11" bold="false" />
+	<Font name="돋움"   size="11" bold="false" />
+	<Font name="돋움"   size="12" bold="false" extra="-1" underline="true" />
+	<HorizontalLayout bkcolor="FFffffff" bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1">
+		<VerticalLayout hole="true" bkimage="file='popup_skin_bg.png' source='0,0,9,26' corner='1,26,1,0'">
+			<HorizontalLayout height="25">            <!--title part-->
+				<Control width="10" />
+				<VerticalLayout width="79">
+					<Control height="7" />
+					<VerticalLayout height="12">
+						<Label text="환경설정"
+							   font="0" textcolor="#FF222222"
+							   width="79" height="12"	
+						/>
+					</VerticalLayout>
+					<Control height="5" />
+				</VerticalLayout>
+				<Control width="398" />                   <!--width between Label & closeButton-->
+				<VerticalLayout width="15">               <!--closeButton region-->
+					<Control height="5" />                   <!--closeButton top-side height-->
+					<VerticalLayout height="15">
+						<Button name="closebtn" float="true"
+							    width="15" height="15"
+							    normalimage= "btn_closepopup.png"
+							    hotimage=	 "btn_closepopup_over.png"
+							    pushedimage= "btn_closepopup_down.png"
+						/>
+					</VerticalLayout>
+					<Control height="5" />                  <!--closeButton bottom-side height-->
+				</VerticalLayout>
+				<Control witdh="6" />                     <!--closeButton right-side width-->
+			</HorizontalLayout>
+			
+			<VerticalLayout height="61" hole="true">
+				<HorizontalLayout height="61">
+					<VerticalLayout width="83">
+						<Option name="basicTab" float="true" group="Tab_Content" 
+							    width="83" height="61" 
+							    normalimage=   "file='popup_tab_setup_basic.png' 		source='1,0,84,61'"
+							    hotimage=	   "file='popup_tab_setup_basic_over.png'   source='1,0,84,61'"
+							    pushedimage=   "file='popup_tab_setup_basic_select.png' source='1,0,84,61'"
+							    selectedimage= "file='popup_tab_setup_basic_select.png' source='1,0,84,61'"
+						/>
+					</VerticalLayout>
+					<VerticalLayout width="1" bkimage="popup_tab_setup_dividingline.png" />
+					<VerticalLayout width="84">
+						<Option name="notificationTab" float="true" group="Tab_Content" 
+							    width="84" height="61" 
+							    normalimage=   "popup_tab_setup_notification.png"
+							    hotimage=	   "popup_tab_setup_notification_over.png"
+							    pushedimage=   "popup_tab_setup_notification_select.png"
+							    selectedimage= "popup_tab_setup_notification_select.png"
+						/>
+					</VerticalLayout>
+					<VerticalLayout width="1" bkimage="popup_tab_setup_dividingline.png" />
+					<VerticalLayout width="84">
+						<Option name="buddyTab" float="true" group="Tab_Content" 
+							    width="84" height="61"
+							    normalimage=   "popup_tab_setup_friend.png"
+							    hotimage=	   "popup_tab_setup_friend_over.png"
+							    pushedimage=   "popup_tab_setup_friend_select.png"
+							    selectedimage= "popup_tab_setup_friend_select.png"
+						/>
+					</VerticalLayout>
+					
+					<VerticalLayout width="1" bkimage="popup_tab_setup_dividingline.png" />
+					<VerticalLayout width="84">
+						<Option name="secretTab" float="true" group="Tab_Content" 
+							    width="84" height="61" 
+							    normalimage=   "popup_tab_setup_security.png"
+							    hotimage=	   "popup_tab_setup_security_over.png"
+							    pushedimage=   "popup_tab_setup_security_select.png"
+							    selectedimage= "popup_tab_setup_security_select.png"
+						/>
+					</VerticalLayout>
+					
+					<VerticalLayout width="1" bkimage="popup_tab_setup_dividingline.png" />
+					<VerticalLayout width="84">
+						<Option name="advanceTab" float="true" group="Tab_Content" 
+							    width="84" height="61" 
+							    normalimage=   "popup_tab_setup_advancedsettings.png"
+							    hotimage=	   "popup_tab_setup_advancedsettings_over.png"
+							    pushedimage=   "popup_tab_setup_advancedsettings_select.png"
+							    selectedimage= "popup_tab_setup_advancedsettings_select.png"
+						/>
+					</VerticalLayout>
+					<VerticalLayout width="1" bkimage="popup_tab_setup_dividingline.png" />
+					<VerticalLayout width="83">
+						<Option name="subaccountTab" float="true" group="Tab_Content" 
+							    width="83" height="61" 
+							    normalimage=   "file='popup_tab_setup_secondaccount.png' 		source='0,0,83,61'"
+							    hotimage=	   "file='popup_tab_setup_secondaccount_over.png' 	source='0,0,83,61'"
+							    pushedimage=   "file='popup_tab_setup_secondaccount_select.png' source='0,0,83,61'"
+							    selectedimage= "file='popup_tab_setup_secondaccount_select.png' source='0,0,83,61'"
+						/>
+					</VerticalLayout>
+				</HorizontalLayout>
+			</VerticalLayout>
+			
+			<VerticalLayout height="681">
+				<HorizontalLayout>
+					<TabLayout name="TabView">
+						<HorizontalLayout>
+							<basicTab />
+						</HorizontalLayout>
+						<HorizontalLayout>
+							<notificationTab />
+						</HorizontalLayout>
+						<HorizontalLayout>
+							<buddyTab />
+						</HorizontalLayout>
+						<HorizontalLayout>
+							<secretTab />
+						</HorizontalLayout>
+						<HorizontalLayout>
+							<advanceTab />
+						</HorizontalLayout>
+						<HorizontalLayout>
+							<subaccountTab />
+						</HorizontalLayout>
+					</TabLayout>
+				</HorizontalLayout>
+			</VerticalLayout>
+		</VerticalLayout>
+	</HorizontalLayout>
+</Window>

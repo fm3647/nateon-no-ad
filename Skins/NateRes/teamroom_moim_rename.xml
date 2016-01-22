@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="300,180" caption="0,0,0,25" setround="0,0,0,0">
+	
+	<Default name="VScrollBar" width="17" value="button1normalimage=&quot;file='scrollbar_s.png' source='0,0,17,17'&quot; button1hotimage=&quot;file='scrollbar_s.png' source='17,0,34,17,17'&quot; button1pushedimage=&quot;file='scrollbar_s.png' source='34,0,51,17'&quot; button2normalimage=&quot;file='scrollbar_s.png' source='0,34,17,51'&quot; button2hotimage=&quot;file='scrollbar_s.png' source='17,34,34,51'&quot; button2pushedimage=&quot;file='scrollbar_s.png' source='34,34,51,51'&quot; thumbnormalimage=&quot;file='scrollbar_s.png' source='0,51,17,152' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar_s.png' source='17,51,34,152' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar_s.png' source='34,51,51,152' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar_s.png' source='0,17,17,34'&quot; " />
+
+	<Font name="돋움"   size="12" bold="false" default="true"/>
+	<Font name="돋움"   size="12" bold="true" />
+	<Font name="굴림"   size="12" bold="false" />
+	<Font name="돋움"   size="11" bold="false" />
+	<Font name="돋움"   size="11" bold="false" underline="true" />
+	<Font name="굴림"   size="12" bold="true" />
+	
+	<VerticalLayout name="RootTop" bkcolor="#FFFFFFFF"  
+					bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1">
+		<VerticalLayout name="frame" bkimage="file='popup_skin_bg.png' corner='3,25,3,0'" hole="true">
+		
+		<HorizontalLayout height="25" >
+			<Control width="10" />
+			<VerticalLayout>
+				<Control  height="7"/>
+				<Label text="모임명 변경하기" 
+					   height="12" 
+					   textcolor="#FF222222" 
+					   font="5" 
+				/>
+				<Control />
+			</VerticalLayout>
+			<VerticalLayout width="15">
+				<Control />
+				<Button name="closebtn" 
+						width="15" height="15"
+						normalimage= "btn_closepopup.png"
+						hotimage=	 "btn_closepopup_over.png"
+						pushedimage= "btn_closepopup_down.png"
+				/>
+				<Control />
+			</VerticalLayout>
+			<Control width="6" />
+		</HorizontalLayout>
+
+		<HorizontalLayout height="515">
+			<Control width="20" />
+			<VerticalLayout>
+
+				<Control height="30" />
+				<HorizontalLayout height="13">
+					<Label text="변경하고 싶은 모임명을 입력하세요." 
+						   width="198" height="13" 
+						   textcolor="#FF333333" 
+						   font="0" 
+						   align="left"
+					/>
+					<Label text="(필수)"
+							width="34" height="13"
+							textcolor="FFFF0000"
+							font="3"
+							align="left"
+					/>
+					<Control />
+				</HorizontalLayout>
+				<Control height="13" />
+
+				<Edit name="name" 
+					  height="22" 
+					  bkimage="file='inputbox_01.png' corner='3,4,1,1'"
+					  textcolor="#FF333333" 
+					  textpadding="4,1,4,0" 
+					  font="0" 
+					  align="left" 
+					  maxchar="20"
+				/>
+
+				<Control height="6" />
+				
+				<HorizontalLayout height="13">
+					<Control />
+					<Label text="최대 20자"
+						   width="50" height="13"
+						   textcolor="FF999999"
+						   font="3"
+						   align="right"
+					/>
+				</HorizontalLayout>
+
+				<Control height="20" />
+
+				<HorizontalLayout height="22">
+					<Control />
+					<Button name="rename" 
+							width="94" 
+							normalimage= "btn_pop_troom_moimrename.png"
+							hotimage=	 "btn_pop_troom_moimrename_over.png"
+							pushedimage= "btn_pop_troom_moimrename_down.png"
+					/>
+					<Control width="5" />
+					<Button name="cancel" 
+							width="40" 
+							normalimage= "btn_pop_cancel_s.png"
+							hotimage=	 "btn_pop_cancel_s_over.png"
+							pushedimage= "btn_pop_cancel_s_down.png"
+					/>
+					<Control />
+				</HorizontalLayout>
+			</VerticalLayout>
+			<Control width="20" />
+		</HorizontalLayout>
+		<Control />
+		</VerticalLayout>
+	</VerticalLayout>
+</Window>

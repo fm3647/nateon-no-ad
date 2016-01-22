@@ -1,0 +1,47 @@
+
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<Window size="200,43">
+
+    <ListContainerElement name="FeedMoreButtonVerticalLayout" height="43" inset="0,10,0,15">
+	
+        <VerticalLayout>
+            <HorizontalLayout>
+			
+                <VerticalLayout>
+					<!-- Control height="5" />
+					<Label height="1" bkcolor="#FFECECEC" / -->
+				</VerticalLayout>
+						
+                <HorizontalLayout width="73">
+                    <VerticalLayout>
+						
+                        <VerticalLayout>														
+                            <HorizontalLayout>										
+								<Button name="feed_PrevButton" width="73" height="18" 
+										textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
+										normalimage="troom_ic_feedmore.png" 
+										hotimage="troom_ic_feedmore_over.png" 
+										pushedimage="troom_ic_feedmore_down.png" />
+								<Button name="feed_NextButton" width="73" height="18" 
+										textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
+										normalimage="troom_ic_feedmore2.png" 
+										hotimage="troom_ic_feedmore2_over.png" 
+										pushedimage="troom_ic_feedmore2_down.png" visible="false" />		
+                            </HorizontalLayout>
+                        </VerticalLayout>
+						
+                    </VerticalLayout>
+                </HorizontalLayout>
+				
+				<VerticalLayout>
+					<!-- Control height="5" />
+					<Label height="1" bkcolor="#FFECECEC" / -->
+				</VerticalLayout>
+												
+            </HorizontalLayout>			
+        </VerticalLayout>
+		
+    </ListContainerElement>
+	
+</Window>

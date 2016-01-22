@@ -1,0 +1,45 @@
+
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<Window size="282,159" caption="0,0,0,25" setround="0,0,0,0">
+
+    <Font name="굴림" size="12" bold="true" italic="false" />
+    <Font name="돋움" size="11" bold="false" italic="false" default="true"/>
+    <Font name="돋움" size="10" bold="false" italic="false" />
+    <Font name="돋움" size="12" bold="true" italic="false" />
+    <Font name="돋움" size="12" bold="false" italic="false" />
+
+	<Default name="VScrollBar" value="button1normalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,0,17,17&apos;&quot; button1hotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;17,0,34,17,17&apos;&quot; button1pushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;34,0,51,17&apos;&quot; button2normalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,34,17,51&apos;&quot; button2hotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;17,34,34,51&apos;&quot; button2pushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;34,34,51,51&apos;&quot; thumbnormalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,51,17,152&apos; corner=&apos;0,2,0,2&apos;&quot; thumbhotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;17,51,34,152&apos; corner=&apos;0,2,0,2&apos;&quot; thumbpushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;34,51,51,152&apos; corner=&apos;0,2,0,2&apos;&quot; bknormalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,17,17,34&apos;&quot; " />
+
+    <VerticalLayout name="vertical" width="282" height="159"
+					bkcolor="#FFFFFFFF"
+					bordersize="1"
+					bordercolor="#FFAAAAAA"
+					inset="1,1,1,1" >
+      
+		<VerticalLayout name="Frame" bkimage="file=&apos;popup_skin_bg.png&apos; source=&apos;0,0,9,26&apos; corner=&apos;1,25,1,0&apos;" >
+		
+			<HorizontalLayout name="Title" height="26">
+				<Text name="textTitle" text="네이트온" float="true" pos="8,7,0,0" width="200" height="22" textpadding="2,0,2,0" textcolor="#FF222222" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+				<Button name="btnClose" float="true" pos="257,4,0,0" width="15" height="15" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+						normalimage="file=&apos;btn_closepopup.png&apos;" hotimage="btn_closepopup_over.png" pushedimage="btn_closepopup_down.png" />
+			</HorizontalLayout>
+			
+			<HorizontalLayout name="horizon" width="278" height="62"/>
+			
+			<Text name="textScript2" float="true" pos="61,56,0,0" width="197" height="25" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="3" align="wrap" />
+			<Button name="iconImage" float="true" pos="15,51,0,0" width="36" height="36" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+			<Text name="textScript" float="true" pos="18,98,0,0" width="240" height="25" textpadding="2,0,2,0" textcolor="#FF000000" font="3" align="centerwrap" />
+			<Text name="border" float="true" pos="18,101,0,0" width="258" height="15" />		
+			<RichEdit name="detailText" float="true" pos="18,101,0,0" width="258" height="15" textcolor="#9C9C9C" font="1" vscrollbar="true" align="wrap" />
+			<CheckBox name="checkbox" float="true" pos="61,114,0,0" width="15" height="15" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+					  normalimage="btn_uncheck_03.png" hotimage="btn_uncheck_03_over.png" pushedimage="btn_uncheck_03_down.png" selectedimage="btn_check_03.png" />
+			<Text name="checkboxText" float="true" pos="76,114,0,0" width="150" height="15" textpadding="5,2,0,0" textcolor="#FFA7A6AA" font="1" align="wrap" />
+			<Button name="btn1" float="true" pos="105,75,0,0" width="71" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+			<Button name="btn2" float="true" pos="184,75,0,0" width="40" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+			
+		</VerticalLayout>
+		
+    </VerticalLayout>
+		
+</Window>

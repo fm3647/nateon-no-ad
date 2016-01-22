@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<ListContainerElement name="BubbleInOutLayout" height="30" inset="10,5,10,5">
+    <VerticalLayout>
+        <HorizontalLayout>
+            <HorizontalLayout name="ContentLayout">
+                <Label name="ContentText" text="[메세지] " height="20" bkimage="file=&apos;chat_bg_guide_parti.png&apos; corner=&apos;10,0,10,0&apos;" 
+				textpadding="20,2,20,0" textcolor="#FFAAAAAA" disabledtextcolor="#FFAAAAAA" font="2" align="center" endellipsis="true" />
+            </HorizontalLayout>
+            <HorizontalLayout width="10" /> 
+        </HorizontalLayout>
+    </VerticalLayout>
+    </ListContainerElement>
+</Window>

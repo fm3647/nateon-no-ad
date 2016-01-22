@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="310,250" sizebox="0,0,0,0" caption="0,0,0,25" roundcorner="6,6" mininfo="310,250" maxinfo="310,250">
+    <Font name="굴림" size="12" bold="true" italic="false" />
+    <Font name="굴림" size="10" bold="true" italic="false" />
+    <Font name="돋움" size="11" bold="false" italic="false" default="true" />
+    <Font name="돋움" size="12" bold="false" italic="false" />
+    <Font name="돋움" size="10" bold="false" italic="false" />
+    <Default name="VScrollBar" width="17" value="button1normalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,0,17,17&apos;&quot; button1hotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;17,0,34,17,17&apos;&quot; button1pushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;34,0,51,17&apos;&quot; button2normalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,34,17,51&apos;&quot; button2hotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;17,34,34,51&apos;&quot; button2pushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;34,34,51,51&apos;&quot; thumbnormalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,51,17,152&apos; corner=&apos;0,2,0,2&apos;&quot; thumbhotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;17,51,34,152&apos; corner=&apos;0,2,0,2&apos;&quot; thumbpushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;34,51,51,152&apos; corner=&apos;0,2,0,2&apos;&quot; bknormalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,17,17,34&apos;&quot; " />
+    <VerticalLayout name="bg" width="312" height="252" bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1" >
+        <VerticalLayout name="Frame" hole="true" bkimage="file=&apos;popup_skin_bg.png&apos; source='0,0,9,26' corner=&apos;1,25,1,0&apos;">
+            <VerticalLayout name="HeaderLayOut" width="310" height="25"> 
+                <HorizontalLayout name="HeaderHorzLayout">
+	                <HorizontalLayout name="titleTextHlay">
+	                    <Text text="이모티콘" float="true" pos="11,7,0,0" width="94" height="14" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+	                </HorizontalLayout>
+	                <HorizontalLayout name="HeaderRightLayOut" width="90">
+	                    <Button name="closebtn" tooltip="창 닫기" float="true" keyboard="false" pos="67,5,0,0" width="15" height="15" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="btn_closepopup.png" hotimage="btn_closepopup_over.png" pushedimage="btn_closepopup_down.png" />
+	                </HorizontalLayout>
+                </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout name="emoticon" width="310" height="220" bkcolor="#FFFFFFFF">
+                <HorizontalLayout width="310" height="34" >
+                    <Option name="btnrecent" float="true" width="104" height="34" bkimage="file=&apos;popup_tab_bg_02.png&apos; source=&apos;1,0,20,34&apos; corner=&apos;1,1,1,1&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="chat_ico_emotihistory.png" group="contenttab" selectedimage="file=&apos;chat_ico_emotihistory_on.png&apos;" />
+                    <Option name="btnemoticon" text="이모티콘" float="true" pos="103,0,0,0" width="104" height="34" bkimage="file=&apos;popup_tab_bg_02.png&apos; source=&apos;0,0,20,34&apos; corner=&apos;1,1,1,1&apos;" textcolor="#FF969696" disabledtextcolor="#FFA7A6AA" font="0" align="center" group="contenttab" selectedimage="file=&apos;popup_tab_select_04.png&apos; source=&apos;0,0,46,34&apos; corner=&apos;2,1,2,1&apos;" />
+                    <Option name="btnmy" text="내 이모티콘" float="true" pos="206,0,0,0" width="104" height="34" bkimage="file=&apos;popup_tab_bg_02.png&apos; source=&apos;0,0,19,34&apos; corner=&apos;1,1,1,1&apos;" textcolor="#FF969696" disabledtextcolor="#FFA7A6AA" font="0" align="center" group="contenttab" selectedimage="file=&apos;popup_tab_select_04.png&apos; source=&apos;0,0,46,34&apos; corner=&apos;2,1,2,1&apos;" />
+                </HorizontalLayout>
+                <HorizontalLayout name="h_layemoalram" width="310" height="38">
+                    <Text text="나만의 이모티콘을 추가하고 사용해보세요." float="true" pos="15,14,0,0" width="221" height="12" textpadding="2,0,2,0" textcolor="#FF9C9C9C" disabledtextcolor="#FFA7A6AA" font="2" align="wrap" />
+                    <Button name="useremoticon" tooltip="내 이모티콘 추가" float="true" pos="242,9,0,0" width="57" height="20" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="chat_btn_emotiadd.png" hotimage="chat_btn_emotiadd_over.png" pushedimage="chat_btn_emotiadd_down.png" />
+                </HorizontalLayout> 
+                <HorizontalLayout name="FirstLine" width="310" height="1" bkcolor="#FFE9E9E9" />
+                <HorizontalLayout name="EmoListContainer">
+	                <List name="EmoticonList" width="310" inset="0,1,2,0" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" vscrollbar="true">
+	                    <ListHeader width="310" height="1" />
+	                </List>
+	              </HorizontalLayout>
+                <HorizontalLayout name="myhlay1" width="310" height="1" bkcolor="#FFE9E9E9" />
+                <HorizontalLayout name="myhlay2" width="310" height="30" visible="false">
+                    <Button name="useremoticon" float="true" pos="15,5,0,0" width="90" height="20" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="chat_btn_emotiadd_02.png" hotimage="chat_btn_emotiadd_02_over.png" pushedimage="chat_btn_emotiadd_02_down.png" />
+                    <Button name="goemoticonweb" text="이모티콘 게시판 가기" float="true" pos="180,8,0,0" width="128" height="17" textcolor="#009C9C9C" disabledtextcolor="#FFA7A6AA" font="2" align="center" />
+                </HorizontalLayout>
+              <Text name="txtnoitem" visible="false" text="서버연결 오류로 목록을 표시할 수 없습니다." float="true" pos="0,90,0,0" width="310" height="12" textpadding="2,0,2,0" disabledtextcolor="#FFA7A6AA" font="2" align="center"/>
+            </VerticalLayout>
+     			<Control height="5" />
+        </VerticalLayout>
+    </VerticalLayout>
+</Window>

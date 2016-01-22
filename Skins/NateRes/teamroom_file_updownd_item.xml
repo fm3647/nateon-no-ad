@@ -1,0 +1,176 @@
+<!-- Window size="180,70" caption="0,0,0,0" -->
+<Window size="180,62" >
+	<ListContainerElement height="62">
+		<VerticalLayout>
+			<Control height="2" />
+			<HorizontalLayout name="file_up_item" height="60" visible="true" bkcolor="#FF52606B">
+				<!-- file upload item -->
+				<Control width="7" />
+
+				<VerticalLayout width="36" name="file_up_start">
+					<Control height="12" />
+					<Control height="36" bkimage="troom_fileup_ing_blank.png" />
+					<Control height="12" />
+				</VerticalLayout>
+
+				<VerticalLayout width="36" name="file_up_end" visible="false" >
+					<Control height="12" />
+					<Control height="36" bkimage="troom_fileup_ing_fill.png" />
+					<Control height="12" />
+				</VerticalLayout>
+
+				<Control width="6" />
+
+				<VerticalLayout width="131">
+
+					<VerticalLayout height="16">
+						<HorizontalLayout >
+							<Control />
+							<Button name="file_up_close" tooltip="닫기"
+								width="15" height="15" visible="false"
+								normalimage= "troom_bt_closefilelayer.png"
+								hotimage=	 "troom_bt_closefilelayer_over.png"
+								pushedimage= "troom_bt_closefilelayer_down.png" />
+						</HorizontalLayout>
+					</VerticalLayout>
+
+					<VerticalLayout height="12" >
+						<HorizontalLayout >
+							<Label name="file_up_name" height="12"
+									 text="팀룸 전송 파일명"
+									 textcolor="#FFFFFFFF" align="left"
+									 endellipsis="true"
+									 font="10" />
+							<Control width="5" />
+						</HorizontalLayout>
+					</VerticalLayout>
+
+					<Control height="6" />
+
+					<VerticalLayout  height="16" >
+						<HorizontalLayout name="fileupLayout" visible="true" >
+							<Label name="file_up_percent" height="16" width="30"
+									 text="0%"
+									 textcolor="#FF42BFDA" align="left"
+									 endellipsis="true"
+									 font="10" />
+
+							<!-- Control width="5" / -->
+
+							<Button name="file_up_cancel" tooltip="취소하기"
+								width="40" height="16" text="취소" textcolor="#FF42BFDA" font="11"/>
+						</HorizontalLayout>
+
+						<HorizontalLayout name="fileupfailLayout" visible="false" >
+							<Label name="file_up_fail" height="16" width="30"
+									 text="실패!"
+									 textcolor="#FFFF0000" align="left"
+									 font="10" />
+
+							<!-- Control width="5" / -->
+
+							<Button name="file_up_retry" tooltip="재전송"
+								width="40" height="16" text="재전송" textcolor="#FF42BFDA" font="11"/>
+
+							<Control width="5" />
+
+							<!-- Button name="file_up_cancel" tooltip="취소하기" 
+							width="40" height="16" text="취소" textcolor="#FF42BFDA" font="10"/ -->
+						</HorizontalLayout>
+
+					</VerticalLayout>
+
+					<Control height="10" />
+
+				</VerticalLayout>
+			</HorizontalLayout>
+
+			<HorizontalLayout name="file_down_item" height="60" visible="false" bkcolor="#FF52606B">
+				<!-- file download item -->
+				<Control width="7" />
+
+				<VerticalLayout width="36" name="file_down_start">
+					<Control height="12" />
+					<Control height="36" bkimage="troom_filedown_ing_blank.png" />
+					<Control height="12" />
+				</VerticalLayout>
+
+				<VerticalLayout width="36" name="file_down_end" visible="false" >
+					<Control height="12" />
+					<Control height="36" bkimage="troom_filedown_ing_fill.png"/>
+					<Control height="12" />
+				</VerticalLayout>
+
+				<Control width="6" />
+
+				<VerticalLayout width="131">
+
+					<VerticalLayout height="16">
+						<HorizontalLayout >
+							<Control />
+							<Button name="file_down_close" tooltip="닫기"
+								width="15" height="15" visible="false"
+								normalimage= "troom_bt_closefilelayer.png"
+								hotimage=	 "troom_bt_closefilelayer_over.png"
+								pushedimage= "troom_bt_closefilelayer_down.png" />
+						</HorizontalLayout>
+					</VerticalLayout>
+
+					<VerticalLayout height="12" >
+						<HorizontalLayout>
+							<Label name="file_down_name" height="12"
+									 text="팀룸 전송 파일명"
+									 textcolor="#FFFFFFFF" align="left"
+									 endellipsis="true"
+									 font="10" />
+							<Control width="5" />
+						</HorizontalLayout>
+					</VerticalLayout>
+
+					<Control height="6" />
+
+					<VerticalLayout  height="16" >
+						<HorizontalLayout name="filedownLayout" visible="true" >
+							<Label name="file_down_percent" height="16" width="30"
+									 text="0%"
+									 textcolor="#FF42BFDA" align="left"
+									 endellipsis="true"
+									 font="10" />
+
+							<!-- Control width="5" / -->
+
+							<Button name="file_down_cancel" tooltip="취소하기"
+								width="40" height="16" text="취소" textcolor="#FF42BFDA" font="11"/>
+						</HorizontalLayout>
+
+						<HorizontalLayout name="filedownEndLayout" visible="false" >
+							<Button name="file_down_open" tooltip="열기"
+								width="40" height="16" text="열기"  align="left" textcolor="#FF42BFDA" font="11"/>
+						</HorizontalLayout >
+
+						<HorizontalLayout name="filedownfailLayout" visible="false" >
+							<Label name="file_down_fail" height="16" width="30"
+									 text="실패!"
+									 textcolor="#FFFF0000" align="left"
+									 font="10" />
+
+							<!-- Control width="5" / -->
+
+							<Button name="file_down_retry" tooltip="다시받기"
+								width="50" height="16" text="다시받기" textcolor="#FF42BFDA" font="11"/>
+
+							<Control width="5" />
+
+							<!-- Button name="file_down_cancel" tooltip="취소하기" 
+							width="40" height="16" text="취소" textcolor="#FF42BFDA" font="10"/ -->
+						</HorizontalLayout >
+
+					</VerticalLayout>
+
+					<Control height="10" />
+
+				</VerticalLayout>
+			</HorizontalLayout>
+		</VerticalLayout>
+	</ListContainerElement>
+</Window>

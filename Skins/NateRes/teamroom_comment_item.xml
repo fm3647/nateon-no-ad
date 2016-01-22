@@ -1,0 +1,98 @@
+<Window>
+	<ListContainerElement  height="50" name="comment_item">
+    <HorizontalLayout>
+      <Control width="15" />
+		  <VerticalLayout>
+			  <HorizontalLayout height="27">
+				  <Control width="5" />
+				  <VerticalLayout width="13">
+					  <Control height="15" />
+					  <Control height="11" bkimage="troom_bl_comment.png"/>
+					  <Control />
+				  </VerticalLayout>
+				  <VerticalLayout name="comment_name_area" width="41">
+					  <Control height="15" />
+					  <Label name="comment_name" 
+						     height="12"
+						     text="이수연" 
+									 width="41"
+									 endellipsis="true"
+						     textcolor="#FF333333" 
+						     font="7" 
+						     align="left" 
+					  />
+					  <Control />
+				  </VerticalLayout>
+				  <Control width="5" />
+				  <VerticalLayout name="comment_time_area" width="150">
+					  <Control height="16" />
+					  <Label name="comment_time" 
+					         height="12"  
+						     text="2015/12/11 (수) 오전 02:00" 
+						     font="10" 
+						     align="left"
+						     textcolor="#FFB9B9B9" 
+					  />
+					  <Control />
+				  </VerticalLayout>
+				  <Control  />
+				  <VerticalLayout width="51">
+					  <Control height="10" />
+            <HorizontalLayout width="51">
+              <HorizontalLayout height="16" width="19">
+                <Button name="comment_delete"
+                        bkimage="troom_ic_delete.png"
+                        height="16"
+							          width="16"
+												tooltip="삭제하기"
+						      />
+                <Control width="3" />
+              </HorizontalLayout>
+					    <HorizontalLayout height="16" width="35">
+						    <Button name="comment_impo" 
+                        bkimage="troom_ic_flag_off.png"
+                        height="16"
+							          width="16"
+						    />
+                <Control width="3" />
+                <Button name="comment_favo"
+                        bkimage="troom_ic_scrap_off.png"
+                        height="16"
+							          width="16"
+						    />
+					    </HorizontalLayout>
+            </HorizontalLayout>
+				  </VerticalLayout>
+				  <Control width="5" />
+			  </HorizontalLayout>
+			  <Control height="7" />
+        <HorizontalLayout>
+          <Control width="15" />
+          <HorizontalLayout defaultHeight="39" defaultWidth="270" name="comment_msg_layout">
+            <!--<BubbleText name="comment_msg" 
+				  	    text="" 
+				  	    lineinterval="3" 
+				  	    font="8" 
+				  	    defaultHeight="39" 
+                defaultWidth="300"
+				  	    textpadding="13,0,5,0"
+	              />-->
+          </HorizontalLayout>
+        </HorizontalLayout>
+			  <Control height="5" />
+		  </VerticalLayout>
+      <Control width="5" />
+    </HorizontalLayout>
+	</ListContainerElement>
+</Window>
+
+<!--
+	<EllipsisText name="comment_msg" 
+				  	text="이것은 중요한 메시지입중요 이것은 중요한 메시지입중요이것은 중요한 메시지입중요이것은 중요한 메시지입중요 ㄴ매ㅑㅓ래ㅑ더레ㅑㅁㅂ저대ㅑ러제ㅐㅑㅓㄷ레ㅐ댜ㅓ래데ㅑㅓ레ㅑㅐ더래ㅑㅓ대랴ㅓ대ㅑㅓㄹ대ㅑㅓ래ㅑ더래ㅑ더ㅐ랴ㅓ대ㅑㅓ래댜ㅓ래ㅑ더래ㅑㅓ대ㅑ러대ㅑ래댜ㅓ래ㅑ더래ㅑ더ㅐㅑㄹ대ㅑ러대ㅑ래댜ㅓ래ㅑ더래ㅑㅓㅋ;트추파ㅡㅋ;ㅣㅏ츺;ㅣ카틏ㅍ;ㅣㅏㅡㅋㅌㅊ;ㅣㅏ프;ㅋ티ㅏ츠;ㅏㅣㅡ;" 
+				  	lineinterval="3" 
+				  	font="8" 
+				  	defaultHeight="39" 
+            defaultWidth="300"
+				  	textpadding="13,0,5,0"
+	/>
+  -->

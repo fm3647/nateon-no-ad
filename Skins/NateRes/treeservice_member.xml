@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="300,370" caption="0,0,0,29">
+	
+	<Font name="돋움"   size="12" bold="false" default="true"/>
+	<Font name="돋움"   size="12" bold="true" />
+	<Font name="굴림"   size="12" bold="false" />
+	<Font name="돋움"   size="11" bold="false" />
+	
+	<HorizontalLayout bkcolor="#FFffffff" bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1">
+		<VerticalLayout hole="true" bkimage="file='popup_skin_bg.png' source='0,0,9,26' corner='1,25,1,0'">
+			<HorizontalLayout height="25" >
+				<Control width="10" />
+				<VerticalLayout>
+					<Control />
+					<Label name="add_caption"  
+						   text="트리멤버 추가" 
+						   font="1" textcolor="#FF333333" 
+						   height="12" 
+						   visible="false" 
+					/>
+					<Label name="modify_caption"  
+						   text="트리멤버 프로필 수정" 
+						   font="1" textcolor="#FF333333" 
+						   height="12" 
+						   visible="false" 
+					/>
+					<Label name="profile_caption"  
+						   text="트리멤버 프로필 보기" 
+						   font="1" textcolor="#FF333333" 
+						   height="12" 
+						   visible="false" 
+					/>
+					<Control />
+				</VerticalLayout>
+				<VerticalLayout width="15">
+					<Control />
+					<Button name="closebtn" 
+						    width="15" height="15"
+						    normalimage= "btn_closepopup.png"
+						    hotimage=	 "btn_closepopup_over.png"
+						    pushedimage= "btn_closepopup_down.png"
+					/>
+					<Control />
+				</VerticalLayout>
+				<Control width="6" />
+			</HorizontalLayout>
+			<Control height="1" />
+
+			<Control height="20" />
+
+			<HorizontalLayout height="232">
+				<Control width="20" />
+				<VerticalLayout>
+					<HorizontalLayout height="22">
+						<VerticalLayout width="78">
+							<Control />
+							<Label text="네이트온ID" 
+								   height="12" 
+								   textcolor="#FF31aed8" 
+								   font="0" 
+								   align="left"
+							/>
+							<Control />
+						</VerticalLayout>
+						<Edit name="id" 
+							  height="22" 
+							  bkimage="file='inputbox_01.png' corner='3,4,1,1'" 
+							  text="ID 입력하세요." 
+							  textpadding="4,1,4,0" 
+							  textcolor="#FF999999" 
+							  disabledtextcolor="#FF333333" 
+							  font="0" 
+							  align="left" 
+							  endellipsis="true" 
+						/>
+						<HorizontalLayout width="44" name="comfirm_layout" visible="false">
+							<Control width="3" />
+							<VerticalLayout width="41">
+								<Control height="1" />
+								<Button name="comfirm" 
+									    width="41" height="20" 
+									    normalimage= "btn_pop_idconfirm.png" 
+									    hotimage=	 "btn_pop_idconfirm_over.png" 
+									    pushedimage= "btn_pop_idconfirm_down.png"
+								/>
+							</VerticalLayout>
+						</HorizontalLayout>
+					</HorizontalLayout>
+					<Control height="8" />
+					<HorizontalLayout height="22">
+						<VerticalLayout >
+							<Control />
+							<Label text="이름" 
+								   height="12" 
+								   textcolor="#FF888888" 
+								   font="0" 
+								   align="left"
+							/>
+							<Control />
+						</VerticalLayout>
+						<HorizontalLayout name="master_badge" width="18" visible="false">
+							<VerticalLayout>
+								<Control />
+								<Control height="13" bkimage="tree_ico_master.png" 
+										 tooltip="마스터" />
+								<Control />
+							</VerticalLayout>
+							<Control width="5" />
+						</HorizontalLayout>
+						<Label name="name" 
+							   height="22" width="180" 
+							   bkimage="file='inputbox_01.png' corner='3,4,1,1'" 
+							   text="ID 확인 시 자동입력됩니다." 
+							   textpadding="4,1,4,0" 
+							   textcolor="#FF999999" 
+							   disabledtextcolor="#FF333333" 
+							   font="0" 
+							   align="left" 
+							   endellipsis="true" 
+						/>
+					</HorizontalLayout>
+					<Control height="8" />
+					<HorizontalLayout height="22">
+						<VerticalLayout >
+							<Control />
+							<Label text="그룹" 
+								   height="12" 
+								   textcolor="#FF888888" 
+								   font="0" 
+								   align="left"
+							/>
+							<Control />
+						</VerticalLayout>
+						<Button name="group" 
+							    height="22" width="180" 
+							    bkimage="file='inputbox_01.png' corner='3,4,1,1'"
+							    text="그룹을 선택하세요" 
+							    textpadding="4,1,4,0" 
+							    textcolor="#FFbbbbbb" 
+							    disabledtextcolor="#FF333333" 
+							    font="0" 
+							    align="left" 
+							    endellipsis="true" 
+						/>
+					</HorizontalLayout>
+					<Control height="8" />
+					<HorizontalLayout height="22">
+						<VerticalLayout>
+							<Control />
+							<Label text="직급/직책" 
+								   height="12" 
+								   textcolor="#FF888888" 
+								   font="0" 
+								   align="left"
+							/>
+							<Control />
+						</VerticalLayout>
+						<Edit name="position" 
+							  height="22" width="180" 
+							  bkimage="file='inputbox_01.png' corner='3,4,1,1'" 
+							  textpadding="4,1,4,0" 
+							  textcolor="#FF333333" 
+							  disabledtextcolor="#FF333333" 
+							  font="0" 
+							  align="left" 
+							  maxchar="20" 
+						/>
+					</HorizontalLayout>
+					<Control height="8" />
+					<HorizontalLayout height="22">
+						<VerticalLayout>
+							<Control />
+							<Label text="휴대폰번호" 
+								   height="12" 
+								   textcolor="#FF888888" 
+								   font="0" 
+								   align="left"
+							/>
+							<Control />
+						</VerticalLayout>
+						<Edit name="mobile" 
+							  height="22" width="180" 
+							  bkimage="file='inputbox_01.png' corner='3,4,1,1'" 
+							  text="숫자만 입력해 주세요." 
+							  textpadding="4,1,4,0" 
+							  textcolor="#FFbbbbbb" 
+							  disabledtextcolor="#FF333333" 
+							  font="0" 
+							  align="left" 
+							  numberonly="true" 
+							  maxchar="20" 
+						/>
+					</HorizontalLayout>
+					<Control height="8" />
+					<HorizontalLayout height="22">
+						<VerticalLayout>
+							<Control />
+							<Label text="전화번호" 
+								   height="12" 
+								   textcolor="#FF888888" 
+								   font="0" 
+								   align="left"
+							/>
+							<Control />
+						</VerticalLayout>
+						<Edit name="phone" 
+							  height="22" width="180" 
+							  bkimage="file='inputbox_01.png' corner='3,4,1,1'" 
+							  text="숫자만 입력해 주세요." 
+							  textpadding="4,1,4,0" 
+							  textcolor="#FFbbbbbb" 
+							  disabledtextcolor="#FF333333" 
+							  font="0" 
+							  align="left" 
+							  numberonly="true" 
+							  maxchar="20" 
+						/>
+					</HorizontalLayout>
+					<Control height="8" />
+					<HorizontalLayout height="22">
+						<VerticalLayout>
+							<Control />
+							<Label text="이메일" 
+								   height="12" 
+								   textcolor="#FF888888" 
+								   font="0" 
+								   align="left"
+							/>
+							<Control />
+						</VerticalLayout>
+						<Edit name="email" 
+							  height="22" width="180" 
+							  bkimage="file='inputbox_01.png' corner='3,4,1,1'" 
+							  textpadding="4,1,4,0" 
+							  textcolor="#FF333333" 
+							  disabledtextcolor="#FF333333" 
+							  font="0" 
+							  align="left" 
+							  endellipsis="true" 
+							  maxchar="100" 
+						/>
+					</HorizontalLayout>
+					<Control height="8" />
+					<HorizontalLayout height="22">
+						<VerticalLayout>
+							<Control />
+							<Label text="주요업무" 
+								   height="12" 
+								   textcolor="#FF888888" 
+								   font="0" 
+								   align="left"
+							/>
+							<Control />
+						</VerticalLayout>
+						<Edit name="job" 
+							  height="22" width="180" 
+							  bkimage="file='inputbox_01.png' corner='3,4,1,1'" 
+							  textpadding="4,1,4,0" 
+							  textcolor="#FF333333" 
+							  disabledtextcolor="#FF333333" 
+							  font="0" 
+							  maxchar="100" 
+							  align="left" 
+							  endellipsis="true" 
+						/>
+					</HorizontalLayout>
+				</VerticalLayout>
+				<Control width="20" />
+			</HorizontalLayout>
+			
+			<VerticalLayout name="add_layout" height="68" visible="false">
+				<Control height="15" />
+				<Label height="11" 
+					   text="상대방이 트리초대에 수락을 해야만 멤버가 됩니다." 
+					   textcolor="#FF31aed8" 
+					   font="3" 
+					   align="center"
+				/>
+				<Control height="20" />
+				<HorizontalLayout height="22">
+					<Control />
+					<Button name="btn_invite_ok" 
+						    height="22" width="112" 
+						    normalimage= "btn_pop_invitetotree_s.png" 
+						    hotimage=	 "btn_pop_invitetotree_s_over.png" 
+						    pushedimage= "btn_pop_invitetotree_s_down.png" 
+					/>
+					<Control width="5" />
+					<Button name="btn_invite_cancel" 
+						    height="22" width="40" 
+						    normalimage= "btn_pop_cancel_s.png" 
+						    hotimage=	 "btn_pop_cancel_s_over.png" 
+						    pushedimage= "btn_pop_cancel_s_down.png" 
+					/>
+					<Control />
+				</HorizontalLayout>
+			</VerticalLayout>
+
+			<VerticalLayout name="modify_layout" height="44" visible="false">
+				<Control height="20" />
+				<HorizontalLayout height="22">
+					<Control />
+					<Button name="btn_modify_ok" 
+						    height="22" width="40" 
+						    normalimage= "btn_pop_edit_s.png" 
+						    hotimage=	 "btn_pop_edit_s_over.png" 
+						    pushedimage= "btn_pop_edit_s_down.png" 
+					/>
+					<Control width="5" />
+					<Button name="btn_modify_cancel" 
+						    height="22" width="40" 
+						    normalimage= "btn_pop_cancel_s.png" 
+						    hotimage=	 "btn_pop_cancel_s_over.png" 
+						    pushedimage= "btn_pop_cancel_s_down.png"
+					/>
+					<Control />
+				</HorizontalLayout>
+			</VerticalLayout>
+
+			<VerticalLayout name="profile_layout" height="44" visible="false">
+				<Control height="20" />
+				<HorizontalLayout height="22">
+					<Control />
+					<Button name="btn_profile_close" 
+						    height="22" width="40" 
+						    normalimage= "btn_pop_close_s.png" 
+						    hotimage=	 "btn_pop_close_s_over.png" 
+						    pushedimage= "btn_pop_close_s_down.png"
+					/>
+					<Control />
+				</HorizontalLayout>
+			</VerticalLayout>
+
+			<Control />
+		</VerticalLayout>
+	</HorizontalLayout>
+</Window>

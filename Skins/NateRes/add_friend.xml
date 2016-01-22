@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="380,400" caption="0,0,0,25">
+	<Font name="굴림" size="12" bold="true" italic="false" default="true" />
+	<Font name="돋움" size="12" bold="false" italic="false" />
+	<Font name="돋움" size="11" bold="false" italic="false" />
+	<Font name="Verdana" size="10" bold="false"/>
+	<Font name="Tahoma" size="9" bold="false" />
+	
+	<Default name="VScrollBar" width="17" value="button1normalimage=&quot;file='scrollbar.png' source='0,0,17,17'&quot; button1hotimage=&quot;file='scrollbar.png' source='17,0,34,17,17'&quot; button1pushedimage=&quot;file='scrollbar.png' source='34,0,51,17'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,34,17,51'&quot; button2hotimage=&quot;file='scrollbar.png' source='17,34,34,51'&quot; button2pushedimage=&quot;file='scrollbar.png' source='34,34,51,51'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,51,17,152' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='17,51,34,152' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='34,51,51,152' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,17,17,34'&quot; " />
+	<HorizontalLayout name="RootTop" bkcolor="FFffffff" bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1">
+		<VerticalLayout name="root" hole="true" bkimage="file='popup_skin_bg.png' source='0,0,9,26' corner='1,25,1,0'">
+			<HorizontalLayout height="25">
+				<Control width="10" />
+				<VerticalLayout width="100">
+					<Control height="7" />
+					<VerticalLayout height="12">
+						<Label name="AddFriend"	text="친구 추가" font="0" textcolor="#FF222222" width="100" height="12" />
+					</VerticalLayout>
+					<Control height="5" />
+				</VerticalLayout>
+				<Control width="247" />
+				<VerticalLayout width="15">
+					<Control height="5" />
+					<VerticalLayout height="15">
+						<Button name="closebtn" tooltip="창 닫기" float="true" width="15" height="15" normalimage="btn_closepopup.png" hotimage="btn_closepopup_over.png" pushedimage="btn_closepopup_down.png" />
+					</VerticalLayout>
+					<Control height="5" />
+				</VerticalLayout>
+				<Control witdh="4" />
+			</HorizontalLayout>
+			<VerticalLayout height="41" hole="true">
+				<Option name="BtnRecomBuddy" float="true" pos="0, 0, 126, 41" group="Tab_Content" text="친구추천" textcolor="#FF969696" textpadding="0,0,0,7" width="127" height ="41" normalimage="file='popup_tab_bg.png' source='1,0,19,41' corner='2, 2, 2, 2'" pushedimage="file='popup_tab_select_03.png' source='2,0,127,41'" selectedimage="file='popup_tab_select_03.png' source='2,0,127,41'" />
+				<Button name="BtnRecomBadge" mouse="false" visible="false" float="true" pos="92, 9, 113, 24" width="15" height="15" font="4" textcolor="#FFFFFFFF" normalimage="file='ico_badge_num.png' corner='5,0,5,0'" textpadding="0,0,0,2"/>
+				<Option name="BtnFindBuddy" float="true" pos="125, 0, 252, 41" group="Tab_Content" text="친구찾기" textcolor="#FF969696" textpadding="0,0,0,7" width="127" height ="41" normalimage="file='popup_tab_bg.png' corner='2, 2, 2, 2'" pushedimage="file='popup_tab_select_03.png' source='1,0,126,41'" selectedimage="file='popup_tab_select_03.png' source='1,0,126,41'" />
+				<Button name="BtnFindBadge" mouse="false" visible="false" float="true" pos="223, 9, 239, 24" width="15" height="15" font="4" textcolor="#FFFFFFFF" normalimage="file='ico_badge_num.png' corner='5,0,5,0'" textpadding="0,0,0,2"/>
+				<Option name="BtnAllowBuddy" float="true" pos="251, 0, 378, 41" group="Tab_Content" text="친구요청" textcolor="#FF969696" textpadding="0,0,0,7" width="127" height ="41" normalimage="file='popup_tab_bg.png' source='0,0,18,41' corner='2, 2, 2, 2'" pushedimage="file='popup_tab_select_03.png' source='1,0,126,41'" selectedimage="file='popup_tab_select_03.png' source='1,0,126,41'" />
+				<Button name="BtnAllowBadge" mouse="false"  visible="false" float="true" pos="344, 9, 365, 24" width="15" height="15" font="4" textcolor="#FFFFFFFF" normalimage="file='ico_badge_num.png' corner='5,0,5,0'" textpadding="0,0,0,2"/>
+			</VerticalLayout>
+			<VerticalLayout height="333" hole="true">
+				<HorizontalLayout>
+					<TabLayout name="TabView">
+						<HorizontalLayout>
+							<RecomBuddy />
+						</HorizontalLayout>
+						<HorizontalLayout>
+							<FindBuddy />
+						</HorizontalLayout>
+						<HorizontalLayout>
+							<AllowBuddy />
+						</HorizontalLayout>
+					</TabLayout>
+				</HorizontalLayout>
+			</VerticalLayout>
+		</VerticalLayout>
+	</HorizontalLayout>
+</Window>

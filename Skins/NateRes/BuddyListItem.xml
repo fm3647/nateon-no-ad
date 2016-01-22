@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="100,30" caption="0,0,0,0" roundcorner="10,10">
+	<Font name="굴림" size="16" bold="true"		italic="false" />
+	<Font name="굴림" size="15" bold="true"		italic="false" />
+	<Font name="굴림" size="13" bold="true"		italic="false" />
+	<Font name="굴림" size="13" bold="true"		italic="false" />
+	<Font name="굴림" size="12" bold="false" 	italic="false" />
+	<Font name="굴림" size="11" bold="false" 	italic="false" />
+	<ListContainerElement height="30" name="item">
+		<HorizontalLayout width="100" height="30">
+			<VerticalLayout width="1" />
+			<VerticalLayout maxwidth="98" height="30">
+				<Label 	name="BuddyName" text=" " height="30" align="center" textpadding="0,0,0,0" textcolor="#FF000000" font="3" />
+			</VerticalLayout>
+			<VerticalLayout width="1" />
+		</HorizontalLayout>
+	</ListContainerElement>
+</Window>

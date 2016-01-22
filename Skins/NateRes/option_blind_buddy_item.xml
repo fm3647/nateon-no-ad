@@ -1,0 +1,87 @@
+<Window size="353,38" caption="0,0,0,0">
+	<Font name="굴림" 		size="12" bold="false" default="true" />
+	<Font name="돋움" 		size="12" bold="true" />
+	<Font name="굴림" 		size="12" bold="true" />
+	<Font name="Tahoma" 	size="10" bold="false" />
+	<Font name="돋움" 		size="12" bold="false" />
+	<Font name="돋움" 		size="11" bold="false" />
+	<Font name="돋움" 		size="11" bold="false" extra="-1" />
+	<ListContainerElement height="38">
+		<VerticalLayout width="353" height="38">
+			<HorizontalLayout height="37">
+				<Control width="20" />
+				<VerticalLayout width="25">
+					<Control height="6" />
+					<VerticalLayout height="25" name="profilephoto" bkimage="file='buddy_profile_default.png' makecorner='100,100,100,100'"/>
+					<VerticalLayout height="25" name="profilephotoFrame" float="true" pos="0,6,25,31"  bkimage="file='profileimg_frame.png'"/>
+					<Control height="6" />
+				</VerticalLayout>
+				<Control width="10" />
+				<VerticalLayout width="37">
+					<Control height="13" />
+					<VerticalLayout height="11">
+						<Label name="nameLabel" text="이름" 
+							   align="left" font="5" textcolor="#FF333333" 
+							   width="37"
+							   height="11" 
+							   endellipsis="true"
+						/>
+					</VerticalLayout>
+					<Control height="13" />
+				</VerticalLayout>
+				<Control width="5" />
+				<VerticalLayout width="141">
+					<Control height="12" />
+					<VerticalLayout height="13">
+						<Label name="idLabel" text="아이디" 
+							   align="left" font="3" textcolor="#FFbbbbbb" 
+							   width="149"
+							   height="13" 
+							   endellipsis="true" 
+						/>
+					</VerticalLayout>
+					<Control height="12" />
+				</VerticalLayout>
+				<VerticalLayout width="55">
+					<Control height="7" />
+					<VerticalLayout height="22">
+						<Button name="unblindBtn" float="true" align="center"
+							    width="55" height="22"
+							    normalimage= "btn_clear_hide.png"
+							    hotimage=	 "btn_clear_hide_over.png"
+							    pushedimage= "btn_clear_hide_down.png"
+						/>
+					</VerticalLayout>
+					<Control height="8" />
+				</VerticalLayout>
+				<VerticalLayout width="40">
+					<Control height="7" />
+					<VerticalLayout height="22">
+						<Button name="blockBtn" float="true" align="center"
+							    width="40" height="22"
+							    normalimage= "btn_popup_blockfriends.png"
+							    hotimage=	 "btn_popup_blockfriends_over.png"
+							    pushedimage= "btn_popup_blockfriends_down.png"
+						/>
+					</VerticalLayout>
+					<Control height="8" />
+				</VerticalLayout>
+				<!-- VerticalLayout width="32">
+					<Control height="7" />
+					<VerticalLayout height="22">
+						<Button name="removeBtn" float="true" align="center"
+							    width="32" height="22"
+							    normalimage= "btn_delete.png"
+							    hotimage=	 "btn_delete_over.png"
+							    pushedimage= "btn_delete_down.png"
+							    disabledimage= "btn_delete_dim.png"
+						/>
+					</VerticalLayout>
+					<Control height="8" />
+				</VerticalLayout -->
+				<Control width="20" />
+			</HorizontalLayout>
+			<Control height="1" bkcolor="#FFf2f2f2" />
+		</VerticalLayout>
+	</ListContainerElement>
+</Window>

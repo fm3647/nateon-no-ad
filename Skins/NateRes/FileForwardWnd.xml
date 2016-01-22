@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="380,275" sizebox="2,2,2,2" caption="0,0,0,25" roundcorner="6,6">
+    <Font name="굴림" size="12" bold="true" italic="false" />
+    <Font name="돋움" size="12" bold="false" italic="false" />
+    <Font name="돋움" size="11" bold="false" italic="false" default="true" />
+    <Font name="돋움" size="10" bold="false" italic="false" />
+    <Default name="VScrollBar" width="17" value="button1normalimage=&quot;file='scrollbar_s.png' source='0,0,17,17'&quot; button1hotimage=&quot;file='scrollbar_s.png' source='17,0,34,17,17'&quot; button1pushedimage=&quot;file='scrollbar_s.png' source='34,0,51,17'&quot; button2normalimage=&quot;file='scrollbar_s.png' source='0,34,17,51'&quot; button2hotimage=&quot;file='scrollbar_s.png' source='17,34,34,51'&quot; button2pushedimage=&quot;file='scrollbar_s.png' source='34,34,51,51'&quot; thumbnormalimage=&quot;file='scrollbar_s.png' source='0,51,17,152' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar_s.png' source='17,51,34,152' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar_s.png' source='34,51,51,152' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar_s.png' source='0,17,17,34'&quot; " />
+    <HorizontalLayout name="bg" width="382" height="277" bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1">
+        <VerticalLayout width="380" height="275" bkimage="file=&apos;popup_skin_bg.png&apos; corner=&apos;5,80,5,27&apos;">
+            <HorizontalLayout width="380" height="25">
+                <HorizontalLayout name="titleTextHlay" width="163" height="25">
+                    <Text text="전달하기" float="true" pos="11,7,0,0" width="94" height="14" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                </HorizontalLayout>
+                <VerticalLayout width="100" height="2" />
+                <VerticalLayout height="2" />
+                <VerticalLayout />
+                <VerticalLayout width="96">
+                    <Button name="minbtn" float="true" pos="55,5,0,0" width="15" height="15" maxheight="15" maxwidth="15" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="2" align="center" normalimage="file=&apos;btn_minimizepopup.png&apos;" hotimage="btn_minimizepopup_over.png" pushedimage="btn_minimizepopup_down.png" />
+                    <Button name="closebtn" float="true" pos="75,5,0,0" width="15" height="15" maxheight="15" maxwidth="15" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="2" align="center" normalimage="file=&apos;btn_closepopup.png&apos;" hotimage="btn_closepopup_over.png" pushedimage="btn_closepopup_down.png" />
+                </VerticalLayout>
+            </HorizontalLayout>
+            <VerticalLayout height="250" bkcolor="#FFFFFFFF">
+                <HorizontalLayout name="h_layup" width="380" height="64">
+                    <Button name="image" float="true" pos="20,17,0,0" width="32" height="32" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                    <VerticalLayout width="320" height="64" padding="60,0,0,0">
+                        <Text name="filename" float="true" pos="0,21,0,0" width="298" height="14" textpadding="2,0,2,0" align="wrap" />
+                        <Text name="fileSize" float="true" pos="0,38,0,0" width="298" height="14" textpadding="2,0,2,0" align="wrap" />
+                    </VerticalLayout>
+                </HorizontalLayout>
+                <VerticalLayout name="v_laymid" width="380" height="1" bkcolor="#FFDADADA" />
+                <HorizontalLayout name="h_laydown" width="380" height="186">
+                    <VerticalLayout width="52" height="183" padding="20,0,0,0">
+                        <Text text="받는 사람" float="true" pos="0,17,0,0" width="55" height="13" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+                    </VerticalLayout>
+                    <VerticalLayout width="308" height="186">
+                        <Button name="addbuddy" float="true" pos="17,11,0,0" width="48" height="20" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="btn_s_selectbuddy.png" hotimage="btn_s_selectbuddy_over.png" />
+                        <List name="buddylist" width="275" height="75" padding="17,39,0,0" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" header="hidden" vscrollbar="true">
+                            <ListHeader />
+                        </List>
+                        <HorizontalLayout width="308" height="30" padding="0,25,0,0">
+                            <Button name="forward" float="true" pos="77,0,0,0" width="56" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="btn_pop_send.png" hotimage="btn_pop_send_over.png" />
+                            <Button name="cancel" float="true" pos="138,0,0,0" width="55" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="btn_pop_cancel.png" hotimage="btn_pop_cancel_over.png" />
+                        </HorizontalLayout>
+                    </VerticalLayout>
+                </HorizontalLayout>
+                <Text name="notitext" visible="false" float="true" pos="107,82,0,0" width="157" height="16" textpadding="2,0,2,0" align="wrap" />
+                <Button name="btnfail" text="재시도" visible="false" float="true" pos="159,138,0,0" width="54" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                <Button name="btnsucces" text="메시지함 열기" visible="false" float="true" pos="140,138,0,0" width="93" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+            </VerticalLayout>
+        </VerticalLayout>
+    </HorizontalLayout>
+</Window>

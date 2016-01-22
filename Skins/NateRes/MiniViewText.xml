@@ -1,0 +1,50 @@
+
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<Window size="210,10">
+
+    <ListContainerElement name="BubbleTheirVerticalLayout" height="10" inset="0,6,0,0">
+	
+        <VerticalLayout>
+            <HorizontalLayout>
+				
+				<VerticalLayout name="IndentVerticalLayout" width="30">
+				
+					<HorizontalLayout width="30" >
+						<Label name="EmptyLabel" width="10" height="10" text=""/>
+						<!-- Label name="IndentLabel" width="20" height="10"  align="vcenter"
+							text="●" textcolor="#FF9C9C9C" disabledtextcolor="#FFA7A6AA" font="2"/ -->
+						<Label name="IndentLabel" width="20" height="10"  align="vcenter"
+							text="•" textcolor="#FF9C9C9C" disabledtextcolor="#FFA7A6AA" font="2"/>	
+					</HorizontalLayout>
+						
+                </VerticalLayout>
+				
+                <!-- HorizontalLayout width="3">				
+                </HorizontalLayout -->
+				
+				<HorizontalLayout>
+                    <VerticalLayout>
+                        <VerticalLayout>
+						
+                            <HorizontalLayout>
+
+								<HorizontalLayout name="BubbleVerticalLayout" inset="0,0,0,0">
+                                    <BubbleText name="BubbleContent" font="0"  parsingemoticon="true" 
+                                                text="[대화내용]" textcolor="#FF000000" textpadding="0,0,0,0"/>
+                                </HorizontalLayout>
+								
+                                <HorizontalLayout name="MessageRightExtra" width="10" />
+
+                            </HorizontalLayout>
+							
+                        </VerticalLayout>
+                    </VerticalLayout>
+                </HorizontalLayout>
+				
+            </HorizontalLayout>
+        </VerticalLayout>
+		
+    </ListContainerElement>
+	
+</Window>

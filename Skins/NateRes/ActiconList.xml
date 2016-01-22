@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+  <ListContainerElement name="ListElement" width="320" height="71" bkcolor="#FFFFFFFF">
+    <HorizontalLayout name="h_lay" bkcolor="#006B93B2">
+      <HorizontalLayout name="h_layitem0" width="90" height="66" padding="11,5,0,0" />
+      <HorizontalLayout name="h_layitem1" width="90" height="66" padding="4,5,0,0" />
+      <HorizontalLayout name="h_layitem2" width="90" height="66" padding="4,5,0,0" />
+    </HorizontalLayout>
+  </ListContainerElement>
+</Window>

@@ -1,0 +1,83 @@
+
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<!-- Window size="210,30" -->
+<Window>
+
+    <ListContainerElement name="BubbleFileMineVerticalLayout" height="38" inset="0,6,0,0">
+	
+        <VerticalLayout>
+            <HorizontalLayout height="16">
+				
+				<VerticalLayout name="IndentVerticalLayout" height="16" width="30" inset="0,3,0,0">				
+					<HorizontalLayout width="30" >
+						<Label name="EmptyLabel" width="10" height="10" text=""/>
+						<!-- Label name="IndentLabel" width="20" height="10"  align="vcenter"
+							text="●" textcolor="#FF9C9C9C" disabledtextcolor="#FFA7A6AA" font="2"/ -->
+						<Label name="IndentLabel" width="20" height="10"  align="vcenter"
+							text="•" textcolor="#FF9C9C9C" disabledtextcolor="#FFA7A6AA" font="2"/>	
+					</HorizontalLayout>						
+                </VerticalLayout>
+				                	
+				
+				<VerticalLayout height="16">
+					<HorizontalLayout height="16">
+						<Label name="FileInfoLabel" text="[파일이름]" height="16" endellipsis="true" textcolor="#FF222222" disabledtextcolor="#FF222222" font="5" />
+					</HorizontalLayout>
+				</VerticalLayout>									
+            </HorizontalLayout>					
+			
+			<HorizontalLayout height="16">
+				<VerticalLayout width="30">
+				</VerticalLayout>
+				
+				<VerticalLayout height="16" name="DownloadLayout">
+					<HorizontalLayout>					
+						<HorizontalLayout maxwidth="160">
+						
+							<HorizontalLayout name="ReadyLayout" width="129" >
+								<Button name="FileSaveButton" width="31" keyboard="false" text="저장" textpadding="2,0,2,0" textcolor="#FF0000FF" disabledtextcolor="#FFA7A6AA" font="3" align="left" />
+								<Button name="FileSaveOtherButton" width="98" text="다른이름으로 저장" endellipsis="true" keyboard="false" textpadding="2,0,2,0" textcolor="#FF0000FF" disabledtextcolor="#FFA7A6AA" font="3" align="left"/>
+							</HorizontalLayout>
+							
+							<HorizontalLayout name="CompleteLayout" width="62" visible="false">
+								<Button name="OpenFileButton" width="31" keyboard="false" text="열기" textpadding="2,0,2,0" textcolor="#FF0000FF" disabledtextcolor="#FFA7A6AA" font="3" align="left" />
+								<Button name="OpenFolderButton" width="31" keyboard="false" text="폴더" textpadding="2,0,2,0" textcolor="#FF0000FF" disabledtextcolor="#FFA7A6AA" font="3" align="left" />							
+							</HorizontalLayout>
+							
+							<Button name="FileShareButton" width="31" text="전달" keyboard="false" textpadding="2,0,2,0" textcolor="#FF0000FF" disabledtextcolor="#FFA7A6AA" font="3" align="left" />
+							
+						</HorizontalLayout>						
+					</HorizontalLayout>
+				</VerticalLayout>
+				
+				<VerticalLayout name="ReTryLayout" height="17" visible="false">
+					<HorizontalLayout>						
+						<HorizontalLayout width="58">
+							<Button name="ReTrySendButton" text="재전송" width="30" padding="0,0,6,0" textcolor="#FF0000FF" disabledtextcolor="#FFA7A6AA" font="3" align="left" />
+							<Control width="10" height="11" bkimage="chat_ico_mn_risk.png" padding="0,3,0,0" />
+						</HorizontalLayout>
+					</HorizontalLayout>
+				</VerticalLayout>
+									
+				<VerticalLayout name="ProgressLayout" height="18" visible="false">
+					<HorizontalLayout>
+						<HorizontalLayout width="105" padding="0,6,0,0">
+							<Progress name="TransProgress" width="100" height="4" bkimage="file=&apos;img_progress2_blank.png&apos; corner=&apos;5,0,5,0&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+							foreimage="file=&apos;img_progress2.png&apos; corner=&apos;5,0,5,0&apos;" min="0" max="100" value="0" hor="true" />
+						</HorizontalLayout>
+						<HorizontalLayout width="17">
+							<Button name="CancelTransButton" keyboard="false" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+							normalimage="chat_btn_cancelfile2.png" hotimage="chat_btn_cancelfile2_over.png" pushedimage="chat_btn_cancelfile2_down.png" />
+						</HorizontalLayout>
+					</HorizontalLayout>
+				</VerticalLayout>
+									
+			</HorizontalLayout>
+	
+	
+        </VerticalLayout>
+		
+    </ListContainerElement>
+			
+</Window>

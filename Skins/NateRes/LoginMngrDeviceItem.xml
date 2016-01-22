@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <ListContainerElement name="User" bkcolor="#00FFFFFF" height="28" inset="0,0,0,0">
+        <HorizontalLayout>
+            <HorizontalLayout name="ProfileImageContainer" width="238">
+                <Label name="deviceimg" float="true" pos="0,6,13,19" width="13" height="13" bkimage="file='ico_poc_pc.png'" />
+                <Text text="test1" name="devicename" float="true" pos="18,1,135,25" width="113" height="23" mouse="false" endellipsis="true" textcolor="#FF000000" textpadding="0,7,0,0" />
+                <Button name="logoutbtn" float="true" pos="151,3,210,24" width="59" height="22" normalimage="file='btn_loginmanager_logout.png'" hotimage="file='btn_loginmanager_logout_over.png'" pushedimage="file='btn_loginmanager_logout_down.png'" />
+            </HorizontalLayout>
+        </HorizontalLayout>        
+    </ListContainerElement>
+</Window>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<Window>
+
+	<ListContainerElement name="BubbleInOutLayout" height="19" inset="0,8,0,0">
+	
+    <VerticalLayout>
+        <HorizontalLayout>
+		
+            <HorizontalLayout name="ContentLayout">
+				<Control width="10" height="11" bkimage="chat_ico_mn_noti.png" />
+                <Label name="ContentText" text="[초대] " height="11" 
+				textpadding="5,0,0,0" textcolor="#FF888888" disabledtextcolor="#FF888888" font="2" align="left" endellipsis="true" />
+            </HorizontalLayout>
+            
+			<!-- HorizontalLayout width="10" / --> 
+			
+        </HorizontalLayout>
+    </VerticalLayout>
+	
+    </ListContainerElement>
+	
+</Window>

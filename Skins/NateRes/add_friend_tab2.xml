@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="378,333">
+<VerticalLayout>
+	<VerticalLayout height="73">
+		<Label text="아이디 또는 전화 번호로 친구를 찾아서 추가하세요." font="1" textcolor="#FF000000" width="350" height="12" float="true" pos="20, 13, 370, 25"/>		
+		<Edit name="findEdit" align="left" text="아이디 또는 전화번호를 입력하세요." font="2" width="227" height="22" float="true" pos="20, 38, 257, 60" textcolor="#FFcccccc" bkimage="file='inputbox_01.png' corner='1,1,1,1'" />		
+		<Button name="findSearchBtn" float="true" pos="262, 38, 315, 57" align="center"width="40" height="22" normalimage="btn_search_02.png" hotimage="btn_search_02_over.png" pushedimage="btn_search_02_down.png" />
+		<Button name="findSearchAddBtn" tooltip="입력된 아이디로 바로 친구 요청을 보냅니다." enabled="false" float="true" pos="307, 38, 380, 57" align="center"width="60" height="22" normalimage="btn_addfrdnow.png" hotimage="btn_addfrdnow_over.png" pushedimage="btn_addfrdnow_down.png" disabledimage="btn_addfrdnow_dim.png" />
+	</VerticalLayout>
+	<HorizontalLayout height="227" bkcolor="FFDADADA" inset="0,1,0,1">
+		<List name="listFindBuddy" vscrollbar="true" header="hidden" bkcolor="FFFFFFFF">
+			<ListContainerElement />
+		</List>
+	</HorizontalLayout>
+  <VerticalLayout height="39">
+    <Label text="추가된 친구는 설정한 그룹에서 확인할 수 있고, 주소록에 저장됩니다." font="2" textcolor="#FF9C9C9C" width="350" height="12" float="true" pos="9, 10, 376, 22"/>
+  </VerticalLayout>
+</VerticalLayout>
+</Window>

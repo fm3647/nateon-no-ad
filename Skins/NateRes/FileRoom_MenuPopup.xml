@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window alpha="255">
+  <Font name="돋움" size="12" bold="false" default="true" />
+  <Default name="Menu" bkcolor="FFFFFFFF" bordercolor="FF828282" bordersize="1" value="bordersize=&quot;1&quot; bordercolor=&quot;FF828282&quot; bkcolor=&quot;FFFFFFFF&quot; inset=&quot;1,1,1,1&quot; itemtextpadding=&quot;10,0,10,0&quot; itemselectedbkcolor=&quot;FFFFF27F&quot;" />
+  <Menu >
+	<MenuElement name="Popup_openfolder" height="23" padding="0,0,0,0" text="폴더열기(S)"/>
+    <MenuElement name="Popup_downloadfile" height="23" padding="0,0,0,0" text="다운로드(S)"/>
+    <MenuElement name="Popup_sharefile" height="23" text="전달하기(F)" />
+	<MenuElement name="Popup_underline" height="1" padding="0,5,0,5" bkimage="mn_main_line_01.png"/>
+	<MenuElement name="Popup_selectonly" height="23" text="님의 파일만 보기(V)" />
+	<MenuElement name="Popup_deletelist" height="23" text="목록에서 삭제(D)" />
+	<MenuElement name="Popup_deletefile" height="23" text="파일 삭제" />
+  </Menu>
+</Window>

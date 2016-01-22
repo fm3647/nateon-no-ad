@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<ListContainerElement name="BubbleImageMineVerticalLayout" 
+                          height="151" inset="0,5,10,5">
+    <VerticalLayout>
+      <HorizontalLayout height="11">
+        <Control />
+        <Label name="DateLabel" 
+               width="55"
+               text="오후 00:00" 
+               textcolor="#FFB9B9B9" 
+               disabledtextcolor="#FFA7A6AA" 
+               font="2" 
+        />
+        <Label name="UnreadCountLabel" 
+               width="20" 
+               text="0" 
+               textcolor="#5EC4DC" disabledtextcolor="#5EC4DC"
+               align="center" 
+               font="2" 
+        />
+      </HorizontalLayout>
+      <Control height="4" />
+      <HorizontalLayout>
+        <Control />
+        <Button name="FileThumbImage" 
+                keyboard="false" 
+        />
+      </HorizontalLayout>
+      <Control height="6" />
+      <VerticalLayout>
+        <HorizontalLayout name="ProgressLayout" visible="false"
+                          height="18">
+          <Control />
+          <VerticalLayout width="50">
+            <Control />
+            <Progress name="TransProgress" 
+                      width="50" height="4" 
+                      textcolor="#FF000000" 
+                      disabledtextcolor="#FFA7A6AA" 
+                      align="center" 
+                      bkimage="file='img_progress2_blank.png' corner='5,0,5,0'" 
+                      foreimage="file='img_progress2.png' corner='5,0,5,0'" 
+                      min="0" max="100" 
+                      value="0" hor="true" 
+            />
+            <Control />
+          </VerticalLayout>
+          <Control width="5" />
+          <Button name="CancelTransButton" 
+                  width="17" height="18" 
+                  textcolor="#FF000000" 
+                  disabledtextcolor="#FFA7A6AA" 
+                  align="center" 
+                  normalimage="chat_btn_cancelfile.png" 
+                  hotimage="chat_btn_cancelfile_over.png" 
+                  pushedimage="chat_btn_cancelfile_down.png" 
+                  tooltip="전송 취소" 
+          />
+        </HorizontalLayout>
+        <HorizontalLayout name="ButtonLayout" height="11">
+          <Control />
+          <HorizontalLayout name="ReadyLayout" visible="false" 
+                            width="23">
+            <Button name="FileSaveButton" 
+                    width="23"
+                    keyboard="false" 
+                    text="저장" 
+                    textcolor="#FF0000FF" 
+                    disabledtextcolor="#FFA7A6AA" 
+                    font="3" 
+                    align="right" 
+            />
+          </HorizontalLayout>
+          <HorizontalLayout name="CompleteLayout" visible="false"
+                            width="23">
+            <Button name="OpenFolderButton" 
+                    width="23" 
+                    text="폴더" 
+                    textcolor="#FF0000FF" 
+                    disabledtextcolor="#FFA7A6AA" 
+                    font="3" 
+                    align="right" 
+            />
+          </HorizontalLayout>
+          <HorizontalLayout name="ReadyLayoutAs" visible="false" 
+                            width="98">
+            <Control width="5" />
+            <Button name="FileSaveOtherButton" 
+                    keyboard="false" 
+                    text="다른이름으로 저장" 
+                    textcolor="#FF0000FF" 
+                    disabledtextcolor="#FFA7A6AA" 
+                    font="3" 
+                    align="right" 
+                    endellipsis="true" 
+            />
+          </HorizontalLayout>
+          <HorizontalLayout name="ReTryLayout" visible="false" 
+                            height="11">
+            <Control />
+            <Button name="ReTrySendButton" 
+                    width="36" 
+                    text="재전송" 
+                    textcolor="#FF0000FF" 
+                    disabledtextcolor="#FFA7A6AA" 
+                    font="3" 
+                    align="center" 
+            />
+            <Control width="3" />
+            <Control width="10" 
+                     bkimage="chat_ico_mn_risk.png" 
+            />
+          </HorizontalLayout>
+          <Control width="5" />
+          <Button name="FileShareButton" visible="false" 
+                  width="23" 
+                  keyboard="false" 
+                  text="전달" 
+                  textcolor="#FF0000FF" 
+                  disabledtextcolor="#FFA7A6AA" 
+                  font="3" 
+                  align="right" 
+          />
+        </HorizontalLayout>
+        
+      </VerticalLayout>
+    </VerticalLayout>
+	</ListContainerElement>
+</Window>

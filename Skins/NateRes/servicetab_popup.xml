@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+<Font name="돋움" size="12" bold="false" italic="false" default="true" />
+<VerticalLayout name="BG" bkcolor="#FFE7E8EA" bkimage="file='svc_tm_more_layerbg.png' corner='0,0,77,2'">
+</VerticalLayout>
+</Window>

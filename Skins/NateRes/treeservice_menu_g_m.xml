@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window alpha="255">
+	<Font name="돋움" size="12" bold="false" default="true" />
+	<Default name="Menu" bkcolor="FFFFFFFF" bordercolor="FF828282" bordersize="1" value="bordersize=&quot;1&quot; bordercolor=&quot;FF828282&quot; bkcolor=&quot;FFFFFFFF&quot; inset=&quot;1,2,1,2&quot; itemtextpadding=&quot;10,0,10,0&quot; itemselectedbkcolor=&quot;FFFFF27F&quot;" />
+	<Menu>
+		<MenuElement height="23" text="편집 메뉴">
+			<HorizontalLayout >
+				<Label />
+				<Label name="moreitem" width="3" height="11" padding="0,6,0,0" bkimage="file='ico_more_on.png'"/>
+      			<Label width="8"/>
+			</HorizontalLayout>
+			<MenuElement name="mn_group_add"	   height="23" text="그룹 추가" />
+			<MenuElement name="mn_group_del"	   height="23" text="그룹 삭제" enabled="false" />
+			<MenuElement name="mn_cut"      	   height="23" text="잘라내기" />
+			<MenuElement name="mn_paste"    	   height="23" text="붙여넣기" enabled="false" />
+			<MenuElement name="mn_group_edit_name" height="23" text="이름 바꾸기" />
+			<!-- MenuElement name="mn_member_add"      height="22" text="멤버 추가" / -->
+		</MenuElement>
+		
+		<MenuElement drawselectedbk="false" height="3">
+      		<VerticalLayout height="3">
+        		<Control />
+        		<Control height="1" bkcolor="FF828282" />
+        		<Control />
+     	 	</VerticalLayout>
+    	</MenuElement>
+
+		<MenuElement name="mn_msg"  height="23" text="메시지        " enabled="false" />
+		<MenuElement name="mn_mail" height="23" text="메일" enabled="false" />
+		<MenuElement name="mn_sms"  height="23" text="문자" enabled="false" />
+	</Menu>
+</Window>

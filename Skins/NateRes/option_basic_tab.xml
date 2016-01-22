@@ -1,0 +1,423 @@
+<Window size="507,580">
+	<VerticalLayout width="507" height="580">
+		<Control height="17" />
+		<HorizontalLayout height="42">
+			<Control width="25" />
+			<VerticalLayout width="80">
+				<Control height="1" />
+				<HorizontalLayout height="12">
+					<Label text="로그인" align="left" font="1" textcolor="#FF77858c" 
+						   width="80" height="12" 
+					/>
+				</HorizontalLayout>
+				<Control height="29" />
+			</VerticalLayout>		
+			<Control width="15" />
+			<VerticalLayout width="367">
+				<HorizontalLayout height="15">
+					<VerticalLayout width="15"> 
+						<Option name="auto_start" float="true" 
+							    width="15" height="15" 
+							    normalimage=	"btn_uncheck_03.png" 
+							    hotimage=		"btn_uncheck_03_over.png" 
+							    pushedimage=	"btn_uncheck_03_down.png" 
+							    selectedimage=	"btn_check_03.png" 
+						/>
+					</VerticalLayout>
+					<Control width="5"/>
+					<VerticalLayout width="347">
+						<Control height="1"/>
+						<VerticalLayout height="12">
+							<Label text="윈도우 실행 시 네이트온 자동 실행하기" 
+								   align="left" font="2" textcolor="#FF333333" 
+								   width="347" height="12" 
+							/>
+						</VerticalLayout>
+						<Control height="2"/>
+					</VerticalLayout>
+				</HorizontalLayout>
+				<Control height="5" />
+				<HorizontalLayout height="22">
+					<Control width="1" />
+					<VerticalLayout width="104">
+						<Control height="5"/>
+						<VerticalLayout height="12">
+							<Label text="로그인시 팝업으로" 
+								   align="left" font="2" textcolor="#FF9c9c9c" 
+								   width="104" height="12" 
+							/>
+						</VerticalLayout>
+						<Control height="5"/>
+					</VerticalLayout>
+					<VerticalLayout width="162">
+						<Combo name="login_popup" float="true" align="left" itemtextpadding="6,3,0,0" 
+							   width="162" height="22" textcolor="FF333333"
+							   dropboxsize="162,70" imagewidth="27"
+							   normalimage= "file='btn_contents_open.png' 		corner='3,3,22,3'" 
+							   hotimage= 	"file='btn_contents_open_over.png' 	corner='3,3,22,3'" 
+							   pushedimage= "file='btn_contents_open_down.png' 	corner='3,3,22,3'">
+							<ListLabelElement text="네이트 메인 보기" name="nate" height="22" />
+							<ListLabelElement text="네이트 메인 보지 않기" name="nothing" height="22" />
+						</Combo>
+					</VerticalLayout>
+					<Control width="100" />
+				</HorizontalLayout>
+			</VerticalLayout>
+			<Control width="20" />
+		</HorizontalLayout>
+		<Control height="18" />
+		<Control height="1" bkcolor="#FFf0f0f0" />
+		<Control height="20" />
+		<HorizontalLayout height="42">
+			<Control width="25" />
+			<VerticalLayout width="80">
+				<HorizontalLayout height="12">
+					<Label text="받은 파일" align="left" font="1" textcolor="#FF77858c"
+						   width="80" height="12"
+					/>
+				</HorizontalLayout>
+				<Control height="8" />
+				<HorizontalLayout height="12">
+					<Label text="저장 위치" align="left" font="1" textcolor="#FF77858c"
+						   width="80" height="12"
+					/>
+				</HorizontalLayout>
+				<Control height="10" />
+			</VerticalLayout>
+			<Control width="15" />
+			<VerticalLayout width="367" height="42">
+				<HorizontalLayout height="11">
+					<Control witdh="1" />
+					<Label text="네이트온에서 받은 파일을 다음 폴더에 저장합니다."
+						   align="left" font="6" textcolor="#FF9c9c9c"
+						   width="366" height="11"
+					/>
+				</HorizontalLayout>
+				<Control height="9" />
+				<HorizontalLayout height="22">
+					<Control width="5" bkimage="contents_title_left.png" />
+					<VerticalLayout width="303">
+						<Edit name="download_edit" align="left"
+							  width="303" height="22" textcolor="#FF333333"
+							  font="2" mouse="false" keyboard="false" 
+							  bkimage="file='contents_title_bg.png' corner='0,0,0,22'"
+						/>
+					</VerticalLayout>
+					<Control width="5" bkimage="contents_title_right.png" />
+					<Control width="4" />
+					<VerticalLayout width="42">
+						<Button name="download_path" float="true" align="center"
+							    width="42" height="22"
+							    normalimage= "btn_change_s.png"
+							    hotimage=	 "btn_change_s_over.png"
+							    pushedimage= "btn_change_s_down.png"
+						/>
+					</VerticalLayout>
+					<Control width="8" />
+				</HorizontalLayout>
+			</VerticalLayout>
+			<Control width="20" />
+		</HorizontalLayout>	
+		<Control height="20" />
+		<Control height="1" bkcolor="#FFf0f0f0" />
+		<Control height="20" />
+		<HorizontalLayout height="76">
+			<Control width="25" />
+			<VerticalLayout width="80">
+				<HorizontalLayout height="12">
+					<Label text="동시접속중" align="left" font="1" textcolor="#FF77858c"
+						   width="80" height="12"
+					/>
+				</HorizontalLayout>
+				<Control height="8" />
+				<HorizontalLayout height="12">
+					<Label text="상태 설정" align="left" font="1" textcolor="#FF77858c"
+						   width="80" height="12"
+					/>
+				</HorizontalLayout>
+				<Control height="44" />
+			</VerticalLayout>			
+			<Control width="15" />
+			<VerticalLayout width="376">
+				<HorizontalLayout height="11">
+					<Control width="1" />
+					<Label text="네이트온을 PC와 모바일 동시에 접속하여 사용하는 경우"
+						   align="left" font="6" textcolor="#FF9c9c9c"
+						   width="366" height="11"
+					/>
+				</HorizontalLayout>
+				<Control height="5" />
+				<HorizontalLayout height="11">
+					<Control width="1" />
+					<Label text="PC에서 자리를 비웠을 때 모바일로 상태표시가 변경되도록 할 수 있습니다."
+						   align="left" font="6" textcolor="#FF9c9c9c"
+						   width="376" height="11"
+					/>
+				</HorizontalLayout>
+				<Control height="9" />
+				<HorizontalLayout height="15">
+					<VerticalLayout width="15">
+						<Option name="messenger_away_use" float="true"
+							    width="15" height="15" 
+							    normalimage=   "btn_uncheck_03.png"
+							    hotimage=	   "btn_uncheck_03_over.png"
+							    pushedimage=   "btn_uncheck_03_down.png"
+							    selectedimage= "btn_check_03.png"
+						/>
+					</VerticalLayout>
+					<Control width="5" />
+					<VerticalLayout width="347">
+						<Control height="1" />
+						<VerticalLayout height="12">
+							<Label text="(동시접속중) PC에서 자리를 비우면 모바일로 상태표시를 변경"
+								   align="left" font="2" textcolor="#FF333333"
+								   width="347" height="12"
+							/>
+						</VerticalLayout>
+						<Control height="2" />
+					</VerticalLayout>
+				</HorizontalLayout>
+				<Control height="5" />
+				<HorizontalLayout height="20">
+					<Control width="20" />
+					<VerticalLayout width="39">
+						<Edit name="away_time" align="center"
+							  width="39" height="20" 
+							  font="2" textcolor="#FF333333" 
+								numberonly="true"
+							  bkimage="file='contents_input_bg.png' corner='3,3,1,1'" 
+							  maxchar="4" 
+						/>
+					</VerticalLayout>
+					<Control width="6"/>
+					<VerticalLayout width="302">
+						<Control height="4" />
+						<VerticalLayout height="12">
+							<Label text="분이 지나면 모바일 상태로 표시"
+								   align="left" font="2" textcolor="#FF333333"
+								   width="302" height="12"
+							/>
+						</VerticalLayout>
+						<Control height="4" />
+					</VerticalLayout>
+				</HorizontalLayout>
+			</VerticalLayout>
+			<Control width="20" />
+		</HorizontalLayout>
+		<Control height="17" />
+		<Control height="1" bkcolor="#FFf0f0f0" />
+		<Control height="20" />
+		<HorizontalLayout height="37">
+			<Control width="25" />
+			<VerticalLayout width="80">
+				<HorizontalLayout height="12">
+					<Label text="잠금 설정" align="left" font="1" textcolor="#FF77858c"
+						   width="80" height="12"
+					/>
+				</HorizontalLayout>
+				<Control height="25" />
+			</VerticalLayout>			
+			<Control width="15" />
+			<VerticalLayout width="367">
+				<HorizontalLayout height="11">
+					<Control width="1" />
+					<Label text="잠시 자리를 비울 경우 메신저의 모든 창을 숨겨 사생활을 보호합니다."
+						   align="left" font="6" textcolor="#FF9c9c9c"
+						   width="366" height="11"
+					/>
+				</HorizontalLayout>
+				<Control height="6" />
+				<HorizontalLayout height="20">
+					<VerticalLayout width="15">
+						<Control height="4" />
+						<VerticalLayout width="15" >
+							<Option name="messenger_lock_use" float="true"
+								    width="15" height="15" 
+								    normalimage=   "btn_uncheck_03.png"
+								    hotimage=	   "btn_uncheck_03_over.png"
+								    pushedimage=   "btn_uncheck_03_down.png"
+								    selectedimage= "btn_check_03.png"
+							/>
+						</VerticalLayout>
+						<Control height="1" />
+					</VerticalLayout>
+					<Control width="5" />
+					<VerticalLayout width="39">
+						<Edit name="lock_time" align="center"
+							  width="39" height="20" 
+								numberonly="true"
+							  font="2" textcolor="#FF333333" 
+							  bkimage="file='contents_input_bg.png' corner='3,3,1,1'" 
+							  maxchar="4" 
+						/>
+					</VerticalLayout>
+					<Control width="6"/>
+					<VerticalLayout width="302">
+						<Control height="4" />
+						<VerticalLayout height="12">
+							<Label text="분이 지나면 네이트온 잠금"
+								   align="left" font="2" textcolor="#FF333333"
+								   width="302" height="12"
+							/>
+						</VerticalLayout>
+						<Control height="4" />
+					</VerticalLayout>
+				</HorizontalLayout>
+			</VerticalLayout>
+			<Control width="20" />
+		</HorizontalLayout>
+		<Control height="17" />
+		<Control height="1" bkcolor="#FFf0f0f0" />
+		<Control height="20" />
+		<HorizontalLayout height="63">
+			<Control width="25" />
+			<VerticalLayout width="80">
+				<HorizontalLayout height="12">
+					<Label text="웹브라우저" align="left" font="1" textcolor="#FF77858c"
+						   width="80" height="12"
+					/>
+				</HorizontalLayout>
+				<Control height="8" />
+				<HorizontalLayout height="12">
+					<Label text="설정" align="left" font="1" textcolor="#FF77858c"
+						   width="80" height="12"
+					/>
+				</HorizontalLayout>
+				<Control height="31" />
+			</VerticalLayout>			
+			<Control width="15" />
+			<VerticalLayout width="367">
+				<HorizontalLayout height="11">
+					<Control width="1" />
+					<Label text="웹브라우저의 시작페이지와 관련된 설정을 할 수 있습니다."
+						   align="left" font="6" textcolor="#FF9c9c9c"
+						   width="366" height="11"
+					/>
+				</HorizontalLayout>
+				<Control height="6" />
+				<HorizontalLayout height="20">
+					<VerticalLayout width="89">
+						<Button name="start_page" float="true" align="center"
+							    width="89" height="20"
+							    normalimage= "bt_startpage_setup.png"
+							    hotimage=	 "bt_startpage_setup_over.png"
+							    pushedimage= "bt_startpage_setup_down.png"
+						/>
+					</VerticalLayout>
+					<Control width="278"/>
+					
+				</HorizontalLayout>
+				
+				<Control height="6"/>
+				
+				<HorizontalLayout height="20">
+					<VerticalLayout width="15"> 
+						<Control height="5"/>
+						<VerticalLayout height="15">
+						<Option name="default_browser" float="true" 
+							    width="15" height="15" 
+							    normalimage=	"btn_uncheck_03.png" 
+							    hotimage=		"btn_uncheck_03_over.png" 
+							    pushedimage=	"btn_uncheck_03_down.png" 
+							    selectedimage=	"btn_check_03.png" />
+						</VerticalLayout>
+					</VerticalLayout>
+					<Control width="5"/>
+					<VerticalLayout width="347">
+						<Control height="6"/>
+						<VerticalLayout height="12">
+							<Label text="윈도우에 설정된 기본 웹 브라우저를 사용합니다." 
+								   align="left" font="2" textcolor="#FF333333" 
+								   width="347" height="12" />
+						</VerticalLayout>
+						<Control height="2"/>
+					</VerticalLayout>
+					
+				</HorizontalLayout>
+
+			</VerticalLayout>
+			<Control width="20" />
+		</HorizontalLayout>
+		<Control height="17" />
+		<Control height="1" bkcolor="#FFf0f0f0" />
+		<Control height="20" />
+		<HorizontalLayout height="27">
+			<Control width="25" />
+			<VerticalLayout width="80">
+				<HorizontalLayout height="12">
+					<Label text="개인 정보" align="left" font="1" textcolor="#FF77858c"
+						   width="80" height="12"
+					/>
+				</HorizontalLayout>
+				<Control height="3" />
+				<HorizontalLayout height="12">
+					<Label text="수정" align="left" font="1" textcolor="#FF77858c"
+						   width="80" height="12"
+					/>
+				</HorizontalLayout>
+			</VerticalLayout>
+			<Control width="15" />
+			<VerticalLayout width="367">
+				<HorizontalLayout height="11">
+					<Control width="1" />
+					<Label text="회원정보 페이지에서 비밀번호 변경, 폰 인증 해지와 같은"
+						   align="left" font="6" textcolor="#FF9c9c9c"
+						   width="366" height="11"
+					/>
+				</HorizontalLayout>
+				<Control height="5" />
+				<HorizontalLayout height="11">
+					<HorizontalLayout width="161">
+						<Control width="1" />
+						<Label text="개인 정보를 수정할수 있습니다. "
+							   align="left" font="6" textcolor="#FF9c9c9c"
+							   width="160" height="11"
+						/>
+					</HorizontalLayout>
+					<VerticalLayout width="85">
+						<Button name="private_info" text="개인정보 수정하기"
+							    align="left" font="4" textcolor="#FF31aed8"
+							    width="85" height="11"
+						/>
+					</VerticalLayout>
+					<Control width="135" />
+				</HorizontalLayout>
+			</VerticalLayout>
+			<Control width="20" />
+		</HorizontalLayout>
+		<Control height="19" />
+		<Control height="1" bkcolor="#FFf0f0f0" />
+		<Control height="20" />
+		<HorizontalLayout height="12">
+			<Control width="25" />
+			<HorizontalLayout width="80">
+				<Label text="도움말" align="left" font="1" textcolor="#FF77858c"
+					   width="80" height="12"
+				/>
+			</HorizontalLayout>
+			<Control width="15" />
+			<VerticalLayout width="367">
+				<HorizontalLayout height="11">
+					<HorizontalLayout width="252">
+						<Control width="1" />
+						<Label text="네이트온 이용이나, 환경설정 방법을 알려드립니다."
+							   align="left" font="6" textcolor="#FF9c9c9c"
+							   width="251" height="11"
+						/>
+					</HorizontalLayout>
+					<Control width="3" />
+					<VerticalLayout width="75">
+						<Button name="nateon_info" text="도움말 바로가기" 
+							    align="left" font="4" textcolor="#FF31aed8"
+							    width="75" height="11"
+						/>
+					</VerticalLayout>
+					<Control width="61" />
+				</HorizontalLayout>
+				<Control height="1" />
+			</VerticalLayout>
+			<Control width="20" />
+		</HorizontalLayout>
+		<Control height="30" />
+	</VerticalLayout>
+</Window>

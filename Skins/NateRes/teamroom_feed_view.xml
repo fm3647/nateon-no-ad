@@ -1,0 +1,220 @@
+<Window>
+	<VerticalLayout width="470" height="645">
+		<HorizontalLayout height="35" bkimage="troom_bg_feedtitle.png">
+			<Control width="15" />
+			
+			<HorizontalLayout width="24" name="BookMarkLayout" >
+				<!-- Control width="2" />
+				<Control / -->
+				<VerticalLayout width="19">
+					<Control />
+					<Button name="feed_favorite" 
+							height="19" width="19"
+							normalimage=  "troom_ic_favorite.png"
+							hotimage=	   "troom_ic_favorite.png"
+							pushedimage=   "troom_ic_favorite.png"
+							selectedimage= "troom_ic_favorite.png"
+							mouse="false"
+					/>
+					<Control />
+				</VerticalLayout>
+				<!-- Control / -->
+				<Control width="5" />
+			</HorizontalLayout>
+			
+			<VerticalLayout minwidth="200" name="FeedMoimNameLayout">
+				<Control />
+				<Label name="feed_MoimName" 
+					   height="20"
+					   text="모임이름"
+					   font="0" 
+					   textcolor="#FF000000" 
+					   align="left" endellipsis="true"
+				/> 
+				<Control height="8" />
+			</VerticalLayout>
+			
+			<Control width="5" />
+			
+			<VerticalLayout width="13">
+				<Control />
+				<Button name="feed_downMenu" 
+					    width="13" height="13" tooltip="모임 설정"
+					    normalimage=   "troom_bt_infoarrow.png"
+					    hotimage=	   "troom_bt_infoarrow_over.png"
+					    pushedimage=   "troom_bt_infoarrow_down.png"
+					    selectedimage= "troom_bt_infoarrow_down.png"
+				/>
+				<Control />
+			</VerticalLayout>
+			
+			<!-- VerticalLayout width="40">
+				<Control />
+				<Label name="feed_test" 
+					   text=""
+					   font="0" 
+					   textcolor="#FF000000" 
+					   align="left" 
+				/>  
+				<Control />
+			</VerticalLayout -->
+
+			<Control />
+
+			<HorizontalLayout name="feed_finder" width="180" visible="false">
+				<Button name="view_member" tooltip="멤버"
+					    width="36" 
+					    normalimage=   "troom_rtab2_member.png"
+					    hotimage=	   "troom_rtab2_member_over.png"
+					    pushedimage=   "troom_rtab2_member_down.png"
+					    selectedimage= "troom_rtab2_member_down.png"
+				/>
+				<Button name="view_search" 
+					    width="36" tooltip="검색" 
+					    normalimage=   "troom_rtab2_search.png"
+					    hotimage=	   "troom_rtab2_search_over.png"
+					    pushedimage=   "troom_rtab2_search_down.png"
+					    selectedimage= "troom_rtab2_search_down.png"
+				/>
+				<Button name="view_filebox" 
+					    width="36" tooltip="파일함" 
+					    normalimage=   "troom_rtab2_filebox.png"
+					    hotimage=	   "troom_rtab2_filebox_over.png"
+					    pushedimage=   "troom_rtab2_filebox_down.png"
+					    selectedimage= "troom_rtab2_filebox_down.png" 
+				/>
+				<Button name="view_important" 
+					    width="36" tooltip="중요" 
+					    normalimage=   "troom_rtab2_flag.png"
+					    hotimage=	   "troom_rtab2_flag_over.png"
+					    pushedimage=   "troom_rtab2_flag_down.png"
+					    selectedimage= "troom_rtab2_flag_down.png"
+				/>
+				<Button name="view_favorite" 
+					    width="36" tooltip="스크랩"
+					    normalimage=   "troom_rtab2_scrap.png"
+					    hotimage=	   "troom_rtab2_scrap_over.png"
+					    pushedimage=   "troom_rtab2_scrap_down.png"
+					    selectedimage= "troom_rtab2_scrap_down.png"
+				/>
+			</HorizontalLayout>
+		</HorizontalLayout>
+		
+		<HorizontalLayout bkcolor="#FFFFFFFF">
+			<VerticalLayout bkcolor="#FFFFFFFF">
+
+				<VerticalLayout name="TopNewMsgLayout" height="25" visible="false">				
+					<HorizontalLayout>					
+						<Control width="10" />
+						
+						<HorizontalLayout bkimage="troom_bg_feednewnoti.png">						
+							<Control />
+							
+							<HorizontalLayout minwidth="250">	
+								<VerticalLayout width="15">
+									<Control height="5" />
+									<VerticalLayout height="15">
+										<Control width="15" height="15" bkimage="troom_ic_feednewnoti.png" />
+									</VerticalLayout>														
+									<Control height="5" />
+								</VerticalLayout>
+								
+								<VerticalLayout width="230">
+									<Control height="5" />
+									<VerticalLayout height="15">
+										<Label name="feed_newmsg_count" text="새 메시지가 xxx건 있습니다." textpadding="5,0,0,0" endellipsis="true" textcolor="#FFFFFFFF" font="8" />
+									</VerticalLayout>														
+									<Control height="5" />
+								</VerticalLayout>
+							</HorizontalLayout>
+						
+							<Control />
+							
+							<VerticalLayout width="20">
+								<Control height="5" />
+								<VerticalLayout height="15">
+									<Button name="feed_newmsg_closebtn" float="true"
+											width="15" height="15"
+											normalimage= "btn_closepopupw.png"
+											hotimage=    "btn_closepopupw_over.png"
+											pushedimage= "btn_closepopupw_down.png" />
+								</VerticalLayout>
+								<Control height="5" />
+							</VerticalLayout>
+							
+							<!-- Control width="30" / -->						
+						</HorizontalLayout>
+						
+						<Control width="10" />					
+					</HorizontalLayout>
+				</VerticalLayout>
+				<HorizontalLayout>
+					<VerticalLayout name="BodyFeedLayout" inset="5,0,0,0">
+						<!-- BubbleListUI bkcolor="#00000000" header="hidden" itemhotbkcolor="#00000000" itemselectedbkcolor="#00000000" name="FeedList" vscrollbar="true" / -->
+					</VerticalLayout>
+
+					<VerticalLayout width="10">
+						<Control />
+						<Button name="feed_expand" visible="false"
+									height="82" tooltip="상세 열기"
+									normalimage= "troom_handle_o.png" 
+									hotimage=	 "troom_handle_o_over.png" 
+									pushedimage= "troom_handle_o_down.png"
+						/>
+						<Button name="feed_collapse"
+									height="82" tooltip="상세 접기" 
+									normalimage= "troom_handle_c.png" 
+									hotimage=	 "troom_handle_c_over.png" 
+									pushedimage= "troom_handle_c_down.png"
+						/>
+						<Control />
+					</VerticalLayout>
+				</HorizontalLayout>
+				<VerticalLayout  name="InputLayoutLine" height="1" bkcolor="#FFC9C9C9"/>
+				
+				<VerticalLayout name="InputLayout" height="79" bkcolor="#FFF5F5F5">
+					<HorizontalLayout name="InputControlLayout">
+						
+						<HorizontalLayout name="InputBoxLayout" inset="15,11,16,5">
+								<Control name="InputEdit" />
+						</HorizontalLayout>
+								
+						<HorizontalLayout name="SendButtonBoxLayout" width="67">
+							<Button name="feed_ContentButton" float="true" keyboard="false" pos="0,5,0,0" width="62" height="33"
+									textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
+									normalimage= "troom_bt_feedfileup.png"
+									hotimage=	 "troom_bt_feedfileup_over.png"
+									pushedimage= "troom_bt_feedfileup_down.png" />
+							<Button name="feed_SendButton" float="true" keyboard="false" pos="0,41,0,0" width="62" height="33"
+									textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
+									normalimage="troom_bt_feedenter.png"
+									hotimage="troom_bt_feedenter_over.png"
+									pushedimage="troom_bt_feedenter_down.png" />
+								<!--	disabledimage="chat_btn_send_disable.png" -->
+						</HorizontalLayout>
+						
+					</HorizontalLayout>
+				</VerticalLayout>
+				
+				<VerticalLayout name="JoinMoimLayout" height="90" bkcolor="#FFFFFFFF" visible="false" >
+					<HorizontalLayout height="30" />
+					<HorizontalLayout name="JoinMoimControlLayout">					
+						<HorizontalLayout />
+						
+						<HorizontalLayout name="SendButtonBoxLayout" height="30" width="125">					
+							<Button name="moim_JoinButton" float="true" keyboard="false" width="125" height="30" tooltip="모임에 참여하기"
+									textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
+									normalimage= "troom_bt_joinmoim.png"
+									hotimage=	 "troom_bt_joinmoim_over.png"
+									pushedimage= "troom_bt_joinmoim_down.png" />
+						</HorizontalLayout>
+						
+						<HorizontalLayout />					
+					</HorizontalLayout>
+					<HorizontalLayout height="30" />
+				</VerticalLayout>
+				
+			</VerticalLayout>
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<ListContainerElement name="BubbleMineVerticalLayout" height="75" inset="0,5,10,5" >
+        <VerticalLayout>
+		
+			<VerticalLayout height="15">
+				<HorizontalLayout>
+					<Control />
+					<Label name="DateLabel" text="오후 00:00" textcolor="#FFB9B9B9" disabledtextcolor="#FFA7A6AA" font="2" width="55" />
+					<Label name="UnreadCountLabel" text="0" textcolor="#5EC4DC" disabledtextcolor="#5EC4DC" align="center" font="2" width="20" />
+				</HorizontalLayout>
+			</VerticalLayout>
+			
+			<VerticalLayout height="6" />
+			
+			<VerticalLayout>
+				<HorizontalLayout>
+					<HorizontalLayout>
+					</HorizontalLayout>
+					<HorizontalLayout name="MessageLeftExtra" width="47">
+						<VerticalLayout inset="0,0,4,7" name="ReTryLayout" visible="false">
+							<VerticalLayout>
+							</VerticalLayout>
+							<VerticalLayout height="17">
+								<HorizontalLayout width="58">
+									<Button name="ReTrySendButton" width="36" text="재전송" font="3" textcolor="#FF0000FF" disabledtextcolor="#00000000" padding="0,0,6,0" />
+									<Control height="17" width="16" bkimage="chat_ico_sendfail.png" />
+								</HorizontalLayout>
+							</VerticalLayout>
+						</VerticalLayout>
+					</HorizontalLayout>
+										
+					<HorizontalLayout name="BubbleVerticalLayout" bkimage="file=&apos;chat_balloon_send.png&apos;" inset="10,10,10,12">
+						<BubbleText name="BubbleContent" font="0" text="[대화내용]" textcolor="#FF000000" parsingemoticon="true" />
+					</HorizontalLayout>
+					<!-- HorizontalLayout width="17">
+					</HorizontalLayout -->
+				</HorizontalLayout>
+			</VerticalLayout>
+			
+        </VerticalLayout>
+	</ListContainerElement>
+</Window>

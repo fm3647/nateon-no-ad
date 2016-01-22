@@ -1,0 +1,47 @@
+﻿
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<Window size="118,29">
+    <ListContainerElement name="NoneUser" bkcolor="#00FFFFFF" height="29" >
+		<VerticalLayout>
+			
+			<VerticalLayout height="5">
+			</VerticalLayout>
+			
+			<VerticalLayout height="24" name="addBuddyLayout" visible="true">
+				<HorizontalLayout  height="24">		
+					<HorizontalLayout width="30">
+						<VerticalLayout width="24">
+						  <Button name="BuddyAddBtn" float="true" keyboard="false" pos="0,0,24,24" width="24" height="24" normalimage="chat_btn_buddyadd_list.png" />
+						  <!-- Button name="BuddyAddBtnFrame" float="true" pos="0,0,24,24" width="24" height="24"  normalimage="profileimg_frame.png"  / -->
+						</VerticalLayout>
+						
+						<Control width="6" />				
+					</HorizontalLayout>
+					
+					<HorizontalLayout>
+						<Button text="대화상대초대" name="BuddyAddBtnItem" textcolor="#FF000000" mouse="true" disabledtextcolor="#FF000000" font="5" align="left" endellipsis="true" />
+					</HorizontalLayout>			
+				</HorizontalLayout>		
+			</VerticalLayout>
+			
+			<VerticalLayout height="24" name="quitRoomLayout" visible="false">
+				<HorizontalLayout  height="24">		
+					<HorizontalLayout width="30">
+						<VerticalLayout width="24">
+						  <Button name="OutRoomBtn" float="true" keyboard="false" pos="0,0,24,24" width="24" height="24" normalimage="chat_btn_chatout_list.png" />
+						  <!-- Button name="OutRoomBtnFrame" float="true" pos="0,0,24,24" width="24" height="24"  normalimage="profileimg_frame.png"  / -->
+						</VerticalLayout>
+						
+						<Control width="6" />				
+					</HorizontalLayout>
+					
+					<HorizontalLayout>
+						<Button text="대화 나가기" name="OutRoomBtnItem" textcolor="#FF000000" mouse="true" disabledtextcolor="#FF000000" font="5" align="left" endellipsis="true" />
+					</HorizontalLayout>			
+				</HorizontalLayout>		
+			</VerticalLayout>
+			
+		</VerticalLayout>
+    </ListContainerElement>
+</Window>

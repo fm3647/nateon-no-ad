@@ -1,0 +1,19 @@
+﻿
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<Window size="118,8">
+    <ListContainerElement name="NoneUser" bkcolor="#00FFFFFF" height="13" >
+		<VerticalLayout>
+			
+			<VerticalLayout height="5">
+			</VerticalLayout>
+			
+			<VerticalLayout height="1" bkcolor="#FFEBEBEB" >
+			</VerticalLayout>
+			
+			<VerticalLayout height="7">
+			</VerticalLayout>
+		
+		</VerticalLayout>
+    </ListContainerElement>
+</Window>

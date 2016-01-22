@@ -1,0 +1,28 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Window>
+	<ListContainerElement name="buddy" bkcolor="00FFFFFF" pushedelementimage="file='main_buddy_selected.png' corner='2,2,2,2'"  hotelementimage="file='main_buddy_over.png' corner='2,2,2,2'">  
+		<VerticalLayout>	
+			<HorizontalLayout height="5"/>			
+			<HorizontalLayout>
+				<VerticalLayout width="10">
+				</VerticalLayout>
+				<VerticalLayout name="profileImageContainer" width="27">		
+					<Button name="buddyProfileImage" mouse="false" float="true" pos="0,1,25,26" width="25" height="25"  normalimage="file='buddy_profile_default.png'"  />
+					<Button name="buddyProfileImageFrame" mouse="false" float="true" pos="0,1,25,26" width="25" height="25"  normalimage="file='profileimg_frame.png'"  />
+				</VerticalLayout>
+				<VerticalLayout name="pocContainer" width="17">
+					<Button name="pocImage" mouse="false" float="true" pos="1,7,0,0" width="13" height="13"  normalimage="file='ico_poc_pc.png'" />
+				</VerticalLayout>
+				<VerticalLayout >
+					<HorizontalLayout>
+						<VerticalLayout name="buddynamecontainer">
+							<Label name="buddyName" height="28" align="left" endellipsis="true" font="4" bordersize="0" textcolor="#FF000000" disabledtextcolor="#FF808080" />
+						</VerticalLayout>
+					</HorizontalLayout>
+				</VerticalLayout>      
+			</HorizontalLayout>	
+		</VerticalLayout>
+	</ListContainerElement>
+</Window>

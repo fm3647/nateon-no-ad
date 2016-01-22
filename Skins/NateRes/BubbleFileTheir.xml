@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <ListContainerElement name="BubbleFileTheirVerticalLayout" height="82" inset="0,5,10,5">
+        <HorizontalLayout>
+            <VerticalLayout width="30">
+                <Button name="ProfileThumb" 
+                        relativepos="0,0,0,0" 
+                        width="30" height="30" 
+                        normalimage="highquality='true' file='buddy_profile_default_43x43.png' makecorner='100,100,100,100'" 
+                        align="center" 
+                />
+                <Button name="ImageFrame" 
+                        float="true" relativepos="0,0,0,0" 
+                        width="30" height="30" 
+                        normalimage="file='profileimg_frame_30x30.png' highquality='true'" 
+                        mouse="false" 
+                />
+            </VerticalLayout>
+            <Control width="10" />
+            <VerticalLayout>
+                <HorizontalLayout height="15">
+                    <!-- Control width="10" / -->
+                    <HorizontalLayout name="NameLayout" width="0" >
+						<Label name="NameLabel" text="[이름]" textcolor="#FF9C9C9C" disabledtextcolor="#FFA7A6AA" font="2" endellipsis="true" />
+					</HorizontalLayout>								
+					<Control width="8" />								
+					<HorizontalLayout width="100" name="DateLayout">
+						<Label name="DateLabel" text="오후 00:00" textcolor="#FFB9B9B9" disabledtextcolor="#FFA7A6AA" font="2" />
+					</HorizontalLayout>
+                    <Control />
+                </HorizontalLayout>
+				
+				<Control height="6" />
+				
+                <HorizontalLayout>
+                    <HorizontalLayout width="50" height="50" 
+                                      bkimage="file='chat_balloon_receive.png'" 
+                                      inset="9,9,9,9">
+                        <Button name="FileThumbImage" 
+                                width="32" height="32" 
+                                keyboard="false" 
+                        />
+                    </HorizontalLayout>
+                    <Control width="9" />
+                    <VerticalLayout>
+                        <Control />
+                        <HorizontalLayout height="14">
+                            <VerticalLayout name="FileInfoLayout" height="14">
+                                <Button name="FileInfoLabel" 
+                                        height="14" 
+                                        textcolor="#FF787878" 
+                                        disabledtextcolor="#FFA7A6AA" 
+                                        font="2" 
+                                        align="left" 
+                                        endellipsis="true" 
+                                        mouse="false" 
+                                />
+                            </VerticalLayout>
+                            <Control width="4" />
+                            <VerticalLayout height="14" width="70">
+                                <Button name="FileSizeLabel" 
+                                        height="14" 
+                                        textcolor="#FF787878" 
+                                        disabledtextcolor="#FFA7A6AA" 
+                                        font="2" 
+                                        align="left" 
+                                        mouse="false" 
+                                />
+                            </VerticalLayout>
+                        </HorizontalLayout>
+						
+						<HorizontalLayout height="5" />
+						
+                        <VerticalLayout height="28" name="DownloadLayout">
+                            <HorizontalLayout>
+                                <HorizontalLayout name="FileDownLayout" width="23" height="14">
+                                    <HorizontalLayout name="ReadyLayout" width="23">
+                                        <Button name="FileSaveButton" 
+                                                width="23"  
+                                                keyboard="false" 
+                                                text="저장" 
+                                                textcolor="#FF0000FF" 
+                                                disabledtextcolor="#FFA7A6AA" 
+                                                font="3" 
+                                                align="left" 
+                                        />
+                                    </HorizontalLayout>
+                                    <HorizontalLayout name="CompleteLayout" visible="false"
+                                                      width="23" height="14">
+                                        <Button name="OpenFolderButton" 
+                                                keyboard="false" 
+                                                text="폴더" 
+                                                width="23" 
+                                                textcolor="#FF0000FF" 
+                                                disabledtextcolor="#FFA7A6AA" 
+                                                font="3" 
+                                                align="left" 
+                                        />
+                                    </HorizontalLayout>
+                                </HorizontalLayout>
+                                <Control width="5" />
+                                <HorizontalLayout name="ReadyLayoutAs" visible="false"
+                                                  height="14">
+                                    <Button name="FileSaveOtherButton" 
+                                            text="다른이름으로 저장" 
+                                            width="97"
+                                            keyboard="false" 
+                                            textcolor="#FF0000FF" 
+                                            disabledtextcolor="#FFA7A6AA" 
+                                            font="3" 
+                                            align="left" 
+                                    />
+									
+                                    <Control width="4" />								
+									<Button name="FileShareButton" 
+											keyboard="false" 
+											text="전달" 
+											width="23" 
+											textcolor="#FF0000FF" 
+											disabledtextcolor="#FFA7A6AA" 
+											font="3" 
+											align="center" 
+									/>
+									<Control />
+                                </HorizontalLayout>
+                            </HorizontalLayout>
+                            <!-- HorizontalLayout height="14">
+                                <Button name="FileShareButton" 
+                                        keyboard="false" 
+                                        text="전달" 
+                                        width="23" 
+                                        textcolor="#FF0000FF" 
+                                        disabledtextcolor="#FFA7A6AA" 
+                                        font="3" 
+                                        align="center" 
+                                />
+                                <Control />
+                            </HorizontalLayout -->
+                        </VerticalLayout>
+                        <HorizontalLayout name="ProgressLayout" visible="false" 
+                                          height="18">
+                            <VerticalLayout width="50">
+                                <Control />
+                                <Progress name="TransProgress" 
+                                          width="50" height="4" 
+                                          textcolor="#FF000000" 
+                                          disabledtextcolor="#FFA7A6AA" 
+                                          align="center" 
+                                          bkimage="file='img_progress2_blank.png' corner='5,0,5,0'" 
+                                          foreimage="file='img_progress2.png' corner='5,0,5,0'" 
+                                          min="0" max="100" 
+                                          value="0" 
+                                          hor="true" 
+                                />
+                                <Control />
+                            </VerticalLayout>
+                            <Control width="5" />
+                            <HorizontalLayout width="17">
+                                <Button name="CancelTransButton" 
+                                        keyboard="false" 
+                                        textcolor="#FF000000" 
+                                        disabledtextcolor="#FFA7A6AA" 
+                                        align="center" 
+                                        normalimage="chat_btn_cancelfile.png" 
+                                        hotimage="chat_btn_cancelfile_over.png" 
+                                        pushedimage="chat_btn_cancelfile_down.png" 
+                                />
+                            </HorizontalLayout>
+                            <Control />
+                        </HorizontalLayout>
+                        <Control />
+                    </VerticalLayout>
+                </HorizontalLayout>
+            </VerticalLayout>
+        </HorizontalLayout>
+    </ListContainerElement>
+</Window>

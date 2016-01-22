@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,0" size="45, 127">
+  <Default name="Menu" width="45" height="127" value="bordersize=&quot;1&quot; bordercolor=&quot;FF777777&quot; bkcolor=&quot;FFFFFFFF&quot; inset=&quot;2,2,2,2&quot; itemtextpadding=&quot;21,0,21,0&quot;" />
+  <Menu itemlinecolor="#FFEDEDED">
+    <MenuElement name="buddybtn1" width="43" height="42" bkimage="file='minipf_lmenu_sms.png'" hotelementimage="file='minipf_lmenu_sms_over.png'">
+    </MenuElement>
+    <MenuElement name="buddybtn2" width="43" height="42" bkimage="file='minipf_lmenu_smschat.png'" hotelementimage="file='minipf_lmenu_smschat_over.png'">
+    </MenuElement>
+    <MenuElement name="buddybtn3" width="43" height="42" bkimage="file='minipf_lmenu_voice.png'" hotelementimage="file='minipf_lmenu_voice_over.png'">
+    </MenuElement>
+  </Menu>
+</Window>

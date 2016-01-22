@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="310,175" sizebox="2,2,2,2" caption="0,0,0,25" roundcorner="6,6">
+    <Font name="굴림" size="12" bold="true" italic="false" />
+    <Font name="돋움" size="12" bold="false" italic="false" />
+    <Font name="돋움" size="11" bold="false" italic="false" default="true" />
+    <Font name="돋움" size="10" bold="false" italic="false" />
+    <Default name="VScrollBar" value="button1normalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,0,16,16&apos;&quot; button1hotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;16,0,32,16,16&apos;&quot; button1pushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;32,0,48,16&apos;&quot; button2normalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,32,16,48&apos;&quot; button2hotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;16,32,32,48&apos;&quot; button2pushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;32,32,48,48&apos;&quot; thumbnormalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,48,16,64&apos; corner=&apos;0,2,0,2&apos;&quot; thumbhotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;16,48,32,64&apos; corner=&apos;0,2,0,2&apos;&quot; thumbpushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;32,48,48,64&apos; corner=&apos;0,2,0,2&apos;&quot; bknormalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,16,16,32&apos;&quot;" />
+    <VerticalLayout name="bg" width="310" height="190" bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1" >
+        <VerticalLayout name="Frame"  hole="true" bkimage="file=&apos;popup_skin_bg.png&apos; source='0,0,9,26' corner=&apos;1,25,1,0&apos;">
+            <VerticalLayout name="HeaderLayOut" width="310" height="25"> 
+                <HorizontalLayout name="HeaderHorzLayout">
+	                <HorizontalLayout name="titleTextHlay">
+	                    <Text text="사용자 이모티콘 만들기" float="true" pos="8,7,0,0" width="194" height="14" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+	                </HorizontalLayout>
+	                <HorizontalLayout name="HeaderRightLayOut" width="90">
+	                    <Button name="closebtn" tooltip="창 닫기" float="true" keyboard="false" pos="67,5,0,0" width="15" height="15" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="btn_closepopup.png" hotimage="btn_closepopup_over.png" pushedimage="btn_closepopup_down.png" />
+	                </HorizontalLayout>
+                </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="145" bkcolor="#FFFFFFFF">
+                <HorizontalLayout width="310" height="50" padding="0,50,0,0">
+                    <Option name="addimage" bordersize="1" float="true" pos="21,0,0,0" width="50" height="50" bordercolor="#00C0C0C0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="centerbottom" normalimage="chat_add_emoti.png" hotimage="chat_add_emoti_over.png" pushedimage="chat_add_emoti_over.png"/>
+                    <Edit name="editname" bordersize="1" float="true" pos="80,0,0,0" width="210" height="22" bkcolor="#FFFFFFFF" bordercolor="#00C0C0C0" relativepos="0,0,0,0" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                </HorizontalLayout>
+                <Text text="나만의 이모티콘을 등록하고, 키워드를 설정하세요." float="true" pos="16,20,0,0" width="310" height="15" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="left" font="1" />
+								<Text text="최대 10자, 빈칸 입력시 자동제외됩니다." font="2" float="true" pos="72,80,0,0" width="220" height="15" textpadding="2,0,2,0" textcolor="#FFA7A6AA" disabledtextcolor="#FFA7A6AA" align="centerwrap" />
+                <Button name="ok" float="true" pos="112,108,0,0" width="40" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="btn_pop_confirm_s.png" hotimage="btn_pop_confirm_s_over.png" pushedimage="btn_pop_confirm_s_down.png" />
+                <Button name="cancel" float="true" pos="157,108,0,0" width="40" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="btn_pop_cancel_s.png" hotimage="btn_pop_cancel_s_over.png" pushedimage="btn_pop_cancel_s_down.png" />
+            </VerticalLayout>
+     			<!-- Control height="5" / -->
+        </VerticalLayout>
+    </VerticalLayout>
+</Window>

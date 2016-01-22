@@ -1,0 +1,52 @@
+﻿
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<Window size="118,31">
+    <ListContainerElement name="User" bkcolor="#00FFFFFF" height="31" >
+		<VerticalLayout>
+			
+			<VerticalLayout height="24" name="addBuddyLayout">
+				<HorizontalLayout  height="24">		
+					<HorizontalLayout width="43">
+						<VerticalLayout width="24">
+						  <Button name="ProfileImage" float="true" keyboard="false" pos="0,0,24,24" width="24" height="24" normalimage="buddy_profile_default.png" />
+						  <Button name="ProfileImageFrame" float="true" pos="0,0,24,24" width="24" height="24"  normalimage="profileimg_frame.png"  />
+						</VerticalLayout>
+												
+						<Button name="PocState" float="true" keyboard="false" pos="30,5,43,18" width="13" height="13" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;ico_poc_pc.png&apos;" />
+						<Button name="AddToBuddy" visible="false" float="true" keyboard="false" pos="16,4,0,0" width="13" height="13" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="chat_btn_makebuddy.png" />
+
+					</HorizontalLayout>
+					
+					<Control width="6" />
+					
+					<HorizontalLayout>
+						<Label name="UserName" textcolor="#FF000000" mouse="true" disabledtextcolor="#FF000000" font="5" align="left" endellipsis="true" />
+					</HorizontalLayout>			
+				</HorizontalLayout>		
+			</VerticalLayout>
+			
+			<VerticalLayout height="7">
+			</VerticalLayout>
+		
+		</VerticalLayout>
+    </ListContainerElement>
+</Window>
+
+<!--Window>
+    <ListContainerElement name="User" bkcolor="#00FFFFFF" height="28" inset="0,0,0,2">
+        <HorizontalLayout>
+            <HorizontalLayout name="ProfileImageContainer" width="41">
+			    <VerticalLayout name="ProfileImageOn" width="27">
+				  <Button name="ProfileImage" float="true" keyboard="false" pos="0,1,25,26" width="25" height="25" normalimage="buddy_profile_default.png" />
+				  <Button name="ProfileImageFrame" float="true" pos="0,1,25,26" width="25" height="25"  normalimage="profileimg_frame.png"  />
+ 			    </VerticalLayout>
+                <Button name="PocState" float="true" keyboard="false" pos="27,6,0,0" width="13" height="11" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;ico_poc_pc.png&apos;" />
+                <Button name="AddToBuddy" visible="false" float="true" keyboard="false" pos="16,4,0,0" width="16" height="17" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="chat_btn_makebuddy_boddy.png" />
+            </HorizontalLayout>
+            <HorizontalLayout>
+                <Label name="UserName" textcolor="#FF000000" mouse="true" disabledtextcolor="#FF000000" font="5" endellipsis="true" />
+            </HorizontalLayout>
+        </HorizontalLayout>
+    </ListContainerElement>
+</Window -->

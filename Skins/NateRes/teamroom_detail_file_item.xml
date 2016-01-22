@@ -1,0 +1,355 @@
+<Window>
+  <ListContainerElement>
+		<VerticalLayout height="170" name="detail_file_item">
+			<HorizontalLayout >
+				<Control width="20" />
+				<VerticalLayout height="56">
+					<!-- 파일 아이콘, 사람이름, 파일이름, 삭제/중요/북마크 버튼-->
+					<Control height="12"/>
+					<HorizontalLayout>
+						<!-- 파일 아이콘 -->
+						<HorizontalLayout name="detail_file_ico_hieght" width="32">
+							<Control />
+							<Button name="detail_file_ico"
+										height="32"
+										mouse="false" />
+							<Control />
+						</HorizontalLayout>
+						<Control width="10" />
+						<VerticalLayout height="47">
+							<!-- 이름, 파일명 -->
+							<Label name="detail_file_owner"
+										height="12"
+										text="장은지"
+										font="7"
+										textcolor="#FF333333"
+										endellipsis="true" />
+							<Control height="11" />
+							<Label name="detail_file_name"
+										height="12"
+										text="파일명 1092939.JPG"
+										font="8"
+										textcolor="#FF2B508D"
+										endellipsis="true" />
+							<Control height="10"/>
+						</VerticalLayout>
+						<VerticalLayout height="56" width="51">
+							<!-- 삭제/중요/북마크-->
+							<HorizontalLayout >
+								<HorizontalLayout width="19" height="16">
+									<Button name="detail_file_delete"
+											bkimage="troom_ic_delete.png"
+											width="16"
+											tooltip="삭제하기"
+											/>
+									<Control width="3" />
+								</HorizontalLayout>
+								<HorizontalLayout width="35">
+									<Button name="detail_file_impo"
+											bkimage="troom_ic_flag_off.png"
+											width="16" />
+									<Control width="3" />
+									<Button name="detail_file_favo"
+											bkimage="troom_ic_scrap_off.png"
+											width="16" />
+								</HorizontalLayout>
+							</HorizontalLayout>
+							<Control height="40" />
+						</VerticalLayout>
+					</HorizontalLayout>
+					<Control height="10"/>
+				</VerticalLayout>
+				<Control width="10" />
+			</HorizontalLayout>
+			<HorizontalLayout name="detail_file_thumnail_area" visible="false"
+										height="0" width="330" align="center">
+				<Control width="15" />
+				<!-- 썸네일 -->
+				<HorizontalLayout width="310" align="center">
+					<Control />
+					<Control name="detail_file_thumnail" align="center" />
+					<Control />
+				</HorizontalLayout>
+				<Control width="5" />
+			</HorizontalLayout>
+			<!-- 날짜, 용량, 다운로드, 전달 기능, 모임이름 -->
+			<Control height="15" />
+			<HorizontalLayout>
+				<Control width="20" />
+				<VerticalLayout height="50">
+					<HorizontalLayout height="11">
+						<VerticalLayout width="10">
+							<Control />
+							<Control height="5" bkimage="troom_bl_dot_01.png" />
+							<Control />
+						</VerticalLayout>
+						<Label name="detail_file_time"
+									width="185"
+									text="2015년 6월 28일 오후 22:12"
+									textcolor="#FFB9B9B9"
+									font="10"
+									align="left" />
+						<Control width="6" />
+						<VerticalLayout width="10">
+							<Control />
+							<Control height="5" bkimage="troom_bl_dot_01.png" />
+							<Control />
+						</VerticalLayout>
+						<Label name="detail_file_size"
+									width="100"
+									text="267KB"
+									textcolor="#FF999999"
+									font="10"
+									align="left" />
+						<Control />
+					</HorizontalLayout>
+					<Control height="9" />
+					<HorizontalLayout height="11">
+						<VerticalLayout width="10">
+							<Control />
+							<Control height="5" bkimage="troom_bl_dot_01.png" />
+							<Control />
+						</VerticalLayout>
+						<Button name="detail_file_download"
+									width="50"
+									text="다운로드"
+									tooltip="파일 다운로드"
+									textcolor="#FF9EBCC3"
+									font="10"
+									align="left" />
+						<Control width="6" />
+						<VerticalLayout width="10">
+							<Control />
+							<Control height="5" bkimage="troom_bl_dot_01.png" />
+							<Control />
+						</VerticalLayout>
+						<Button name="detail_file_forward"
+									width="100"
+									text="네이트온으로 전달"
+									tooltip="파일 전달"
+									textcolor="#FF9EBCC3"
+									font="10"
+									align="left" />
+						<Control width="6" />
+						<VerticalLayout width="10">
+							<Control />
+							<Control height="5" bkimage="troom_bl_dot_01.png" />
+							<Control />
+						</VerticalLayout>
+						<Button name="detail_file_preview"
+									width="48"
+									text="미리보기"
+									tooltip="미리보기"
+									textcolor="#FF9EBCC3"
+									font="10"
+									align="left" />
+						<Control />
+					</HorizontalLayout>
+					<Control height="9" />
+					<HorizontalLayout height="11">
+						<VerticalLayout width="10">
+							<Control />
+							<Control height="5" bkimage="troom_bl_dot_01.png" />
+							<Control />
+						</VerticalLayout>
+						<Label name="detail_msg_moim"
+									text="디자인팀모임인데 모임이름이 길경우"
+									textcolor="#FFB9B9B9"
+									font="10"
+									height="11"
+									align="left"
+					/>
+					</HorizontalLayout>
+				</VerticalLayout>
+				<Control width="10" />
+			</HorizontalLayout>
+			<Control height="15" />
+				<!-- 경계선-->
+			<HorizontalLayout height="1">
+				<Control width="10" />
+				<Control  height="1" bkcolor="#FFf1f1f1" />
+				<Control width="10" />
+			</HorizontalLayout>
+			<!-- 이전 댓글 보기 -->
+			<VerticalLayout name="detai_file_more_area" height="26" visible="false">
+				<Control height="8" />
+				<HorizontalLayout height="18">
+					<Control />
+					<Button name="detail_file_more"
+								width="93"
+								normalimage= "troom_bt_loadcomment.png"
+								hotimage=	 "troom_bt_loadcomment_over.png"
+								pushedimage= "troom_bt_loadcomment_down.png"
+						/>
+					<Control />
+				</HorizontalLayout>
+			</VerticalLayout>
+		</VerticalLayout>
+  </ListContainerElement>
+</Window>
+
+<!--
+   <HorizontalLayout name="detail_file_item" height="180">
+      <VerticalLayout>
+        <VerticalLayout>
+          <HorizontalLayout height="55">
+            <Control width="10" />
+            <VerticalLayout width="32">
+              <Control height="10" />
+              <HorizontalLayout name="detail_file_ico_hieght">
+                <Control />
+                <Button name="detail_file_ico"
+                      height="32"
+                      mouse="false" />
+                <Control />
+              </HorizontalLayout>
+              <Control />
+            </VerticalLayout>
+            <Control width="13" />
+            <VerticalLayout height="35">
+              <HorizontalLayout>
+                <VerticalLayout>
+                  <Control height="12" />
+                  <Label name="detail_file_owner"
+                       height="12"
+                       text="장은지"
+                       font="7"
+                       textcolor="#FF333333"
+							        />
+                  <Control height="11" />
+                </VerticalLayout>
+                <VerticalLayout width="51">
+                  <Control height="10" />
+                  <HorizontalLayout height="16">
+                    <Button name="detail_file_delete"
+                        bkimage="troom_ic_delete.png"
+                        width="16"
+								        />
+                    <Control width="3" />
+                    <Button name="detail_file_impo"
+                        bkimage="troom_ic_flag_off.png"
+                        width="16"
+								        />
+                    <Control width="3" />
+                    <Button name="detail_file_favo"
+                        bkimage="troom_ic_scrap_off.png"
+                        width="16"
+								        />
+                  </HorizontalLayout>
+                  <Control />
+                </VerticalLayout>
+              </HorizontalLayout>
+              <Label name="detail_file_name"
+                   height="12"
+                   text="파일명 1092939.JPG"
+                   font="8"
+                   textcolor="#FF2B508D"
+					        />
+            </VerticalLayout>
+          </HorizontalLayout>
+          <VerticalLayout name="detail_file_thumnail_area" visible="false"
+                    height="100"
+                    bkcolor="#FFFF2B508D">
+            <Control height="10" />
+            <HorizontalLayout align="center">
+              <Control />
+              <Control name="detail_file_thumanil"
+                   widht="100"
+                   bkcolor="#FF00FFFF"/>
+              <Control />
+            </HorizontalLayout>
+          </VerticalLayout>
+          <VerticalLayout height="81"
+                    inset="10,0,0,0">
+            <Control height="15" />
+            <HorizontalLayout height="11">
+              <VerticalLayout width="10">
+                <Control />
+                <Control height="5" bkimage="troom_bl_dot_01.png" />
+                <Control />
+              </VerticalLayout>
+              <Label name="detail_file_time"
+                   width="177"
+                   text="2015년 6월 28일 오후 2:12"
+                   textcolor="#FFB9B9B9"
+                   font="10"
+                   align="left"
+					        />
+              <Control width="6" />
+              <VerticalLayout width="10">
+                <Control />
+                <Control height="5" bkimage="troom_bl_dot_01.png" />
+                <Control />
+              </VerticalLayout>
+              <Label name="detail_file_size"
+                   width="100"
+                   text="267KB"
+                   textcolor="#FFB9B9B9"
+                   font="10"
+                   align="left"
+					        />
+              <Control />
+            </HorizontalLayout>
+            <Control height="9" />
+            <HorizontalLayout height="11">
+              <VerticalLayout width="10">
+                <Control />
+                <Control height="5" bkimage="troom_bl_dot_01.png" />
+                <Control />
+              </VerticalLayout>
+              <Button name="detail_file_download"
+                    width="50"
+                    text="다운로드"
+                    textcolor="#FFB9B9B9"
+                    font="10"
+                    align="left"
+					        />
+              <Control width="6" />
+              <VerticalLayout width="10">
+                <Control />
+                <Control height="5" bkimage="troom_bl_dot_01.png" />
+                <Control />
+              </VerticalLayout>
+              <Button name="detail_file_forward"
+                    width="100"
+                    text="네이트온으로 전달"
+                    textcolor="#FFB9B9B9"
+                    font="10"
+                    align="left"
+					        />
+              <Control />
+            </HorizontalLayout>
+            <Control height="9" />
+            <HorizontalLayout height="11">
+              <VerticalLayout width="10">
+                <Control />
+                <Control height="5" bkimage="troom_bl_dot_01.png" />
+                <Control />
+              </VerticalLayout>
+              <Label name="detail_msg_moim"
+                   text="디자인팀모임인데 모임이름이 길경우"
+                   textcolor="#FFB9B9B9"
+                   font="10"
+                   align="left"
+					        />
+            </HorizontalLayout>
+            <Control height="15" />
+          </VerticalLayout>
+        </VerticalLayout>
+        <VerticalLayout name="detai_file_more_area" height="41">
+          <Control height="8" />
+          <HorizontalLayout height="18">
+            <Control />
+            <Button name="detail_file_more"
+                  width="93"
+                  normalimage= "troom_bt_loadcomment.png"
+                  hotimage=	 "troom_bt_loadcomment_over.png"
+                  pushedimage= "troom_bt_loadcomment_down.png"
+					    />
+            <Control />
+          </HorizontalLayout>
+          <Control height="15" />
+        </VerticalLayout>
+      </VerticalLayout>
+    </HorizontalLayout>
+-->

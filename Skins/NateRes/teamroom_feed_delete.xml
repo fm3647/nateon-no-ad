@@ -1,0 +1,82 @@
+
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<Window>
+
+    <ListContainerElement name="FeedDeleteVerticalLayout" height="59" inset="5,5,0,5" menu="true" >
+        <VerticalLayout name="FrameLayout">
+            <HorizontalLayout>
+			
+                <VerticalLayout width="10">																<!-- 왼쪽 공백 -->
+                </VerticalLayout>
+				                
+                <HorizontalLayout>
+                    <VerticalLayout>
+					
+                        <VerticalLayout height="15" name="NameVerticalLayout">							<!-- 이름 영역 -->
+                            <HorizontalLayout inset="0,0,0,0">
+							
+                                <HorizontalLayout name="NameLayout" width="0">
+                                    <Button name="feed_NameLabel" text="[이름]" 
+                                           textcolor="#FF333333" disabledtextcolor="#FFA7A6AA" 
+                                           font="7" endellipsis="true" align="left" />
+                                </HorizontalLayout>
+								
+								<Control width="8" />
+								
+                                <HorizontalLayout width="100" >
+                                    <Label name="feed_DateLabel" text="오후 00:00" 
+                                           textcolor="#FFB9B9B9" disabledtextcolor="#FFA7A6AA" 
+                                           font="10" />
+                                </HorizontalLayout>
+								
+                            </HorizontalLayout>
+                        </VerticalLayout>
+						
+						<VerticalLayout height="7" name="SpaceVerticalLayout" />						<!-- 위아래 중간 공백 -->
+						
+                        <VerticalLayout height="40">						
+                            <HorizontalLayout height="15">
+							
+                                <HorizontalLayout name="DeleteVerticalLayout" >							<!-- 텍스트 영역 -->
+                                    <Label text="삭제된 콘텐츠입니다." 
+                                           textcolor="#FFB9B9B9" disabledtextcolor="#FFA7A6AA" 
+                                           font="10" />
+                                </HorizontalLayout>
+
+                            </HorizontalLayout>
+							
+							<HorizontalLayout height="10" />
+								
+							<HorizontalLayout name="OwnerVerticalLayout" visible="false" height="15">							<!-- 텍스트 영역 -->
+	
+								<Label text="(" width="5" textcolor="#FF999999" font="10" align="left" />
+				   
+								<HorizontalLayout name="OrgNameLayout" width="0">	   
+									<Button name="feed_OrgName" text="[작성자]"
+													textcolor="#FF999999" font="9" align="left" endellipsis="true" />
+								</HorizontalLayout>
+			
+								<Label text="님의 파일 - " width="80" textcolor="#FF999999" font="10" align="left" />
+			
+								<HorizontalLayout name="OrgFileLayout" width="0">
+									<Button name="feed_OrgFile" text="[파일]" 
+													textcolor="#FF2B508D" font="10" align="left" endellipsis="true" />
+								</HorizontalLayout>	   
+
+								<Label text=")" width="5" textcolor="#FF999999" font="10" align="left" />
+										   
+							</HorizontalLayout>
+						</VerticalLayout>
+						
+	                </VerticalLayout>
+		        </HorizontalLayout>
+								
+				<VerticalLayout width="5">																<!-- 오픈쪽 공백 -->					
+				</VerticalLayout>
+				
+			</HorizontalLayout>
+        </VerticalLayout>
+    </ListContainerElement>
+	
+</Window>
