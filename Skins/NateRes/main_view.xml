@@ -113,7 +113,7 @@
 			<!-- private area -->
       <HorizontalLayout name="mainProfile" height="54" bkcolor="#FF75C2D4">
         <Control width="11" />
-        
+
         <VerticalLayout width="66">
           <Control height="16" />
           <HorizontalLayout height="32">
@@ -124,7 +124,7 @@
                     hotimage=    "btn_main_file_over.png"
                     pushedimage= "btn_main_file_down.png"
             />
-            
+
             <Control width="1" />
 
             <Button name="troomBtn"
@@ -135,7 +135,7 @@
                     pushedimage= "btn_main_troom_down.png"
             />
           </HorizontalLayout>
-          
+
           <Button name="myfileBtnBadge" visible="false"
               width="15" height="15"
               float="true" pos="27,13,42,28"
@@ -143,100 +143,18 @@
               hotimage=    "ico_badge_new.png"
               pushedimage= "ico_badge_new.png"
 						/>
-        </VerticalLayout>        
+        </VerticalLayout>
 
         <Control />
-        
-        <VerticalLayout width="113">
-          <Control height="23" />
-          
-          <HorizontalLayout height="26">
-            <Button name="mailBtn"
-                  tooltip="메일 읽기"
-                  width="26" height="26"
-                  normalimage= "btn_main_mail.png"
-                  hotimage=    "btn_main_mail_over.png"
-                  pushedimage= "btn_main_mail_down.png"
-								/>
 
-            <Control width="1"/>
 
-            <Button name="nateBtn"
-                  tooltip="네이트 메인 페이지로 이동"
-                  width="26" height="26"
-                  normalimage= "btn_main_nate.png"
-                  hotimage=    "btn_main_nate_over.png"
-                  pushedimage= "btn_main_nate_down.png"
-								/>
-
-            <Control width="1"/>
-
-            <Button name="minihomeyBtn"
-                  width="26" height="26"
-                  normalimage= "btn_main_mycyworld.png"
-                  hotimage=    "btn_main_mycyworld_over.png"
-                  pushedimage= "btn_main_mycyworld_down.png"
-								/>
-
-            <Control width="1"/>
-
-            <Button name="noticeBtn"
-                  tooltip="공지사항"
-                  width="26" height="26"
-                  normalimage= "btn_main_notice.png"
-                  hotimage=    "btn_main_notice_over.png"
-                  pushedimage= "btn_main_notice_down.png"
-								/>
-
-            <Control width="6"/>
-
-          </HorizontalLayout>
-          
-          <!-- Badge Area for mail, nate, minihp, notice-->          
-          <Button name="mailBtnBadge" visible="false"
-                float="true" pos="6, 18, 21, 33"
-                mouse="false"
-                font="9"
-                textcolor="#FFFFFFFF"
-                textpadding="0,0,0,2"
-                normalimage="file='ico_badge_num.png' corner='5,0,5,0'"
-							/>
-          <Button name="nateBtnBadge" visible="false"
-                float="true" pos="33, 18, 48, 33"                
-                font="9"
-                normalimage= "ico_badge_new.png"
-                hotimage=    "ico_badge_new.png"
-                pushedimage= "ico_badge_new.png"
-							/>
-          <Button name="minihomeyBtnBadge" visible="false"
-                float="true" pos="60, 18, 75, 33"                
-                font="9"
-                normalimage= "ico_badge_new.png"
-                hotimage=    "ico_badge_new.png"
-                pushedimage= "ico_badge_new.png"
-							/>
-          <Button name="noticeBtnBadge" visible="false"
-                float="true" pos="87, 18, 102, 33"
-                font="9"
-                normalimage= "ico_badge_new.png"
-                hotimage=    "ico_badge_new.png"
-                pushedimage= "ico_badge_new.png"
-							/>
-          
-        </VerticalLayout>
       </HorizontalLayout>
 
 			<!--buddylist area -->
 			<VerticalLayout name="mainContents" minheight="1" bkcolor="#FFFFFFFF">
 				<HorizontalLayout height="31">
-					<VerticalLayout width="22">
+					<VerticalLayout width="1">
 						<Button name="showServicebtn" tooltip="서비스탭을 열고 닫음"
-										float="true"
-										pos="0,0,22,31"
-										width="22" height="31"
-										normalimage="btn_main_tapopen.png"
-										hotimage="btn_main_tapopen_over.png"
-										pushedimage="btn_main_tapopen_down.png"
 						/>
 					</VerticalLayout>
 					<Control width="5" />
@@ -360,8 +278,8 @@
 			</VerticalLayout>
 
 			<!-- subaccount logged in -->
-			<HorizontalLayout name="subProfile" visible="false" 
-							  height="54" 
+			<HorizontalLayout name="subProfile" visible="false"
+							  height="54"
 							  bkimage="file='2ndID_skin_main.png' corner='2,2,2,2'">
 				<Control width="13" />
 
@@ -374,9 +292,9 @@
 
 				<Control width="10" />
 
-				<VerticalLayout name="2ndID_loginedButton">					
+				<VerticalLayout name="2ndID_loginedButton">
 					<Button name="subMyfileBtn"
-									tooltip="내 파일함 열기"									
+									tooltip="내 파일함 열기"
 									float="true"
 									pos="0,25,22,47"
 									width="22" height="22"
@@ -396,7 +314,7 @@
 				</VerticalLayout>
 
 				<Control width="10" />
-				
+
 			</HorizontalLayout>
 
 			<!-- subaccount buddylist area -->
@@ -519,7 +437,7 @@
 				<VerticalLayout>
 					<Control height="1" />
 					<HorizontalLayout>
-						<Label text="부계정" textcolor="#FF000000" font="1" width="46" />						
+						<Label text="부계정" textcolor="#FF000000" font="1" width="46" />
 						<Label name="subID"
 									 text=" "
 									 align="left"
@@ -552,96 +470,12 @@
 									normalimage="2ndID_btn_my_login.png"
 									hotimage="2ndID_btn_my_login_over.png"
 									pushedimage="2ndID_btn_my_login_down.png"
-					/>					
+					/>
 				</VerticalLayout>
 
 				<Control width="10" />
 
 			</HorizontalLayout>
-
-			<!-- AD area -->
-			<VerticalLayout name="BottomArea" height="112" bkcolor="#FFF4F4F4">				
-				<Control height="1" bkcolor="#FFD0D0D0" />
-				<!-- shop AD -->
-				<HorizontalLayout name="tickerShopLay" height="23" bkcolor="FFFFFF">
-					<Ticker name="tickerShopAd"
-									tickertype="map"
-									imagewidth="289"
-									bkcolor="FFFFFF"
-									rollinterval="3000"
-									align="left"
-					/>
-					<VerticalLayout width="11">
-						<Button name="btnShopUp"
-										float="false"
-										width="11" height="11"
-										normalimage="btn_vback_01.png"
-										hotimage="btn_vback_01_over.png"
-										pushedimage="btn_vback_01_down.png"
-						/>
-						<Control height="1" />
-						<Button name="btnShopDn"
-										float="false"
-										width="11" height="11"
-										normalimage="btn_vforward_01.png"
-										hotimage="btn_vforward_01_over.png"
-										pushedimage="btn_vforward_01_down.png"
-						/>
-					</VerticalLayout>
-				</HorizontalLayout>
-				<Control height="1" bkcolor="#FFEBEBEB" />
-				<!-- banner AD -->
-				<HorizontalLayout name="tickerMainLay" height="60" bkcolor="F4F4F4">
-					<Ticker name="tickerMainAd"
-									tickertype="image"
-									imagewidth="255"
-									bkcolor="F4F4F4" 
-									align="center"
-					/>
-				</HorizontalLayout>
-				<Control height="1" bkcolor="#FFEBEBEB" />
-				<!-- ticker -->
-				<HorizontalLayout name="tickerNewsLay" height="26">
-					<Control width="4" />
-					<VerticalLayout width="11">
-						<Control height="2" />
-						<Button name="btnNewsUp"
-										float="false"
-										width="11" height="11"
-										normalimage="btn_vback_01.png"
-										hotimage="btn_vback_01_over.png"
-										pushedimage= "btn_vback_01_down.png"
-						/>
-						<Button name="btnNewsDn"
-										float="false"
-										width="11" height="11"
-										normalimage="btn_vforward_01.png"
-										hotimage="btn_vforward_01_over.png"
-										pushedimage= "btn_vforward_01_down.png"
-						/>
-						<Control height="2" />
-					</VerticalLayout>
-					<Control width="8" />
-					<Ticker name="tickerNews"
-									tickertype="text"
-									textalign="left"
-									font="5"
-									rollinterval="3000"
-									scrollinterval= "10"
-									textcolor="888888"
-									bkcolor="F4F4F4"
-					/>
-					<Control width="8" />
-					<VerticalLayout width="15" bkcolor="F4F4F4">
-						<Button name="btnGripper"
-										mouse="false"
-										float="true"
-										pos="3,14,13,24"
-										normalimage="ico_handle.png"
-						/>
-					</VerticalLayout>
-				</HorizontalLayout>
-			</VerticalLayout>
 
 			<!-- profile edit -->
 			<VerticalLayout name="layerpfedit"
@@ -813,51 +647,51 @@
 
 			<!-- emoticon help layer -->
 			<!--
-			<Container name="LayerReqEmoticon" visible="false" 
-					   float="true" pos="61,44,61,44" 
+			<Container name="LayerReqEmoticon" visible="false"
+					   float="true" pos="61,44,61,44"
 					   height="96" width="170">
 				<VerticalLayout>
 					<HorizontalLayout height="6" />
 					<HorizontalLayout>
-						<VerticalLayout bordersize="1" 
-									    bordercolor="#FF777777" 
+						<VerticalLayout bordersize="1"
+									    bordercolor="#FF777777"
 									    bkcolor="#FFFFFFFF">
-							<Button name="btnCloseUseEmoticon" 
-								    float="true" pos="151,6,165,20" 
-								    normalimage= "btn_title_close.png" 
-								    hotimage=    "btn_title_close_over.png" 
-								    pushedimage= "btn_title_close_down.png" 
+							<Button name="btnCloseUseEmoticon"
+								    float="true" pos="151,6,165,20"
+								    normalimage= "btn_title_close.png"
+								    hotimage=    "btn_title_close_over.png"
+								    pushedimage= "btn_title_close_down.png"
 							/>
-							<Label float="true" pos="1,20,169,32" 
-								   text="새로운 이모티콘으로" 
-								   textcolor="#FF333333" 
-								   font="4" 
-								   align="vcenter" 
+							<Label float="true" pos="1,20,169,32"
+								   text="새로운 이모티콘으로"
+								   textcolor="#FF333333"
+								   font="4"
+								   align="vcenter"
 							/>
-							<Label float="true" pos="1,38,169,50" 
-								   text="나의 상태를 표시해 보세요." 
-								   textcolor="#FF333333" 
-								   font="4" 
-								   align="vcenter" 
+							<Label float="true" pos="1,38,169,50"
+								   text="나의 상태를 표시해 보세요."
+								   textcolor="#FF333333"
+								   font="4"
+								   align="vcenter"
 							/>
-							<CheckBox name="chkUseEmoticon" 
-									  float="true" pos="35,65,50,80" 
-									  selected="false" 
-									  normalimage=   "btn_uncheck_03.png" 
-									  selectedimage= "btn_check_03.png" 
+							<CheckBox name="chkUseEmoticon"
+									  float="true" pos="35,65,50,80"
+									  selected="false"
+									  normalimage=   "btn_uncheck_03.png"
+									  selectedimage= "btn_check_03.png"
 							/>
-							<Label name="lblUseEmoticon" 
-								   float="true" pos="58,65,135,80" 
-								   text="다시 보지 않기" 
-								   textcolor="#FF9C9C9C" 
-								   font="5" 
+							<Label name="lblUseEmoticon"
+								   float="true" pos="58,65,135,80"
+								   text="다시 보지 않기"
+								   textcolor="#FF9C9C9C"
+								   font="5"
 							/>
 						</VerticalLayout>
 					</HorizontalLayout>
-					<Button float="true" pos="26,0,37,7" 
-						    mouse="false" 
-						    width="11" height="7" 
-						    normalimage="layer_tail.png" 
+					<Button float="true" pos="26,0,37,7"
+						    mouse="false"
+						    width="11" height="7"
+						    normalimage="layer_tail.png"
 					/>
 				</VerticalLayout>
 			</Container>
@@ -978,46 +812,46 @@
 
 			<!-- cyworld help layer -->
 			<!--
-			<Container name="LayerReqCy" visible="false" 
-				       float="true" pos="215,73,289,169" 
+			<Container name="LayerReqCy" visible="false"
+				       float="true" pos="215,73,289,169"
 				       height="76" width="170">
 				<VerticalLayout>
 					<HorizontalLayout height="6" />
 					<HorizontalLayout>
-						<VerticalLayout bordersize="1" 
-									    bordercolor="#FF777777" 
+						<VerticalLayout bordersize="1"
+									    bordercolor="#FF777777"
 									    bkcolor="#FFFFFFFF">
-							<Button name="btnCloseUseCy" 
-								    float="true" pos="151,6,165,20" 
-								    normalimage= "btn_title_close.png" 
-								    hotimage=    "btn_title_close_over.png" 
-								    pushedimage= "btn_title_close_down.png" 
+							<Button name="btnCloseUseCy"
+								    float="true" pos="151,6,165,20"
+								    normalimage= "btn_title_close.png"
+								    hotimage=    "btn_title_close_over.png"
+								    pushedimage= "btn_title_close_down.png"
 							/>
-							<Label float="true" pos="1,28,169,43" 
-								   text="<b><c #31aed8>New!</c><c #222222> 미니홈피 바로가기</c></b>" 
-								   font="4" 
-								   align="vcenter" 
-								   showhtml="true" 
+							<Label float="true" pos="1,28,169,43"
+								   text="<b><c #31aed8>New!</c><c #222222> 미니홈피 바로가기</c></b>"
+								   font="4"
+								   align="vcenter"
+								   showhtml="true"
 							/>
-							<CheckBox name="chkUseCy" 
-									  float="true" pos="35,47,50,62" 
-									  selected="false" 
-									  normalimage="btn_uncheck_03.png" 
-									  selectedimage="btn_check_03.png" 
+							<CheckBox name="chkUseCy"
+									  float="true" pos="35,47,50,62"
+									  selected="false"
+									  normalimage="btn_uncheck_03.png"
+									  selectedimage="btn_check_03.png"
 							/>
-							<Label name="lblUseCy" 
-								   float="true" pos="58,47,135,62" 
-								   text="다시 보지 않기" 
-								   textcolor="#FF9C9C9C" 
-								   font="5" 
+							<Label name="lblUseCy"
+								   float="true" pos="58,47,135,62"
+								   text="다시 보지 않기"
+								   textcolor="#FF9C9C9C"
+								   font="5"
 							/>
 						</VerticalLayout>
 					</HorizontalLayout>
-					<Button name="btnIndicator" 
-						    float="true" pos="120,0,37,7" 
-						    mouse="false" 
-						    width="11" height="7" 
-						    normalimage="layer_tail.png" 
+					<Button name="btnIndicator"
+						    float="true" pos="120,0,37,7"
+						    mouse="false"
+						    width="11" height="7"
+						    normalimage="layer_tail.png"
 					/>
 				</VerticalLayout>
 			</Container>

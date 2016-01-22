@@ -11,106 +11,106 @@
     <Font name="돋움" size="11" bold="true" italic="false" />
 	<Font name="돋움" size="12" bold="false" italic="false" />
 	<Font name="돋움" size="12" bold="true" italic="false" />
-	
+
     <Default name="VScrollBar" width="17" value="button1normalimage=&quot;file='scrollbar.png' source='0,0,17,17'&quot; button1hotimage=&quot;file='scrollbar.png' source='17,0,34,17,17'&quot; button1pushedimage=&quot;file='scrollbar.png' source='34,0,51,17'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,34,17,51'&quot; button2hotimage=&quot;file='scrollbar.png' source='17,34,34,51'&quot; button2pushedimage=&quot;file='scrollbar.png' source='34,34,51,51'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,51,17,152' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='17,51,34,152' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='34,51,51,152' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,17,17,34'&quot; " />
-	
+
 	<!-- VerticalLayout name="RootTop" width="350" height="500" bkimage="file=&apos;chat_skin_bg.png&apos; corner=&apos;4,42,4,26&apos;" bkcolor="#FFFFFFFF" -->
     <VerticalLayout name="RootTop" width="302" height="348" bkcolor="#FFFFFFFF" bordersize="1" bordercolor="#FFAAAAAA" inset="1,1,1,1" >
-					
+
 		<!-- VerticalLayout name="Frame"  bkimage="file=&apos;body_stroke.png&apos; corner=&apos;7,7,7,7&apos;" inset="1,0,1,1" hole="true" -->
 		<VerticalLayout name="Frame" hole="true">
-		
+
             <!-- VerticalLayout name="HeaderLayout" height="42" -->
 			<VerticalLayout name="HeaderLayout" height="40" bkimage="chat_skin_bg.png">
-				
-				<VerticalLayout name="HeaderVerticalLayout" height="40">				
+
+				<VerticalLayout name="HeaderVerticalLayout" height="40">
 					<HorizontalLayout>
-								
+
 						<HorizontalLayout>
 							<!-- VerticalLayout width="64">
 								<Button name="BuddyAddButton"tooltip="대화 상대 초대하기"
-									float="true" pos="12,8,35,31" width="23" height="23" 
+									float="true" pos="12,8,35,31" width="23" height="23"
 									normalimage="chat_btn_buddyadd.png" hotimage="chat_btn_buddyadd_over.png" pushedimage="chat_btn_buddyadd_down.png" />
-								<Button name="AlramOnButton" visible="true" 
+								<Button name="AlramOnButton" visible="true"
 									float="true" pos="41,8,64,31" width="23" height="23"
 									normalimage="chat_btn_alarm_on.png" hotimage="chat_btn_alarm_on_over.png" pushedimage="chat_btn_alarm_on_down.png" />
 								<Button name="AlramOffButton" visible="false"
 									float="true" pos="41,8,64,31" width="23" height="23"
 									normalimage="chat_btn_alarm_off.png" hotimage="chat_btn_alarm_off_over.png" pushedimage="chat_btn_alarm_off_down.png" />
-							</VerticalLayout>							
+							</VerticalLayout>
 							<Control / -->
-							
+
 							<VerticalLayout width="10" />
-							
+
 							<VerticalLayout width="17" name="cryptImg_layout" visible="false">
 								<Button name="cryptImg" mouse="false"
-									float="true" pos="0,12,15,27" width="15" height="15" 
+									float="true" pos="0,12,15,27" width="15" height="15"
 									normalimage="chat_ico_security.png" hotimage="chat_ico_security.png" pushedimage="chat_ico_security.png" />
 							</VerticalLayout>
-							
+
 							<VerticalLayout width="17" name="PocStateLayout">
 								<Control height="13" />
 								<VerticalLayout height="13">
 									<Button name="PocState" float="true" keyboard="false" mouse="false" width="13" height="13" normalimage="ico_poc_pc.png" />
 									<Button name="blockBtn" visible="false" float="true" width="13" height="13" bkimage="ico_poc_block.png" />
 									<Button name="makebuddyBtn" visible="false" float="true" width="13" height="13" bkimage="chat_btn_makebuddy.png" />
-								</VerticalLayout>														
+								</VerticalLayout>
 								<Control height="14" />
 							</VerticalLayout>
-							
+
 							<VerticalLayout name="GroupName_layout" minwidth="160">
 								<Control height="13" />
 								<VerticalLayout height="15">
 									<Button height="15" name="GroupName" text="[이름]" textcolor="#FF000000" font="6" endellipsis="true" />
-								</VerticalLayout>														
+								</VerticalLayout>
 								<!-- Control height="13" / -->
 							</VerticalLayout>
-								
-							<!-- HorizontalLayout minwidth="100">	
+
+							<!-- HorizontalLayout minwidth="100">
 								<VerticalLayout width="15">
 									<Control height="14" />
 									<VerticalLayout height="13">
 										<Button name="PocState" float="true" keyboard="false" mouse="false" width="13" height="13" normalimage="ico_poc_pc.png" />
 										<Button name="blockBtn" visible="false" float="true" width="13" height="13" bkimage="ico_poc_block.png" />
 										<Button name="makebuddyBtn" visible="false" float="true" width="13" height="13" bkimage="chat_btn_makebuddy.png" />
-									</VerticalLayout>														
+									</VerticalLayout>
 									<Control height="13" />
-								</VerticalLayout>								
+								</VerticalLayout>
 								<VerticalLayout name="GroupName_layout" width="0">
 									<Control height="12" />
 									<VerticalLayout height="15">
 										<Label name="GroupName" text="[이름]" textcolor="#FFFFFFFF"font="6" endellipsis="true" />
-									</VerticalLayout>														
+									</VerticalLayout>
 									<Control height="13" />
 								</VerticalLayout>
 							</HorizontalLayout -->
-						
+
 							<Control />
-							
+
 							<VerticalLayout width="79">
 								<Control height="12" />
 								<VerticalLayout height="15">
-									<Button name="MenuButton" tooltip="메뉴" 
-											width="15" height="15" float="true" pos="0,0,15,15" 
+									<Button name="MenuButton" tooltip="메뉴"
+											width="15" height="15" float="true" pos="0,0,15,15"
 											normalimage="btn_chat_menu.png" hotimage="btn_chat_menu_over.png" pushedimage="btn_chat_menu_down.png" />
-									<Control float="true" pos="17,0,23,15" width="6" height="15" bkimage="chat_bar_v_01.png" />		
-									<Button name="MiniButton" tooltip="미니대화 설정" 
-											width="15" height="15" float="true" pos="24,0,39,15"  
+									<Control float="true" pos="17,0,23,15" width="6" height="15" bkimage="chat_bar_v_01.png" />
+									<Button name="MiniButton" tooltip="미니대화 설정"
+											width="15" height="15" float="true" pos="24,0,39,15"
 											normalimage="btn_chat_mode_chat_mini.png" hotimage="btn_chat_mode_chat_mini.png" pushedimage="btn_chat_mode_chat_mini_down.png" />
-									<Button name="minbtn" tooltip="최소화" 
+									<Button name="minbtn" tooltip="최소화"
 											width="15" height="15" float="true" pos="40,0,55,15"
-											normalimage="btn_chat_winminimize.png" hotimage="btn_chat_winminimize_over.png" pushedimage="btn_chat_winminimize_down.png" />									
-									<Button name="closebtn" tooltip="창 닫기"  
-											width="15" height="15" float="true" pos="56,0,71,15" 
+											normalimage="btn_chat_winminimize.png" hotimage="btn_chat_winminimize_over.png" pushedimage="btn_chat_winminimize_down.png" />
+									<Button name="closebtn" tooltip="창 닫기"
+											width="15" height="15" float="true" pos="56,0,71,15"
 											normalimage="btn_chat_winclose.png" hotimage="btn_chat_winclose_over.png" pushedimage= "btn_chat_winclose_down.png" />
 								</VerticalLayout>
 								<Control height="5" />
 							</VerticalLayout>
-							
+
 						</HorizontalLayout>
 					</HorizontalLayout>
-				</VerticalLayout>			
-                <!-- HorizontalLayout name="HeaderHorzLayout" visible="false">				
+				</VerticalLayout>
+                <!-- HorizontalLayout name="HeaderHorzLayout" visible="false">
                     <HorizontalLayout name="HeaderLeftLayout">
                         <Control width="10"/>
                         <VerticalLayout width="29">
@@ -134,30 +134,30 @@
                                 <Label name="GroupName" text="[이름]" textcolor="#FF222222" disabledtextcolor="#FFA7A6AA" font="1" endellipsis="true" />
                             </VerticalLayout>
                         </VerticalLayout>
-                    </HorizontalLayout>					
-                    <HorizontalLayout name="HeaderRightLayout" width="147">					
-                        <Button name="AlramOnButton" visible="true" float="true" keyboard="false" pos="0,10,0,0" width="24" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
+                    </HorizontalLayout>
+                    <HorizontalLayout name="HeaderRightLayout" width="147">
+                        <Button name="AlramOnButton" visible="true" float="true" keyboard="false" pos="0,10,0,0" width="24" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
                                 normalimage="chat_btn_alarm_on.png" hotimage="chat_btn_alarm_on_over.png" pushedimage="chat_btn_alarm_on_down.png" />
-                        <Button name="AlramOffButton" visible="false" float="true" keyboard="false" pos="0,10,0,0" width="24" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
+                        <Button name="AlramOffButton" visible="false" float="true" keyboard="false" pos="0,10,0,0" width="24" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
                                 normalimage="chat_btn_alarm_off.png" hotimage="chat_btn_alarm_off_over.png" pushedimage="chat_btn_alarm_off_down.png" />
-                        <Button name="BuddyAddButton" tooltip="대화 상대 초대하기" float="true" keyboard="false" pos="27,10,0,0" width="24" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
-                                normalimage="chat_btn_buddyadd.png" hotimage="chat_btn_buddyadd_over.png" pushedimage="chat_btn_buddyadd_down.png" />								
-                        <Button name="MenuButton" float="true" keyboard="false" pos="54,7,0,0" width="36" height="14" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
-                                normalimage="btn_title_menu.png" hotimage="btn_title_menu_over.png" pushedimage="btn_title_menu_down.png" />								
-                        <Control float="true" pos="94,8,0,0" width="1" height="12" bkimage="bar_v_01.png" />						
-                        <Button name="MiniButton" float="true" keyboard="false" tooltip="미니대화 설정" pos="99,7,0,0" width="14" height="14" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
+                        <Button name="BuddyAddButton" tooltip="대화 상대 초대하기" float="true" keyboard="false" pos="27,10,0,0" width="24" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+                                normalimage="chat_btn_buddyadd.png" hotimage="chat_btn_buddyadd_over.png" pushedimage="chat_btn_buddyadd_down.png" />
+                        <Button name="MenuButton" float="true" keyboard="false" pos="54,7,0,0" width="36" height="14" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+                                normalimage="btn_title_menu.png" hotimage="btn_title_menu_over.png" pushedimage="btn_title_menu_down.png" />
+                        <Control float="true" pos="94,8,0,0" width="1" height="12" bkimage="bar_v_01.png" />
+                        <Button name="MiniButton" float="true" keyboard="false" tooltip="미니대화 설정" pos="99,7,0,0" width="14" height="14" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
 								normalimage="btn_title_mode_chat_mini.png" hotimage="btn_title_mode_chat_mini_over.png" pushedimage="btn_title_mode_chat_mini_down.png" />
-                        <Button name="minbtn" tooltip="최소화" float="true" keyboard="false" pos="114,7,0,0" width="14" height="14" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
+                        <Button name="minbtn" tooltip="최소화" float="true" keyboard="false" pos="114,7,0,0" width="14" height="14" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
                                 normalimage="btn_title_minimize.png" hotimage="btn_title_minimize_over.png" pushedimage="btn_title_minimize_down.png" />
-                        <Button name="closebtn" tooltip="창 닫기" float="true" keyboard="false" pos="129,7,0,0" width="14" height="14" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
-                                normalimage="btn_title_close.png" hotimage="btn_title_close_over.png" pushedimage="btn_title_close_down.png" />								
-                        <Slider name="TransfarentSlide" tooltip="창의 투명도를 조절합니다." float="true" keyboard="false" pos="100,27,0,0" width="39" height="9" 
-                                bkimage="file=&apos;chat_control_opacity_bar.png&apos; dest=&apos;0,4,39,6&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
-                                min="50" max="255" value="255" hor="true" thumbimage="chat_control_opacity_handle.png" thumbsize="8,9" />								
-                    </HorizontalLayout>					
+                        <Button name="closebtn" tooltip="창 닫기" float="true" keyboard="false" pos="129,7,0,0" width="14" height="14" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+                                normalimage="btn_title_close.png" hotimage="btn_title_close_over.png" pushedimage="btn_title_close_down.png" />
+                        <Slider name="TransfarentSlide" tooltip="창의 투명도를 조절합니다." float="true" keyboard="false" pos="100,27,0,0" width="39" height="9"
+                                bkimage="file=&apos;chat_control_opacity_bar.png&apos; dest=&apos;0,4,39,6&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+                                min="50" max="255" value="255" hor="true" thumbimage="chat_control_opacity_handle.png" thumbsize="8,9" />
+                    </HorizontalLayout>
                 </HorizontalLayout -->
             </VerticalLayout>
-						
+
             <VerticalLayout name="TopNoticeLayout" height="25" visible="false">
                 <HorizontalLayout name="NoticeControl" bkimage="file='chat_bg_noti_memo.png' corner=&apos;1,0,30,13&apos;" inset="10,0,1,0">
                     <HorizontalLayout>
@@ -174,7 +174,7 @@
 						<Control name="NoticeEdit" />
 					</VerticalLayout>
 					<VerticalLayout height="10">
-					</VerticalLayout>					
+					</VerticalLayout>
 					<VerticalLayout name="TopNoticeLayoutExpandBottom" height="38">
 						<HorizontalLayout height="8" />
 						<HorizontalLayout>
@@ -187,13 +187,13 @@
 							<Button name="NoticeCloseButtonExpand" width="46" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
 									normalimage="chat_btn_noti_close.png" hotimage="chat_btn_noti_close_over.png" pushedimage="chat_btn_noti_close_down.png" />
 							<Control width="8" />
-						</HorizontalLayout>	
-					</VerticalLayout>					
+						</HorizontalLayout>
+					</VerticalLayout>
 				</VerticalLayout>
 				<!-- VerticalLayout name="NoticeControlLineExpand" height="1" bkimage="file='chat_bg_noti_memo_line.png' corner=&apos;1,0,30,0&apos;" inset="10,0,1,0">
 				</VerticalLayout -->
 			</VerticalLayout>
-			
+
             <VerticalLayout name="TopAlertType1Layout" height="25" visible="false">
                 <HorizontalLayout bkimage="chat_bg_noti_risk.png" inset="10,7,1,6">
                     <HorizontalLayout>
@@ -204,7 +204,7 @@
                         <Button name="AlertType1CloseButton" keyboard="false" width="7" height="8" bkimage="chat_ico_closenoti_01.png" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
                     </HorizontalLayout>
                 </HorizontalLayout>
-            </VerticalLayout>			
+            </VerticalLayout>
             <VerticalLayout name="TopAlertType2Layout" height="25" visible="false">
                 <HorizontalLayout bkimage="chat_bg_noti_risk.png" inset="10,7,1,6">
                     <HorizontalLayout inset="0,0,5,0">
@@ -216,24 +216,24 @@
                         <Button name="AlertType2CloseButton" width="7" height="8" bkimage="chat_ico_closenoti_01.png" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
                     </HorizontalLayout>
                 </HorizontalLayout>
-            </VerticalLayout>			
+            </VerticalLayout>
 			<VerticalLayout name="TopAlertType3Layout" height="30" visible="false">
                 <HorizontalLayout bkimage="chat_bg_noti_risk.png" inset="10,7,1,6">
-                    <HorizontalLayout inset="0,0,5,0">                        
+                    <HorizontalLayout inset="0,0,5,0">
 						<Control width="10" height="10" bkimage="chat_ico_risk.png" />
-                        <Label name="AlertType3Label" text="ID 도용." textpadding="5,0,0,0" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="2" showhtml="true"/>                        
+                        <Label name="AlertType3Label" text="ID 도용." textpadding="5,0,0,0" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="2" showhtml="true"/>
                     </HorizontalLayout>
                     <HorizontalLayout width="13" inset="0,0,5,0">
                         <Button name="AlertType3CloseButton" width="7" height="8" bkimage="chat_ico_closenoti_01.png" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
                     </HorizontalLayout>
                 </HorizontalLayout>
             </VerticalLayout>
-						
+
             <VerticalLayout name="BodyContentLayout">
                 <BubbleListUI bkcolor="#00000000" header="hidden" itemhotbkcolor="#00000000" itemselectedbkcolor="#00000000" name="MessgeBubbleList" vscrollbar="true" />
                 <MImage name="TypingImage" visible="false" float="true" height="21" width="21" image="img_typing.png" hcutsize="21" rollingtime="200" imagetype="0" />
             </VerticalLayout>
-			
+
             <VerticalLayout name="BottomNoticeLayoutType1" visible="false" height="25" bkimage="chat_bg_noti_status.png" inset="10,0,10,3">
 				<HorizontalLayout name="labelArea" float="true" height="25" pos="0,0,220,25" relativepos="0,0,100,0" minwidth="220" >
 					<Label float="true" name="NoticeType1Text" text="[알림1]" textpadding="12,2,2,0" textcolor="#FF666666" disabledtextcolor="#FFA7A6AA" font="2" endellipsis="true" align="left" pos="0,0,220,25" relativepos="0,0,100,0" minwidth="220"/>
@@ -245,17 +245,17 @@
 							float="true" pos="30,8,0,0" width="22" height="13" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" showhtml="true" align="left"/>
 					<Button name="NoticeType1CancelBtn" text="&lt;f 돋움 11&gt;&lt;u&gt;&lt;c #31AED8&gt;취소&lt;/c&gt;&lt;/f&gt;&lt;/u&gt;"
 							float="true" pos="30,8,0,0" width="22" height="13" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" showhtml="true" align="left"/>
-				</HorizontalLayout>	
-            </VerticalLayout>			
+				</HorizontalLayout>
+            </VerticalLayout>
             <VerticalLayout name="BottomNoticeLayoutType2" visible="false" height="25" bkimage="chat_bg_noti_status.png" inset="10,7,10,3">
                 <Text name="NoticeType2Text" text="[알림2]" textpadding="2,0,2,0" textcolor="#FF666666" disabledtextcolor="#FFA7A6AA" font="2" align="wrap" />
-            </VerticalLayout>			
+            </VerticalLayout>
             <VerticalLayout name="BottomNoticeLayoutType3" visible="false" height="42" bkimage="file=&apos;chat_bg_noti_status.png&apos; corner=&apos;0,1,0,1&apos;" inset="10,7,10,3">
                 <Text name="NoticeType3Text" text="[알림3]" textpadding="2,0,2,0" textcolor="#FF666666" disabledtextcolor="#FFA7A6AA" font="2" align="wrap" />
             </VerticalLayout>
-						
+
             <!-- VerticalLayout name="InputToolOutLayout" height="29">
-                <HorizontalLayout name="InputToolBodyHorzLayout" bkimage="chat_skin_inputbar_bg.png">                    
+                <HorizontalLayout name="InputToolBodyHorzLayout" bkimage="chat_skin_inputbar_bg.png">
 					<HorizontalLayout name="InputToolLeftHorzLayout">
 						<Option name="Bomb" tooltip="한번메시지" float="true" keyboard="false" pos="0,0,0,0" width="40" height="29"
 								normalimage="chat_ico_oncemsg.png" hotimage="chat_ico_oncemsg_over.png" pushedimage="chat_ico_oncemsg_down.png" disabledimage="chat_ico_oncemsg_disable.png" selectedimage="chat_ico_oncemsg_selected.png"/>
@@ -284,13 +284,13 @@
 						<Control name="ImgBar3" float="true" pos="250,10,0,0" width="2" height="10" bkimage="chat_bar_v_01.png" />
 						<Button name="FileMngrButton" tooltip="메시지에서 주고받은 파일 목록보기" float="true" keyboard="false" pos="257,4,0,0" width="22" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
 								normalimage="chat_ico_filebox.png" hotimage="chat_ico_filebox_over.png" pushedimage="chat_ico_filebox_down.png" disabledimage="chat_ico_filebox_disable.png" />
-					</HorizontalLayout>					
+					</HorizontalLayout>
                 </HorizontalLayout>
             </VerticalLayout -->
-			
+
 			<VerticalLayout height="1" bkcolor="#FFEBEBEB" >
 			</VerticalLayout>
-			
+
             <VerticalLayout name="InputLayout" height="80" bkcolor="#FFFAFAFA" >
                 <HorizontalLayout name="InputControlLayout">
                     <HorizontalLayout name="InputBoxLayout" inset="8,8,8,6">
@@ -304,9 +304,9 @@
                     </HorizontalLayout>
                 </HorizontalLayout>
             </VerticalLayout>
-			
+
 			<VerticalLayout name="InputToolOutLayout" height="30" bkcolor="#FFFAFAFA" >
-                <HorizontalLayout name="InputToolBodyHorzLayout">                    
+                <HorizontalLayout name="InputToolBodyHorzLayout">
 					<HorizontalLayout name="InputToolLeftHorzLayout">
 						<Option name="Bomb" tooltip="한번메시지" float="true" keyboard="false" pos="8,4,30,26" width="22" height="22"
 								normalimage="chat_ico_oncemsg.png" hotimage="chat_ico_oncemsg_over.png" pushedimage="chat_ico_oncemsg_down.png" disabledimage="chat_ico_oncemsg_disable.png" selectedimage="chat_ico_oncemsg_selected.png"/>
@@ -317,7 +317,7 @@
 						<Button name="ActiconButtonBadge" tooltip="액티콘" visible="false" float="true" pos="70,2,0,0" width="15" height="15" font="6"
 								normalimage="file='ico_badge_new.png'" hotimage="ico_badge_new.png" pushedimage="ico_badge_new.png" disabledimage="ico_badge_new_disable.png" />
 						<Button name="FileAttachButton" tooltip="파일 전송하기" float="true" keyboard="false" pos="86,4,108,26" width="22" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
-								normalimage="chat_ico_attachfile.png" hotimage="chat_ico_attachfile_over.png" pushedimage="chat_ico_attachfile_down.png" disabledimage="chat_ico_attachfile_disable.png" />		
+								normalimage="chat_ico_attachfile.png" hotimage="chat_ico_attachfile_over.png" pushedimage="chat_ico_attachfile_down.png" disabledimage="chat_ico_attachfile_disable.png" />
 						<Button name="FontButton" tooltip="글꼴 변경하기" float="true" keyboard="false" pos="112,4,134,26" width="22" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
 								normalimage="chat_ico_text.png" hotimage="chat_ico_text_over.png" pushedimage="chat_ico_text_down.png" disabledimage="chat_ico_text_disable.png" />
 						<Button name="GiftButton" tooltip="기프티콘 선물하기" float="true" keyboard="false" pos="138,4,160,26" width="22" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
@@ -327,28 +327,28 @@
 						<Button name="FileMngrButton" tooltip="메시지에서 주고받은 파일 목록보기" float="true" keyboard="false" pos="190,4,212,26" width="22" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
 								normalimage="chat_ico_filebox.png" hotimage="chat_ico_filebox_over.png" pushedimage="chat_ico_filebox_down.png" disabledimage="chat_ico_filebox_disable.png" />
 						<Button name="PhoneButton" tooltip="음성/영상 대화하기" float="true" keyboard="false" pos="216,4,238,26" width="22" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
-								normalimage="chat_ico_natephone.png" hotimage="chat_ico_natephone_over.png" pushedimage="chat_ico_natephone_down.png" disabledimage="chat_ico_natephone_disable.png" />		
+								normalimage="chat_ico_natephone.png" hotimage="chat_ico_natephone_over.png" pushedimage="chat_ico_natephone_down.png" disabledimage="chat_ico_natephone_disable.png" />
 					</HorizontalLayout>
-										
+
 					<HorizontalLayout width="43">
-						<Slider name="TransfarentSlide" tooltip="창의 투명도를 조절합니다." float="true" keyboard="false" pos="0,11,0,0" width="35" height="7" 
-                                bkimage="file=&apos;chat_control_opacity_bar.png&apos; dest=&apos;0,0,35,7&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
+						<Slider name="TransfarentSlide" tooltip="창의 투명도를 조절합니다." float="true" keyboard="false" pos="0,11,0,0" width="35" height="7"
+                                bkimage="file=&apos;chat_control_opacity_bar.png&apos; dest=&apos;0,0,35,7&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
                                 min="50" max="255" value="255" hor="true" thumbimage="chat_control_opacity_handle.png" thumbsize="7,7" />
 					</HorizontalLayout>
-									
+
                 </HorizontalLayout>
             </VerticalLayout>
-			
+
 			<VerticalLayout height="1" bkcolor="#FFEBEBEB" >
 			</VerticalLayout>
-			
+
             <!-- VerticalLayout name="TickerLayout" height="24" inset="6,2,4,4" -->
-			<VerticalLayout name="TickerLayout" height="24" inset="6,1,3,4">
+			<VerticalLayout name="TickerLayout" height="1" inset="6,1,3,4">
                 <HorizontalLayout>
 					<VerticalLayout width="11">
-						<Button name="btnNewsUp" float="false" width="11" height="11" 
+						<Button name="btnNewsUp" float="false" width="11" height="11"
 								normalimage="file='btn_vback_01.png'" hotimage="btn_vback_01_over.png" pushedimage="btn_vback_01_down.png" />
-						<Button name="btnNewsDn" float="false" width="11" height="11" 
+						<Button name="btnNewsDn" float="false" width="11" height="11"
 								normalimage="file='btn_vforward_01.png'" hotimage="btn_vforward_01_over.png" pushedimage="btn_vforward_01_down.png" />
 					</VerticalLayout>
                     <!-- HorizontalLayout inset="3,5,10,3" -->
@@ -363,10 +363,10 @@
                                 <Button name="resize" height="10" width="10" keyboard="false" normalimage="ico_handle.png" />
                             </VerticalLayout>
                         </VerticalLayout>
-                    </HorizontalLayout>                    
+                    </HorizontalLayout>
                 </HorizontalLayout>
             </VerticalLayout>
-						
+
 			<!-- Container name="LayerMiniChatInfo" visible="false" pos="215,73,289,163" float="true" height="70" width="160" >
 				<VerticalLayout>
 					<HorizontalLayout height="6" />
@@ -382,7 +382,7 @@
 					<Button name="btnIndicator" float="true" mouse="false" pos="114,0,125,7" width="11" height="7" normalimage="file='layer_tail.png'" />
 				</VerticalLayout>
 			</Container -->
-						
+
         </VerticalLayout>
     </VerticalLayout>
 </Window>
