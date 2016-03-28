@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Window>
-  <Font name="돋움" size="12" bold="false" default="true"/>
-  <Default name="Menu" bkcolor="FFFFFFFF" bordercolor="FF828282" bordersize="1" value="bordersize=&quot;1&quot; bordercolor=&quot;#FF828282&quot; bkcolor=&quot;FFFFFFFF&quot; inset=&quot;1,2,1,2&quot; itemtextpadding=&quot;21,0,22,0&quot;" />
-  <MenuElement text="item1" padding="0,0,0,0"></MenuElement>
-</Window>

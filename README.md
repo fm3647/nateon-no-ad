@@ -3,6 +3,7 @@
 ____________________________________
 Windows:
 hosts 추가 부분
+c:\Windows\System32\Drives\etc\hosts
 #NateON AD
 
 127.0.0.1 cyad.nate.com

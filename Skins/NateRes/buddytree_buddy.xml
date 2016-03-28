@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Window>
-	<BuddyTreeItem name="buddy"
-								 pushedelementimage="file='main_buddy_selected.png'"
-								 hotelementimage="file='main_buddy_over.png'">
-	</BuddyTreeItem>
-</Window>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Window>
-	<BuddyTreeItem name="buddyGroup"
-								 bkimage="file='main_group.png'"
-								 pushedelementimage="file='main_group_selected.png'"
-								 hotelementimage="file='main_group_over.png'">
-	</BuddyTreeItem>
-</Window>

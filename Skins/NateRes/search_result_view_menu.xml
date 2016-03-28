@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Window alpha="255">
-  <Font name="돋움" size="12" bold="false" default="true" />
-  <Default name="Menu" bkcolor="FFFFFFFF" bordercolor="FF828282" bordersize="1" value="bordersize=&quot;1&quot; bordercolor=&quot;FF828282&quot; bkcolor=&quot;FFFFFFFF&quot; inset=&quot;1,2,1,2&quot; itemtextpadding=&quot;10,0,10,0&quot; itemselectedbkcolor=&quot;FFFFF27F&quot;" />
-  <Menu>
-    <MenuElement name="Copy"   height="23" padding="0,5,0,0" text="복사" enable="false" />
-    <MenuElement name="Select" height="23" padding="0,5,0,0" text="모두 선택"/>
-  </Menu>
-</Window>

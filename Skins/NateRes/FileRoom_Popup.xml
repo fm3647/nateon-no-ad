@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Window alpha="255" size="115, 38">
-  <Font name="돋움" size="11" bold="false" default="true" />
-  <Default name="Menu" bkcolor="FFFFFFFF" bordercolor="FF777777" bordersize="1" value="bordersize=&quot;1&quot; bordercolor=&quot;FF777777&quot; bkcolor=&quot;FFFFFFFF&quot; inset=&quot;2,2,2,2&quot; itemtextpadding=&quot;10,0,10,0&quot; itemselectedbkcolor=&quot;FFFFE652&quot;" />
-  <Menu name="popupmenu">
-    <MenuElement name="ShowAll" height="22" padding="0,5,0,0" text="전체 콘텐츠 보기"/>
-    <MenuElement name="ShowRecent" height="22" text="최근 7일간 콘텐츠 보기" /> 
-  </Menu>
-</Window>
